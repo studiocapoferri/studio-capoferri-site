@@ -111,7 +111,7 @@ export function LocalizedServicesPageContent() {
               const media = sectionMedia[section.id];
               return (
                 <section key={section.id} id={section.id} className={`reveal-block ${scrollAnchorClass}`}>
-                  <h2 className="font-display section-title text-2xl tracking-tight text-[#2a2a2a] sm:text-[1.75rem]">
+                  <h2 className={`font-display ${ui.sectionHeadingAccent} tracking-tight sm:text-[1.75rem]`}>
                     {section.heading}
                   </h2>
                   {section.paragraphs.map((p) => (
