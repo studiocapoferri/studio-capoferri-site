@@ -48,7 +48,7 @@ export const ui = {
   /** @deprecated prefer sectionHeadingAccent; kept for any residual imports */
   cardHeading: "section-title section-heading-accent text-2xl text-[#2a2a2a]",
 
-  /** Foto di contenuto (editoriale: angolo vivo, filetto leggero; .photo-alive rinvigorisce tono) */
+  /** Foto di contenuto: angolo vivo + grade/scrim di sistema (.photo-alive) */
   contentImage: "photo-alive relative overflow-hidden rounded-sm border border-[#1c1e21]/10",
 
   /** Link inline (grafite → rosso logo al hover) */

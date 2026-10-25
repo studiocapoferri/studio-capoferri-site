@@ -15,7 +15,7 @@ export function HomeAboutSection({ locale }: { locale: Locale }) {
           <h2 className={homeTitleCls}>{t.aboutTitle}</h2>
           <div className="mt-8 grid grid-cols-1 items-start gap-8 md:mt-10 md:grid-cols-2 md:gap-x-[clamp(2rem,4vw,3.5rem)] md:gap-y-0">
             <figure className="m-0 order-2 md:order-1">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1]">
+              <div className="photo-alive relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1]">
                 <Image
                   src={homeChiSiamoImages.cantiere.src}
                   alt={locale === "en" ? homeChiSiamoImages.cantiere.altEn : homeChiSiamoImages.cantiere.alt}

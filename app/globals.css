@@ -203,21 +203,11 @@ main ul {
 }
 
 .copy-rhythm {
-  line-height: 1.78;
+  line-height: 1.65;
   letter-spacing: normal;
-  /* Justify only from sm up — on narrow screens it blows gaps on short lines (e.g. studio name). */
   text-align: left;
-  hyphens: manual;
-  -webkit-hyphens: manual;
-}
-
-@media (min-width: 640px) {
-  .copy-rhythm {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-  }
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .eyebrow {
@@ -255,13 +245,13 @@ main ul {
 
 .home-split-header__right {
   font-size: 0.98rem;
-  line-height: 1.75;
+  line-height: 1.65;
   letter-spacing: normal;
   color: var(--copy-body);
   font-weight: 400;
   text-align: left;
-  hyphens: manual;
-  -webkit-hyphens: manual;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .home-split-header__right--inverted {
@@ -271,11 +261,7 @@ main ul {
 @media (min-width: 640px) {
   .home-split-header__right {
     font-size: 1.05rem;
-    line-height: 1.78;
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    line-height: 1.68;
   }
 }
 
@@ -330,17 +316,8 @@ main ul {
 .home-section-body {
   color: var(--copy-body);
   text-align: left;
-  hyphens: manual;
-  -webkit-hyphens: manual;
-}
-
-@media (min-width: 640px) {
-  .home-section-body {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-  }
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 .home-section-body strong,
@@ -351,22 +328,18 @@ main ul {
 
 .home-section-prose {
   font-size: 0.98rem;
-  line-height: 1.75;
+  line-height: 1.65;
   letter-spacing: normal;
   color: var(--copy-body);
   text-align: left;
-  hyphens: manual;
-  -webkit-hyphens: manual;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 @media (min-width: 640px) {
   .home-section-prose {
     font-size: 1.05rem;
-    line-height: 1.78;
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    line-height: 1.68;
   }
 }
 
@@ -417,17 +390,40 @@ main ul {
   background: linear-gradient(90deg, transparent, rgba(28, 30, 33, 0.16), transparent);
 }
 
+/* Soft bottom wash — prefer .photo-alive::after; kept for legacy markup */
 .image-unify-overlay {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(180deg, transparent 40%, rgba(20, 28, 36, 0.14));
+  background:
+    linear-gradient(180deg, transparent 42%, rgba(20, 28, 36, 0.16) 100%),
+    linear-gradient(to left, rgba(20, 28, 36, 0.05), transparent 55%);
 }
 
-/* Case / gallery photos: slightly more contrast and colour (no re-export) */
+/*
+ * Editorial photo system (always on): mild grade + brand scrim.
+ * Put `.photo-alive` on the positioned frame (not only on <img>) so ::after works.
+ */
+.photo-alive {
+  isolation: isolate;
+}
 .photo-alive img,
 img.photo-alive {
-  filter: brightness(1.04) contrast(1.07) saturate(1.12);
+  filter: brightness(1.03) contrast(1.09) saturate(1.08);
+}
+.photo-alive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 42%, rgba(20, 28, 36, 0.16) 100%),
+    linear-gradient(to left, rgba(20, 28, 36, 0.05), transparent 55%);
+}
+/* Portraits keep their own wash layer above the system scrim */
+.photo-alive .portrait-mann-wash {
+  z-index: 2;
 }
 
 /* Team portraits: gelatin-silver B/W on hover — desktop only (no sticky hover on touch) */
@@ -491,7 +487,7 @@ img.photo-alive {
   }
 
   .copy-rhythm {
-    line-height: 1.68;
+    line-height: 1.6;
   }
 
   .section-title {

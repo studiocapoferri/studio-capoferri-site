@@ -40,12 +40,12 @@ export function ProjectPreviewCard({
       title={linkTitles.progetto(title, locale)}
       className={`group ${dark ? ui.projectCardDark : ui.projectCardLight} ${className}`}
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="photo-alive relative aspect-[4/3] overflow-hidden">
         <Image
           src={image}
           alt={alt}
           fill
-          className="photo-alive object-cover transition-[filter] duration-400 ease-out group-hover:[filter:brightness(1.03)_contrast(1.04)] motion-reduce:transition-none motion-reduce:group-hover:[filter:none]"
+          className="object-cover transition-[filter] duration-400 ease-out group-hover:brightness-[1.04] motion-reduce:transition-none"
           sizes="(min-width:1024px) 33vw, 100vw"
         />
       </div>
