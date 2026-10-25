@@ -14,90 +14,103 @@ export function LocalizedContactsPageContent() {
   const isEn = locale === "en";
   const openingHours = isEn ? site.openingHoursDisplayEn : site.openingHoursDisplay;
   const contactLd = contactPageJsonLd(locale);
-  const cardH2 = `font-display ${ui.sectionHeadingAccent} mb-4 sm:mb-5`;
+
+  const rows = [
+    {
+      label: isEn ? "Address" : "Indirizzo",
+      value: <address className="not-italic [hyphens:none]">{site.addressLine}</address>,
+    },
+    {
+      label: isEn ? "Phone" : "Telefono",
+      value: (
+        <a
+          href={`tel:${site.phoneTel}`}
+          title={linkTitles.telefono(site.phoneDisplay, locale)}
+          className="inline-block min-h-[44px] py-1 underline-offset-2 hover:underline"
+        >
+          {site.phoneDisplay}
+        </a>
+      ),
+    },
+    {
+      label: "Email",
+      value: (
+        <a
+          href={`mailto:${site.email}`}
+          title={linkTitles.email(site.email, locale)}
+          className="inline-block min-h-[44px] py-1 underline-offset-2 hover:underline"
+        >
+          {site.email}
+        </a>
+      ),
+    },
+    {
+      label: isEn ? "Hours" : "Orari",
+      value: openingHours,
+    },
+  ] as const;
 
   return (
     <main id="main-content" className="section-shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <div className={`reveal-block home-plate home-plate--well mb-6 ${ui.articleMax} sm:mb-8`}>
-            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
+          <header className="reveal-block mb-8 sm:mb-10">
+            <h1 className={`font-display reveal-title ${ui.pageTitle}`}>
               {isEn ? "Contact structural engineers in Italy" : "Contatti"}
             </h1>
-          </div>
+            <p className="mt-3 max-w-[36rem] text-left text-[0.98rem] text-[#555] sm:mt-4 sm:text-[1.05rem]">
+              {isEn
+                ? "Studio Capoferri in Adro (Brescia). Call, write, or send a brief below."
+                : "Studio Capoferri ad Adro (Brescia). Chiama, scrivi o invia una richiesta qui sotto."}
+            </p>
+          </header>
 
-          <div className="grid gap-5 sm:gap-8 lg:grid-cols-[1.02fr_1.28fr] lg:items-stretch">
-            <section aria-labelledby="recapiti-heading" className="reveal-block home-plate home-plate--well">
-              <h2 id="recapiti-heading" className={cardH2}>
-                {isEn ? "Details" : "Recapiti"}
-              </h2>
-              <p className="mb-4 text-left text-[0.98rem] font-semibold text-[#1c1e21] sm:mb-6 sm:text-[1.05rem]">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:items-start lg:gap-14">
+            <section aria-labelledby="recapiti-heading" className="reveal-block">
+              <h2 id="recapiti-heading" className="font-display text-lg font-medium tracking-tight text-[#1c1e21]">
                 {site.gmbName}
-              </p>
-              <ul className="space-y-2 text-left text-[0.98rem] text-[#444] sm:space-y-3 sm:text-[1.05rem]">
-                <li>
-                  <strong className="font-semibold text-[#1c1e21]">{isEn ? "Address" : "Indirizzo"}</strong>:{" "}
-                  <address className="inline not-italic [hyphens:none]">{site.addressLine}</address>
-                </li>
-                <li>
-                  <strong className="font-semibold text-[#1c1e21]">{isEn ? "Phone" : "Telefono"}</strong>:{" "}
-                  <a
-                    href={`tel:${site.phoneTel}`}
-                    title={linkTitles.telefono(site.phoneDisplay, locale)}
-                    className="inline-block min-h-[44px] py-1 underline-offset-2 hover:underline"
-                  >
-                    {site.phoneDisplay}
-                  </a>
-                </li>
-                <li>
-                  <strong className="font-semibold text-[#1c1e21]">Email</strong>:{" "}
-                  <a
-                    href={`mailto:${site.email}`}
-                    title={linkTitles.email(site.email, locale)}
-                    className="inline-block min-h-[44px] py-1 underline-offset-2 hover:underline"
-                  >
-                    {site.email}
-                  </a>
-                </li>
-                <li>
-                  <strong className="font-semibold text-[#1c1e21]">{isEn ? "Hours" : "Orari"}</strong>: {openingHours}
-                </li>
-              </ul>
-              <div className="mt-5 border-t border-[#1c1e21]/10 pt-4 sm:mt-7 sm:pt-6">
-                <a
-                  href={site.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={linkTitles.linkedin(locale)}
-                  aria-label={isEn ? "Follow us on LinkedIn - Studio Capoferri" : "Seguici su LinkedIn - Studio Capoferri"}
-                  className="inline-flex min-h-[44px] items-center gap-2 py-1 text-sm font-semibold text-[#1c1e21] underline-offset-2 transition hover:text-[#b01010] hover:underline"
-                >
-                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#1c1e21]/15 bg-[#1c1e21]/5 text-[#1c1e21]">
-                    <LinkedInIcon className="h-4 w-4" />
-                  </span>
-                  {isEn ? "Follow us on LinkedIn" : "Seguici su LinkedIn"}
-                </a>
-              </div>
+              </h2>
+              <dl className="mt-6 space-y-5 border-t border-[#1c1e21]/12 pt-6">
+                {rows.map((row) => (
+                  <div key={row.label}>
+                    <dt className="text-[0.72rem] font-medium uppercase tracking-[0.12em] text-[#888]">{row.label}</dt>
+                    <dd className="mt-1.5 text-[0.98rem] leading-snug text-[#1c1e21] sm:text-[1.02rem]">{row.value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <a
+                href={site.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={linkTitles.linkedin(locale)}
+                aria-label={isEn ? "Follow us on LinkedIn - Studio Capoferri" : "Seguici su LinkedIn - Studio Capoferri"}
+                className="mt-8 inline-flex min-h-[44px] items-center gap-2.5 text-sm font-semibold text-[#1c1e21] underline-offset-2 transition hover:text-[#b01010] hover:underline"
+              >
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#1c1e21]/15 bg-[#1c1e21]/5 text-[#1c1e21]">
+                  <LinkedInIcon className="h-4 w-4" />
+                </span>
+                {isEn ? "Follow us on LinkedIn" : "Seguici su LinkedIn"}
+              </a>
             </section>
 
-            <section aria-labelledby="mappa-heading" className="reveal-block home-plate home-plate--well">
-              <h2 id="mappa-heading" className={cardH2}>
+            <section aria-labelledby="mappa-heading" className="reveal-block min-w-0">
+              <h2 id="mappa-heading" className="sr-only">
                 {isEn ? "Where we are" : "Dove siamo"}
               </h2>
               <MapEmbed />
             </section>
           </div>
 
-          <section id="form-contatti" className={`mt-10 sm:mt-16 ${scrollAnchorClass}`}>
-            <div className="reveal-block home-plate home-plate--well">
-              <h2 className={`font-display ${ui.sectionHeadingAccent} mb-2 sm:mb-3`}>
-                {isEn ? "Speak with our engineers" : "Contattaci"}
+          <section id="form-contatti" className={`mt-14 border-t border-[#1c1e21]/12 pt-10 sm:mt-16 sm:pt-12 ${scrollAnchorClass}`}>
+            <div className="reveal-block max-w-[640px]">
+              <h2 className="font-display text-2xl font-medium tracking-tight text-[#1c1e21] sm:text-[1.75rem]">
+                {isEn ? "Speak with our engineers" : "Scrivici"}
               </h2>
-              <p className={`mb-6 w-full sm:mb-8 ${ui.bodyMuted}`}>
+              <p className="mt-3 mb-8 text-left text-[0.95rem] text-[#555] sm:text-[1.02rem]">
                 {isEn
                   ? "Tell us about scope, programme and constraints. We reply in English."
-                  : "Compila il form con i dettagli del tuo intervento. Riceverai un riscontro tecnico puntuale dal nostro team."}
+                  : "Oggetto, tempi e vincoli dell'intervento. Rispondiamo con un riscontro tecnico."}
               </p>
               <ContactForm />
             </div>
