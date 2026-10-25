@@ -25,9 +25,9 @@ const sectionMedia: Record<string, { src: string; altIt: string; altEn: string }
     altEn: "Steel residence with integrated architecture and structure",
   },
   "direzione-lavori": {
-    src: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
-    altIt: "Montaggio carpenteria in cantiere, direzione lavori strutturali",
-    altEn: "Steel erection on site, structural construction supervision",
+    src: "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.webp",
+    altIt: "Montaggio copertura metallica in cantiere, direzione lavori strutturali",
+    altEn: "Steel canopy erection on site, structural construction supervision",
   },
 };
 
