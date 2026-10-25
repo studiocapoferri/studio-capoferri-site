@@ -42,9 +42,9 @@ export function LocalizedServicesPageContent() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <header className="reveal-block mb-8 max-w-[42rem] sm:mb-10">
-            <h1 className={`font-display reveal-title ${ui.pageTitle}`}>{copy.title}</h1>
-            <p className={`mt-4 text-left ${ui.body}`}>{copy.lead}</p>
+          <header className="reveal-block home-plate home-plate--well mb-8 max-w-[42rem] sm:mb-10">
+            <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
+            <p className={`text-left ${ui.body}`}>{copy.lead}</p>
           </header>
 
           <nav
@@ -120,13 +120,13 @@ export function LocalizedServicesPageContent() {
                     </p>
                   ))}
                   {media ? (
-                    <div className={`${ui.contentImage} relative mt-6 aspect-[16/9] w-full`}>
+                    <div className={`${ui.contentImage} relative mt-6 aspect-[16/9] w-full max-w-[48rem]`}>
                       <Image
                         src={media.src}
                         alt={isEn ? media.altEn : media.altIt}
                         fill
                         className="object-cover"
-                        sizes="(min-width:860px) 860px, 100vw"
+                        sizes="(min-width:768px) 768px, 100vw"
                       />
                     </div>
                   ) : null}
