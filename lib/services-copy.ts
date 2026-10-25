@@ -1,7 +1,7 @@
 export const servicesCopy = {
   it: {
     title: "Servizi",
-    lead: "Progettazione strutturale (acciaio, cemento armato, muratura: FEM, BIM, disegni d'officina, collaudi), urbanistica e architettura, direzione lavori e consulenza, pratiche edilizie e catastali, sicurezza di cantiere (CSP/CSE), assistenza immobiliare.",
+    lead: "Dal calcolo alla messa in opera: strutture in acciaio, cemento armato e muratura, architettura e pratiche quando servono, direzione lavori e sicurezza di cantiere.",
     fabricatorsNote: "Per carpenterie metalliche e officine EN 1090 vedi",
     gcNote: "Per general contractor e imprese generali in Lombardia vedi",
     internationalNote: "Per partner UE e clienti esteri vedi",
@@ -158,7 +158,7 @@ export const servicesCopy = {
   },
   en: {
     title: "Structural engineers for steel design and shop drawings",
-    lead: "Structural engineers in Northern Italy for steel, reinforced concrete and masonry: FEM, BIM, shop drawings, testing, planning and architecture, construction supervision, Italian filings, site safety (CSP/CSE) and property support.",
+    lead: "From analysis to erection: steel, reinforced concrete and masonry, architecture and filings when needed, site supervision and construction safety.",
     fabricatorsNote: "For steel fabricators and EN 1090 workshops, see",
     gcNote: "For general contractors working in Northern Italy, see",
     internationalNote: "For overseas partners and EU fabricators, see",

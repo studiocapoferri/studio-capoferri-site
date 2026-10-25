@@ -24,44 +24,52 @@ export function LocalizedServicesPageContent() {
         <div className={layoutContentMaxClass}>
           <article className={`reveal-block home-plate home-plate--well ${ui.articleMax}`}>
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>{copy.title}</h1>
-            <p className={ui.body}>{copy.lead}</p>
-            {"fabricatorsNote" in copy && copy.fabricatorsNote ? (
-              <p className={`mt-4 ${ui.body}`}>
-                {copy.fabricatorsNote}{" "}
-                <Link
-                  href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
-                  title={linkTitles.fabricators(locale)}
-                  className="link-accent"
-                >
-                  {locale === "en"
-                    ? "structural design for steel fabricators"
-                    : "progettazione strutturale per carpenterie"}
-                </Link>
-                .
-              </p>
-            ) : null}
-            {"gcNote" in copy && copy.gcNote ? (
-              <p className={`mt-4 ${ui.body}`}>
-                {copy.gcNote}{" "}
-                <Link
-                  href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
-                  title={linkTitles.generalContractor(locale)}
-                  className="link-accent"
-                >
-                  {locale === "en" ? "structural design for general contractors" : "progettazione strutturale per general contractor"}
-                </Link>
-                .
-              </p>
-            ) : null}
-            {"internationalNote" in copy && copy.internationalNote ? (
-              <p className={`mt-4 ${ui.body}`}>
-                {copy.internationalNote}{" "}
-                <Link href={localizeHref("/clienti-internazionali", locale)} title={linkTitles.international(locale)} className="link-accent">
-                  {locale === "en" ? "International clients" : "Clienti internazionali"}
-                </Link>
-                .
-              </p>
-            ) : null}
+            <p className={`text-left ${ui.body}`}>{copy.lead}</p>
+            <ul className="mt-6 list-none space-y-2 border-t border-[#1c1e21]/10 pt-5 text-left text-[0.92rem] text-[#555] sm:text-[0.98rem]">
+              {"fabricatorsNote" in copy && copy.fabricatorsNote ? (
+                <li>
+                  {copy.fabricatorsNote}{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
+                    title={linkTitles.fabricators(locale)}
+                    className="link-accent"
+                  >
+                    {locale === "en"
+                      ? "structural design for steel fabricators"
+                      : "progettazione strutturale per carpenterie"}
+                  </Link>
+                  .
+                </li>
+              ) : null}
+              {"gcNote" in copy && copy.gcNote ? (
+                <li>
+                  {copy.gcNote}{" "}
+                  <Link
+                    href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+                    title={linkTitles.generalContractor(locale)}
+                    className="link-accent"
+                  >
+                    {locale === "en"
+                      ? "structural design for general contractors"
+                      : "progettazione strutturale per general contractor"}
+                  </Link>
+                  .
+                </li>
+              ) : null}
+              {"internationalNote" in copy && copy.internationalNote ? (
+                <li>
+                  {copy.internationalNote}{" "}
+                  <Link
+                    href={localizeHref("/clienti-internazionali", locale)}
+                    title={linkTitles.international(locale)}
+                    className="link-accent"
+                  >
+                    {locale === "en" ? "International clients" : "Clienti internazionali"}
+                  </Link>
+                  .
+                </li>
+              ) : null}
+            </ul>
 
             {copy.sections.map((section) => (
               <section key={section.id} id={section.id} className={scrollAnchorClass}>

@@ -32,11 +32,13 @@ export function LocalizedContactsPageContent() {
               <h2 id="recapiti-heading" className={cardH2}>
                 {isEn ? "Details" : "Recapiti"}
               </h2>
-              <p className={`mb-4 font-semibold text-[#1c1e21] sm:mb-6 ${ui.body}`}>{site.gmbName}</p>
-              <ul className={`space-y-2 sm:space-y-3 ${ui.bodyMuted}`}>
+              <p className="mb-4 text-left text-[0.98rem] font-semibold text-[#1c1e21] sm:mb-6 sm:text-[1.05rem]">
+                {site.gmbName}
+              </p>
+              <ul className="space-y-2 text-left text-[0.98rem] text-[#444] sm:space-y-3 sm:text-[1.05rem]">
                 <li>
                   <strong className="font-semibold text-[#1c1e21]">{isEn ? "Address" : "Indirizzo"}</strong>:{" "}
-                  <address className="inline not-italic">{site.addressLine}</address>
+                  <address className="inline not-italic [hyphens:none]">{site.addressLine}</address>
                 </li>
                 <li>
                   <strong className="font-semibold text-[#1c1e21]">{isEn ? "Phone" : "Telefono"}</strong>:{" "}
