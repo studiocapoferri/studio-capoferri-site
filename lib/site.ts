@@ -25,11 +25,8 @@ export const site = {
   phoneTel: "+390307357263",
   /** Visible NAP — Italian order (Via + civico). */
   addressLine: "Via Piave 35, 25030 Adro (BS), Italia",
-  /**
-   * English NAP: number-first + country helps US local-SEO crawlers
-   * that miss Italian “Via … N” order.
-   */
-  addressLineEn: "35 Via Piave, 25030 Adro, Brescia, Italy",
+  /** English NAP — same street order as IT, country in English. */
+  addressLineEn: "Via Piave 35, 25030 Adro, Brescia, Italy",
   address: {
     street: "Via Piave 35",
     postalCode: "25030",
