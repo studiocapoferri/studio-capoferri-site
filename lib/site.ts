@@ -29,7 +29,7 @@ export const site = {
    * English NAP: number-first + country helps US local-SEO crawlers
    * that miss Italian “Via … N” order.
    */
-  addressLineEn: "35 Via Piave, 25030 Adro, Brescia, Italia",
+  addressLineEn: "35 Via Piave, 25030 Adro, Brescia, Italy",
   address: {
     street: "Via Piave 35",
     postalCode: "25030",
