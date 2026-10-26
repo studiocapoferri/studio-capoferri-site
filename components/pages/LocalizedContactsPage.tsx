@@ -18,7 +18,11 @@ export function LocalizedContactsPageContent() {
   const rows = [
     {
       label: isEn ? "Address" : "Indirizzo",
-      value: <address className="not-italic [hyphens:none]">{site.addressLine}</address>,
+      value: (
+        <address className="not-italic [hyphens:none]">
+          {isEn ? site.addressLineEn : site.addressLine}
+        </address>
+      ),
     },
     {
       label: isEn ? "Phone" : "Telefono",

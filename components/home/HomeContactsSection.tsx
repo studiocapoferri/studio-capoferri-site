@@ -40,7 +40,9 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
           </article>
           <article className="home-plate reveal-block">
             <h3 className={`font-display mb-1.5 text-base font-medium tracking-tight text-[#1c1e21] sm:text-lg`}>{t.office}</h3>
-            <address className="not-italic text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem]">{site.addressLine}</address>
+            <address className="not-italic text-[0.88rem] leading-relaxed text-[#444] sm:text-[0.95rem]">
+              {locale === "en" ? site.addressLineEn : site.addressLine}
+            </address>
           </article>
         </div>
         <p className="mt-8 sm:mt-12">

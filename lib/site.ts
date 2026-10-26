@@ -23,11 +23,13 @@ export const site = {
   email: "info@studiocapoferri.eu",
   phoneDisplay: "+39 030 7357263",
   phoneTel: "+390307357263",
+  /** Visible NAP — Italian order (Via + civico). */
+  addressLine: "Via Piave 35, 25030 Adro (BS)",
   /**
-   * Visible NAP line: number-first + English country helps US local-SEO crawlers
+   * English NAP: number-first + country helps US local-SEO crawlers
    * that miss Italian “Via … N” order.
    */
-  addressLine: "35 Via Piave, 25030 Adro, Brescia, Italy",
+  addressLineEn: "35 Via Piave, 25030 Adro, Brescia, Italia",
   address: {
     street: "Via Piave 35",
     postalCode: "25030",

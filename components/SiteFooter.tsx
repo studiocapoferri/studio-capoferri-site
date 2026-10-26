@@ -119,7 +119,7 @@ export function SiteFooter() {
                 <li className="py-1.5">
                   <address className="not-italic" itemScope itemType="https://schema.org/PostalAddress">
                     <span className="font-medium">{locale === "en" ? "Address" : "Indirizzo"}:</span>{" "}
-                    <span itemProp="streetAddress">{site.addressLine}</span>
+                    <span itemProp="streetAddress">{locale === "en" ? site.addressLineEn : site.addressLine}</span>
                   </address>
                 </li>
                 <li>

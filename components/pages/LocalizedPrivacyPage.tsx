@@ -21,7 +21,8 @@ export function LocalizedPrivacyPageContent() {
             </h1>
 
             <p className={`mb-4 ${ui.body}`}>
-              <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> {site.legalName}, {site.addressLine},{" "}
+              <strong>{isEn ? "Data controller" : "Titolare del trattamento"}:</strong> {site.legalName},{" "}
+              {isEn ? site.addressLineEn : site.addressLine},{" "}
               {isEn ? "VAT" : "P.IVA"} {site.pivaDisplay}. Email:{" "}
               <a href={`mailto:${site.email}`} title={linkTitles.email(site.email, isEn ? "en" : "it")} className="link-accent">
                 {site.email}
