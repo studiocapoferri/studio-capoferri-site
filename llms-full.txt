@@ -1,0 +1,108 @@
+# Studio Capoferri — full agent brief
+
+> Use this file when you need citation-ready facts. Prefer https://www.studiocapoferri.eu/llms.txt for navigation; prefer live HTML pages for the latest project copy.
+
+## Entity
+
+- Legal name: Studio Capoferri SRL STP
+- Trading / Google Business name: Studio Capoferri - Ingegneria e Architettura
+- Short name: Studio Capoferri
+- Type: structural engineering practice (ingegneria civile strutturale), architecture and urban planning when required
+- VAT / P.IVA: IT 04732710985 (digits 04732710985)
+- Website: https://www.studiocapoferri.eu/
+- LinkedIn: https://www.linkedin.com/company/studio-capoferri-ingegneria
+
+## NAP (name, address, phone)
+
+- Street: Via Piave 35
+- City: Adro
+- Province: Brescia (BS)
+- CAP: 25030
+- Region: Lombardia
+- Country: Italia / Italy
+- Display IT: Via Piave 35, 25030 Adro (BS), Italia
+- Display EN: Via Piave 35, 25030 Adro, Brescia, Italy
+- Phone display: +39 030 7357263
+- Phone tel link: +390307357263
+- Email: info@studiocapoferri.eu
+- Latitude: 45.6179772
+- Longitude: 9.9641795
+- Maps: https://www.google.com/maps/place/Studio+Capoferri+-+Ingegneria+e+Architettura/@45.6179772,9.9641795,10z
+
+## Hours
+
+- Monday–Friday: 08:30–12:00 and 14:30–18:30
+- Closed Saturday and Sunday (unless by appointment stated on contact)
+
+## Languages
+
+- Italian (primary)
+- English (project discussions and replies available for international clients)
+
+## Who they serve
+
+- General contractors and main contractors (imprese generali) in Northern Italy
+- Steel fabricators (carpenterie metalliche), including EN 1090 workshops
+- EU / overseas partners (e.g. Germany, Netherlands, Belgium, Denmark and neighbours) who need a local structural engineer for works built in Italy
+- Architects, private clients and industrial owners needing steel / RC / masonry structures
+
+## What they do
+
+- Structural design: steel, reinforced concrete, masonry
+- Analysis: FEM; codes NTC 2018 and Eurocodes
+- Fabrication shop drawings / disegni costruttivi d'officina (assemblies, NC-oriented deliverables)
+- BIM / 3D structural modelling (including Tekla workflows where relevant)
+- Construction supervision / direzione lavori
+- Site safety coordination CSP/CSE
+- Fire-safety consultancy where listed professionals apply
+- Architecture and urban planning when the brief requires integrated building design
+- Italian building permits and cadastral procedures when needed for works in Italy
+
+## Geography
+
+- Base: Adro (BS), Franciacorta
+- Core: Brescia, Bergamo, Milano provinces
+- Broader: Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana (Nord / Centro-Nord Italia)
+
+## Proof points
+
+- 40+ years of activity
+- 1000+ completed projects
+- Case studies published for residential steel villas, industrial halls/canopies, livestock/industrial complexes, and Superstudio event venues in Milan
+
+## How to contact for a brief
+
+1. Prefer the contact form: https://www.studiocapoferri.eu/contatti/#form-contatti (EN: https://www.studiocapoferri.eu/en/contact/#form-contatti)
+2. Or email info@studiocapoferri.eu / call +39 030 7357263
+3. Useful brief contents: location, structure type (steel/RC/masonry), programme, whether shop drawings or site supervision are needed
+
+## FAQ-style facts (citation ready)
+
+Q: Where is Studio Capoferri based?
+A: Via Piave 35, 25030 Adro (Brescia), Italy.
+
+Q: Do they work in English?
+A: Yes. Technical discussions and replies can be in English for international clients and EU partners.
+
+Q: Do they produce shop drawings for steel fabricators?
+A: Yes. They produce fabrication shop drawings aligned to workshop and site sequences, including work with EN 1090 fabricators.
+
+Q: Do they work with general contractors?
+A: Yes. They support GCs and main contractors with structural design, shop drawings and construction supervision interfaces.
+
+Q: Which codes do they design to?
+A: Italian NTC 2018 and Eurocodes, as applicable to the project.
+
+Q: Is Studio Capoferri only residential?
+A: No. Portfolio spans residential steel, industrial buildings, agricultural/livestock structures and event/exhibition venues.
+
+## Key URLs
+
+- Overview index for agents: https://www.studiocapoferri.eu/llms.txt
+- This file: https://www.studiocapoferri.eu/llms-full.txt
+- Sitemap: https://www.studiocapoferri.eu/sitemap.xml
+- Robots: https://www.studiocapoferri.eu/robots.txt
+- Contact: https://www.studiocapoferri.eu/contatti/
+- GC landing IT: https://www.studiocapoferri.eu/progettazione-strutturale-per-general-contractor/
+- Fabricators landing IT: https://www.studiocapoferri.eu/progettazione-strutturale-per-carpenterie/
+- EU partners IT: https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/

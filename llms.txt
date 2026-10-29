@@ -1,132 +1,70 @@
 # Studio Capoferri
 
-Studio Capoferri is a practice of structural engineers in Adro, near Brescia, Italy. For over 40 years it has designed steel buildings across Northern and North-Central Italy, with fabrication shop drawings and site support. Coverage is strongest in Lombardy (Brescia, Bergamo, Milan), and also Veneto, Piedmont, Emilia-Romagna and Tuscany.
+> Structural engineers in Adro (Brescia), Northern Italy: steel, reinforced concrete and masonry design, fabrication shop drawings, construction supervision and site safety. Local partner for general contractors and EU fabricators building in Italy. Discussions in Italian and English. / Studio tecnico di ingegneria civile ad Adro (BS): strutture in acciaio, CA e muratura, disegni d'officina, direzione lavori e sicurezza cantieri. Partner per imprese generali e carpenterie UE che realizzano opere in Italia.
 
-It works with general contractors and main contractors in Northern Italy, and with EU fabricators and overseas partners (Germany, the Netherlands, Belgium, Denmark and neighbouring countries) who need a local structural engineer for projects built in Italy. Technical discussions can be held in English.
+Studio Capoferri SRL STP (P.IVA IT04732710985) is a ProfessionalService / LocalBusiness based at Via Piave 35, 25030 Adro (BS), Italia. Google Business name: "Studio Capoferri - Ingegneria e Architettura". Phone +39 030 7357263 · Email info@studiocapoferri.eu · Hours Mon–Fri 08:30–12:00 and 14:30–18:30 · Coordinates 45.6179772, 9.9641795 · LinkedIn https://www.linkedin.com/company/studio-capoferri-ingegneria
 
-Studio Capoferri è uno studio tecnico di ingegneria civile, architettura e urbanistica con sede ad Adro (BS). Opera da oltre 40 anni nel Nord e Centro Nord Italia (Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana), con focus su Brescia, Bergamo e Milano. Specializzato in strutture in acciaio, progettazione strutturale, disegni d'officina, direzione lavori e sicurezza cantieri. Lavora con imprese generali, general contractor e studi tecnici in Lombardia, e con partner UE che realizzano opere in Italia.
+40+ years, 1000+ completed projects. Strongest coverage: Lombardy (Brescia, Bergamo, Milan / Franciacorta), also Veneto, Piedmont, Emilia-Romagna, Tuscany. Codes: NTC 2018, Eurocodes. Stack: FEM, BIM/Tekla, EN 1090 fabricator interfaces.
 
-## Official website / Sito ufficiale
+Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file): https://www.studiocapoferri.eu/llms.txt · Expanded facts: https://www.studiocapoferri.eu/llms-full.txt · Sitemap: https://www.studiocapoferri.eu/sitemap.xml
 
-### Italian
-- [Home](https://www.studiocapoferri.eu/)
-- [Chi siamo](https://www.studiocapoferri.eu/chi-siamo/)
-- [Servizi](https://www.studiocapoferri.eu/servizi/)
-- [Progetti](https://www.studiocapoferri.eu/progetti/)
-- [Contatti](https://www.studiocapoferri.eu/contatti/)
-- [Privacy policy](https://www.studiocapoferri.eu/privacy-policy/)
+## Core pages (Italian)
 
-### English
-- [Home](https://www.studiocapoferri.eu/en/)
-- [About](https://www.studiocapoferri.eu/en/about/)
-- [Services](https://www.studiocapoferri.eu/en/services/)
-- [Projects](https://www.studiocapoferri.eu/en/projects/)
-- [Contact](https://www.studiocapoferri.eu/en/contact/)
-- [Privacy policy](https://www.studiocapoferri.eu/en/privacy-policy/)
+- [Home](https://www.studiocapoferri.eu/): Studio overview, services and northern Italy coverage
+- [Chi siamo](https://www.studiocapoferri.eu/chi-siamo/): Practice profile and engineers (Professionisti)
+- [Servizi](https://www.studiocapoferri.eu/servizi/): Structural design, architecture/planning, site supervision, cadastral and safety services
+- [Progetti](https://www.studiocapoferri.eu/progetti/): Project index by sector
+- [Contatti](https://www.studiocapoferri.eu/contatti/): Address, phone, email, map and contact form
 
-## Contatti / Contact
+## Core pages (English)
 
-- Indirizzo / Address: Via Piave 35, 25030 Adro (BS), Italy
-- Telefono / Phone: +39 030 7357263
-- Email: info@studiocapoferri.eu
-- LinkedIn: [Studio Capoferri su LinkedIn](https://www.linkedin.com/company/studio-capoferri-ingegneria)
-- Coordinate / Coordinates: 45.6179772, 9.9641795
-- Lingue / Languages: Italiano, English
+- [Home](https://www.studiocapoferri.eu/en/): English overview for EU partners and international clients
+- [About](https://www.studiocapoferri.eu/en/about/): Engineers and practice profile
+- [Services](https://www.studiocapoferri.eu/en/services/): Full service list in English
+- [Projects](https://www.studiocapoferri.eu/en/projects/): Case-study index
+- [Contact](https://www.studiocapoferri.eu/en/contact/): How to reach the studio; English replies available
 
-## Services / Servizi
+## Audience landing pages
 
-- Structural design / Progettazione strutturale (steel, RC, masonry; FEM; NTC 2018 / Eurocodes)
-- Shop drawings / Disegni costruttivi d'officina for steel fabrication
-- Architectural design / Progettazione architettonica
-- Urban planning / Progettazione urbanistica
-- Construction supervision / Direzione lavori
-- Fire-safety consultancy / Consulenza sicurezza antincendio
-- Site safety coordination (CSP/CSE) / Coordinamento sicurezza cantieri
-- Property support / Assistenza immobiliare
-- Building and cadastral procedures / Pratiche edilizie e catastali
+- [Progettazione strutturale per general contractor](https://www.studiocapoferri.eu/progettazione-strutturale-per-general-contractor/): For Italian GCs and main contractors (NTC, shop drawings, site interface)
+- [Structural design for general contractors](https://www.studiocapoferri.eu/en/structural-design-for-general-contractors/): English GC landing
+- [Progettazione strutturale per carpenterie](https://www.studiocapoferri.eu/progettazione-strutturale-per-carpenterie/): For EN 1090 steel fabricators; sample shop drawings via form
+- [Structural design for steel fabricators](https://www.studiocapoferri.eu/en/structural-design-for-steel-fabricators/): English fabricator landing
+- [Progettazione strutturale acciaio per partner UE](https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/): EU fabricators / overseas partners building in Italy
+- [Structural steel design Italy](https://www.studiocapoferri.eu/en/structural-steel-design-italy/): English EU-partner landing
+- [Clienti internazionali](https://www.studiocapoferri.eu/clienti-internazionali/): International clients hub (IT)
+- [International clients](https://www.studiocapoferri.eu/en/international-clients/): International clients hub (EN)
 
-## Focus areas / Ambiti principali
+## City / local pages
 
-- Prefabricated steel structures / Strutture in acciaio prefabbricate
-- Residential steel design / Progettazione residenziale in acciaio
-- Industrial buildings and sheds / Capannoni e edifici industriali
-- Vertical extensions / Sopraelevazioni
-- Steel fabrication engineering / Carpenteria metallica
-- Shop drawings for fabricators and general contractors / Disegni d'officina per carpenterie e imprese generali
-- Structural design for general contractors / Progettazione strutturale per general contractor
-- Seismic upgrading / Miglioramento sismico
-- Fire safety / Sicurezza antincendio
-- NTC 2018 and Eurocodes
+- [Progettazione strutture in acciaio a Brescia](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-brescia/): Steel structures around Brescia / Franciacorta
+- [Structural engineer Brescia](https://www.studiocapoferri.eu/en/structural-engineer-brescia/): English Brescia landing
+- [Progettazione strutture in acciaio a Bergamo](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-bergamo/): Steel structures Bergamo province
+- [Structural engineer Bergamo](https://www.studiocapoferri.eu/en/structural-engineer-bergamo/): English Bergamo landing
+- [Progettazione strutture in acciaio a Milano](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-milano/): Steel structures Milan metro area
+- [Structural engineer Milan](https://www.studiocapoferri.eu/en/structural-engineer-milan/): English Milan landing
 
-## Areas served / Aree servite
+## Project categories
 
-- Regioni / Regions: Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana
-- Province principali / Main provinces: Brescia, Bergamo, Milano
-- Aree frequenti / Frequent areas: Franciacorta, Lago d'Iseo, Adro, Erbusco (BS)
-- Imprese generali e general contractor italiani che cercano progettazione strutturale e disegni d'officina
-- Partner UE che necessitano di progettazione acciaio in Italia, NTC/Eurocodici e interfaccia di cantiere
+- [Residenziale / Residential](https://www.studiocapoferri.eu/progetti/residenziali/): Houses and steel villas — EN: https://www.studiocapoferri.eu/en/projects/residential/
+- [Industria / Industrial](https://www.studiocapoferri.eu/progetti/industriali/): Halls, canopies, silos, logistics — EN: https://www.studiocapoferri.eu/en/projects/industrial/
+- [Ricettivi / Event venues](https://www.studiocapoferri.eu/progetti/ricettivi/): Exhibition and event structures — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/
 
-## Project categories / Categorie progetti
+## Selected case studies
 
-### Italian
-- [Strutture per il residenziale](https://www.studiocapoferri.eu/progetti/residenziali/)
-- [Progetti per l'industria](https://www.studiocapoferri.eu/progetti/industriali/)
-- [Strutture per eventi](https://www.studiocapoferri.eu/progetti/ricettivi/)
+- [Villa acciaio Pollenza (MC)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-pollenza/): Private steel residence — EN: https://www.studiocapoferri.eu/en/projects/residential/steel-villa-pollenza/
+- [Villa acciaio Salsomaggiore (PR)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore/): Steel villa — EN: https://www.studiocapoferri.eu/en/projects/residential/steel-villa-salsomaggiore/
+- [Centro raccolta rifiuti Chiuduno (BG)](https://www.studiocapoferri.eu/progetti/industriali/centro-raccolta-rifiuti-chiuduno/): Waste centre steel structure — EN: https://www.studiocapoferri.eu/en/projects/industrial/waste-collection-centre-chiuduno/
+- [Copertura verniciatura Maranello (MO)](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/): Large-span space-truss canopy — EN: https://www.studiocapoferri.eu/en/projects/industrial/paint-shop-roof-structure-maranello/
+- [Lamiere da getto Spinelli Adro (BS)](https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/): Steel decking for concrete slabs — EN: https://www.studiocapoferri.eu/en/projects/industrial/steel-decking-spinelli/
+- [Capannone Erbusco (BS)](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/): Industrial hall — EN: https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco/
+- [Complesso zootecnico Castegnato (BS)](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico/): Livestock complex extension — EN: https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension/
+- [Centro direzionale Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/): Office / HQ structure — EN: https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/
+- [Superstudio Village Milano](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/): Event venue structure Bovisa — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village/
+- [Superstudio Maxi Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/): Large exhibition venue structure — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi/
 
-### English
-- [Residential steel structures](https://www.studiocapoferri.eu/en/projects/residential/)
-- [Industrial steel buildings](https://www.studiocapoferri.eu/en/projects/industrial/)
-- [Event venue structures](https://www.studiocapoferri.eu/en/projects/public-spaces/)
+## Optional
 
-## Thematic pages / Pagine tematiche
-
-### Italian
-- [Progettazione strutturale per general contractor](https://www.studiocapoferri.eu/progettazione-strutturale-per-general-contractor/)
-- [Progettazione strutture in acciaio a Brescia](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-brescia/)
-- [Progettazione strutture in acciaio a Bergamo](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-bergamo/)
-- [Progettazione strutture in acciaio a Milano](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-milano/)
-- [Progettazione strutturale in acciaio per partner UE](https://www.studiocapoferri.eu/progettazione-strutturale-acciaio-italia/)
-- [Clienti internazionali](https://www.studiocapoferri.eu/clienti-internazionali/)
-
-### English
-- [Structural design for general contractors](https://www.studiocapoferri.eu/en/structural-design-for-general-contractors/)
-- [Structural engineer in Brescia](https://www.studiocapoferri.eu/en/structural-engineer-brescia/)
-- [Structural engineer in Bergamo](https://www.studiocapoferri.eu/en/structural-engineer-bergamo/)
-- [Structural engineer in Milan](https://www.studiocapoferri.eu/en/structural-engineer-milan/)
-- [Structural engineers in Italy for fabricators](https://www.studiocapoferri.eu/en/structural-steel-design-italy/)
-- [International clients](https://www.studiocapoferri.eu/en/international-clients/)
-
-## Case studies / Casi studio
-
-### Italian
-- [Residenza privata - Pollenza (MC)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-pollenza/)
-- [Villa in acciaio - Salsomaggiore Terme (PR)](https://www.studiocapoferri.eu/progetti/residenziali/villa-acciaio-salsomaggiore/)
-- [Centro raccolta rifiuti - Chiuduno (BG)](https://www.studiocapoferri.eu/progetti/industriali/centro-raccolta-rifiuti-chiuduno/)
-- [Tettoia reticolare a grande luce - Maranello (MO)](https://www.studiocapoferri.eu/progetti/industriali/copertura-edificio-verniciatura-maranello/)
-- [Lamiere da getto in acciaio - Adro (BS)](https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/)
-- [Capannone industriale - Erbusco (BS)](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/)
-- [Complesso zootecnico - Castegnato (BS)](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico/)
-- [Centro direzionale - Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/)
-- [Superstudio Village - Milano Bovisa](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/)
-- [Superstudio Maxi - Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/)
-
-### English
-- [Steel villa in Pollenza (MC)](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-pollenza/)
-- [Steel villa in Salsomaggiore Terme (PR)](https://www.studiocapoferri.eu/en/projects/residential/steel-villa-salsomaggiore/)
-- [Waste collection centre in Chiuduno (BG)](https://www.studiocapoferri.eu/en/projects/industrial/waste-collection-centre-chiuduno/)
-- [Large-span space-truss canopy in Maranello (MO)](https://www.studiocapoferri.eu/en/projects/industrial/paint-shop-roof-structure-maranello/)
-- [Steel decking for Spinelli S.r.l. in Adro (BS)](https://www.studiocapoferri.eu/en/projects/industrial/steel-decking-spinelli/)
-- [Industrial building in Erbusco (BS)](https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco/)
-- [Livestock complex in Castegnato (BS)](https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension/)
-- [Headquarters in Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/)
-- [Superstudio Village in Milan Bovisa](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village/)
-- [Superstudio Maxi in Famagosta](https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi/)
-
-## Snapshot / Dati sintetici
-
-- Anni di attività / Years of activity: 40+
-- Progetti realizzati / Completed projects: 1000+
-- Clienti soddisfatti / Satisfied clients: 300+
-- Orari / Hours: lunedì–venerdì, 08:30–18:00
-- P. IVA / VAT: 04732710985
-- Ragione sociale / Legal name: Studio Capoferri SRL STP
+- [llms-full.txt](https://www.studiocapoferri.eu/llms-full.txt): Longer entity sheet, FAQ-style facts and citation-ready NAP for agents
+- [Privacy policy](https://www.studiocapoferri.eu/privacy-policy/): GDPR / cookie notice — EN: https://www.studiocapoferri.eu/en/privacy-policy/
+- [Sitemap](https://www.studiocapoferri.eu/sitemap.xml): Full URL inventory for crawlers

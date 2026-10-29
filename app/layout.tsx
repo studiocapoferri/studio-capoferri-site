@@ -166,6 +166,8 @@ export default function RootLayout({
     <html lang="it" suppressHydrationWarning>
       <head>
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <link rel="describedby" href="/llms.txt" title="LLM / agent site overview" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full entity brief" />
         <script
           dangerouslySetInnerHTML={{
             __html:
@@ -186,6 +188,22 @@ export default function RootLayout({
               name: site.name,
               publisher: { "@id": organizationId() },
               inLanguage: ["it-IT", "en"],
+              hasPart: [
+                {
+                  "@type": "WebPage",
+                  "@id": `${site.url}/llms.txt`,
+                  url: `${site.url}/llms.txt`,
+                  name: "llms.txt — agent overview",
+                  encodingFormat: "text/plain",
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": `${site.url}/llms-full.txt`,
+                  url: `${site.url}/llms-full.txt`,
+                  name: "llms-full.txt — entity brief",
+                  encodingFormat: "text/plain",
+                },
+              ],
             }),
           }}
         />

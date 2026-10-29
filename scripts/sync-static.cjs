@@ -1,7 +1,7 @@
 /**
  * Sincronizza contenuti statici per Next.js:
  * - assets/ → public/assets/
- * - llms.txt / CNAME se presenti (robots è generato da app/robots.ts)
+ * - llms.txt / llms-full.txt / CNAME se presenti (robots è generato da app/robots.ts)
  */
 const fs = require("fs");
 const path = require("path");
@@ -28,7 +28,7 @@ if (fs.existsSync(publicRobots)) {
   console.log("[sync-static] rimosso public/robots.txt (usa app/robots.ts)");
 }
 
-for (const extra of ["favicon.ico", "llms.txt", "CNAME"]) {
+for (const extra of ["favicon.ico", "llms.txt", "llms-full.txt", "CNAME"]) {
   const p = path.join(root, extra);
   if (fs.existsSync(p)) {
     fs.copyFileSync(p, path.join(root, "public", extra));

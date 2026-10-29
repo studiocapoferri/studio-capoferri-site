@@ -13,6 +13,7 @@
 /out/
 /public/assets/
 /public/llms.txt
+/public/llms-full.txt
 
 # production
 /build
