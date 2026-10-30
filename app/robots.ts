@@ -3,42 +3,79 @@ import { site } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-/** AI / answer-engine crawlers — explicitly allowed (same policy as *). */
-const aiUserAgents = [
-  "GPTBot",
-  "ChatGPT-User",
-  "OAI-SearchBot",
-  "ClaudeBot",
-  "anthropic-ai",
-  "PerplexityBot",
-  "Perplexity-User",
-  "Bingbot",
-  "Google-Extended",
-  "GoogleOther",
-  "Applebot-Extended",
-  "Bytespider",
-  "CCBot",
-  "meta-externalagent",
-  "FacebookBot",
-  "Diffbot",
-  "YouBot",
-] as const;
-
+/**
+ * Allineato a Studio Pagnoni: Allow ampio, Googlebot esplicito, Sitemap assoluta.
+ * Gli hreflang restano nei metadata; non nel robots.
+ */
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/llms.txt", "/llms-full.txt", "/sitemap.xml"],
-        disallow: ["/api/", "/_next/"],
-      },
-      ...aiUserAgents.map((userAgent) => ({
-        userAgent,
         allow: "/",
         disallow: ["/api/", "/_next/"],
-      })),
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Googlebot-Image",
+        allow: "/",
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+      },
+      {
+        userAgent: "GPTBot",
+        allow: "/",
+      },
+      {
+        userAgent: "ChatGPT-User",
+        allow: "/",
+      },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+      },
+      {
+        userAgent: "ClaudeBot",
+        allow: "/",
+      },
+      {
+        userAgent: "anthropic-ai",
+        allow: "/",
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Perplexity-User",
+        allow: "/",
+      },
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
+      {
+        userAgent: "Applebot-Extended",
+        allow: "/",
+      },
+      {
+        userAgent: "Bytespider",
+        allow: "/",
+      },
+      {
+        userAgent: "CCBot",
+        allow: "/",
+      },
+      {
+        userAgent: "meta-externalagent",
+        allow: "/",
+      },
     ],
-    host: site.url,
     sitemap: `${site.url}/sitemap.xml`,
   };
 }

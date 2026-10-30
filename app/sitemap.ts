@@ -2,34 +2,34 @@ import type { MetadataRoute } from "next";
 import { pageUrl, steelLandingSlugs } from "@/lib/seo";
 import { projectAreas, projectCategories } from "@/lib/projects";
 
+/** Obbligatorio con `output: export` (GitHub Pages / hosting statico). */
 export const dynamic = "force-static";
 
-/** Aggiornato a ogni build statico / deploy (evita lastmod stale). */
+/**
+ * Sitemap semplice come Studio Pagnoni: solo loc / lastmod / changefreq / priority.
+ * Niente xhtml:link hreflang (quel formato fa fallire spesso "Impossibile recuperare" in GSC).
+ * Gli hreflang restano nei metadata di pagina.
+ */
 const lastModified = new Date();
+
+type ChangeFreq = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
 
 function entry(
   path: string,
   locale: "it" | "en",
   priority: number,
-  changefreq: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly"
+  changeFrequency: ChangeFreq = "monthly"
 ): MetadataRoute.Sitemap[number] {
   return {
     url: pageUrl(path, locale),
     lastModified,
-    changeFrequency: changefreq,
+    changeFrequency,
     priority,
-    alternates: {
-      languages: {
-        it: pageUrl(path, "it"),
-        en: pageUrl(path, "en"),
-        "x-default": pageUrl(path, "it"),
-      },
-    },
   };
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages: MetadataRoute.Sitemap = [
+  const entries: MetadataRoute.Sitemap = [
     entry("/", "it", 1.0, "weekly"),
     entry("/", "en", 0.9, "weekly"),
     entry("/chi-siamo", "it", 0.8),
@@ -56,15 +56,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
   ];
 
-  const projectPages: MetadataRoute.Sitemap = [];
   for (const area of projectAreas) {
-    projectPages.push(entry(`/progetti/${area}`, "it", 0.7));
-    projectPages.push(entry(`/progetti/${area}`, "en", 0.7));
+    entries.push(entry(`/progetti/${area}`, "it", 0.7));
+    entries.push(entry(`/progetti/${area}`, "en", 0.7));
     for (const c of projectCategories[area].cases) {
-      projectPages.push(entry(`/progetti/${area}/${c.slug}`, "it", 0.6));
-      projectPages.push(entry(`/progetti/${area}/${c.slug}`, "en", 0.6));
+      entries.push(entry(`/progetti/${area}/${c.slug}`, "it", 0.6));
+      entries.push(entry(`/progetti/${area}/${c.slug}`, "en", 0.6));
     }
   }
 
-  return [...staticPages, ...projectPages];
+  return entries;
 }
