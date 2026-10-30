@@ -8,6 +8,8 @@ import { ui } from "@/lib/ui";
 
 export function HomeContactsSection({ locale }: { locale: Locale }) {
   const t = homeCopy[locale];
+  const mapsLabel = locale === "en" ? "Open on Google Maps" : "Apri su Google Maps";
+  const reviewsLabel = locale === "en" ? "Google reviews" : "Recensioni Google";
 
   return (
     <section id="contatti" className={`lazy-section section-shell ${scrollAnchorClass} ${layoutGutterXClass}`}>
@@ -39,6 +41,29 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
             </li>
             <li>
               <address className="not-italic">{locale === "en" ? site.addressLineEn : site.addressLine}</address>
+            </li>
+            <li className="pt-1">
+              <a
+                href={site.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-accent"
+                title={mapsLabel}
+              >
+                {mapsLabel}
+              </a>
+              <span className="mx-2 text-[#bbb]" aria-hidden>
+                ·
+              </span>
+              <a
+                href={site.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-accent"
+                title={reviewsLabel}
+              >
+                {reviewsLabel}
+              </a>
             </li>
           </ul>
         </article>

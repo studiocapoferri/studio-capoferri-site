@@ -83,13 +83,34 @@ export function LocalizedContactsPageContent() {
                   </div>
                 ))}
               </dl>
+              <p className="mt-6 text-[0.95rem]">
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-accent"
+                >
+                  {isEn ? "Open on Google Maps" : "Apri su Google Maps"}
+                </a>
+                <span className="mx-2 text-[#bbb]" aria-hidden>
+                  ·
+                </span>
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-accent"
+                >
+                  {isEn ? "Google reviews" : "Recensioni Google"}
+                </a>
+              </p>
               <a
                 href={site.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 title={linkTitles.linkedin(locale)}
                 aria-label={isEn ? "Follow us on LinkedIn - Studio Capoferri" : "Seguici su LinkedIn - Studio Capoferri"}
-                className="mt-8 inline-flex min-h-[44px] items-center gap-2.5 text-sm font-semibold text-[#1c1e21] underline-offset-2 transition hover:text-[#b01010] hover:underline"
+                className="mt-6 inline-flex min-h-[44px] items-center gap-2.5 text-sm font-semibold text-[#1c1e21] underline-offset-2 transition hover:text-[#b01010] hover:underline"
               >
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-[#1c1e21]/15 bg-[#1c1e21]/5 text-[#1c1e21]">
                   <LinkedInIcon className="h-4 w-4" />

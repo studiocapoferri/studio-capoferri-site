@@ -1,5 +1,6 @@
 import { ClientsStrip } from "@/components/home/ClientsStrip";
 import { HomeAboutSection } from "@/components/home/HomeAboutSection";
+import { HomeCertificationsSection } from "@/components/home/HomeCertificationsSection";
 import { HomeContactsSection } from "@/components/home/HomeContactsSection";
 import { HomeProjectsSection } from "@/components/home/HomeProjectsSection";
 import { HomeServicesSection } from "@/components/home/HomeServicesSection";
@@ -13,6 +14,7 @@ export function LocalizedHomeSections({ locale }: { locale: Locale }) {
       <ClientsStrip locale={locale} />
       <HomeServicesSection locale={locale} />
       <HomeProjectsSection locale={locale} />
+      <HomeCertificationsSection locale={locale} compact />
       <HomeZoneSection locale={locale} />
       <HomeContactsSection locale={locale} />
     </>

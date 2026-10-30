@@ -53,7 +53,7 @@ export function ProjectPreviewCard({
         <span
           className={`font-display block text-base font-medium tracking-tight transition-colors duration-200 sm:text-lg ${
             dark
-              ? "text-white group-hover:text-[#f0b4b4]"
+              ? "text-white group-hover:text-white/80"
               : "text-[#1c1e21] group-hover:text-[#b01010]"
           }`}
         >

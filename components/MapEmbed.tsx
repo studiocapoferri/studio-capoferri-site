@@ -35,15 +35,23 @@ export function MapEmbed() {
   if (consent !== "accepted") {
     return (
       <div
-        className="flex min-h-[220px] items-center justify-center rounded-sm border border-[#1c1e21]/10 bg-[#f7f6f2] px-4 text-center text-[0.82rem] text-[#444] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
+        className="flex min-h-[220px] flex-col items-center justify-center gap-3 rounded-sm border border-[#1c1e21]/10 bg-[#f7f6f2] px-4 text-center text-[0.82rem] text-[#444] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
         role="region"
         aria-label={isEn ? "Map disabled until cookie consent" : "Mappa disattivata fino al consenso cookie"}
       >
-        <p>
+        <p className="m-0 max-w-md">
           {isEn
             ? "The Google Maps embed loads only if you accept non-essential cookies from the banner at the bottom of the page, or from the privacy policy."
             : "La mappa Google Maps viene caricata solo se accetti i cookie non strettamente necessari dal banner in basso, oppure da privacy policy."}
         </p>
+        <a
+          href={site.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-accent font-medium"
+        >
+          {isEn ? "Open on Google Maps" : "Apri su Google Maps"}
+        </a>
       </div>
     );
   }

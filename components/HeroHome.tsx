@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { useLocale } from "@/components/LocaleProvider";
-import { chromeCopy } from "@/lib/i18n";
+import { chromeCopy, localizeHref } from "@/lib/i18n";
+import { linkTitles } from "@/lib/link-seo";
 import { layoutContentMaxClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
@@ -90,17 +92,26 @@ export function HeroHome() {
 
           <h1 className="font-display section-title text-[clamp(1.55rem,6.2vw,1.85rem)] leading-[1.12] tracking-[-0.022em] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.75)] sm:text-[clamp(2.45rem,8vw,4.6rem)] sm:leading-[1.04] sm:tracking-[-0.03em]">
             <span className="block sm:whitespace-nowrap">{copy.line1}</span>
-            {/* One line on mobile too — avoid orphan “al cantiere” on a third row */}
-            <span className="mt-1 block whitespace-nowrap text-[0.9em] tracking-[-0.028em] sm:mt-1.5 sm:text-[length:inherit] sm:tracking-[-0.03em]">
+            <span className="mt-1 block text-[0.9em] tracking-[-0.028em] sm:mt-1.5 sm:whitespace-nowrap sm:text-[length:inherit] sm:tracking-[-0.03em]">
               {copy.line2}
             </span>
           </h1>
 
-          <p className="mt-3 text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:whitespace-nowrap sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:text-[1rem]">
-            <span className="block whitespace-nowrap text-[0.7rem] tracking-[-0.015em] drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">
+          <p className="mt-3 max-w-[22rem] text-[0.78rem] leading-[1.4] text-white/90 sm:mt-4 sm:max-w-none sm:text-[0.9rem] sm:leading-snug sm:text-white/80 md:text-[1rem]">
+            <span className="block text-[0.7rem] tracking-[-0.015em] drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)] sm:hidden">
               {copy.supportMobile}
             </span>
-            <span className="hidden sm:inline">{copy.support}</span>
+            <span className="hidden sm:inline sm:whitespace-nowrap">{copy.support}</span>
+          </p>
+
+          <p className="mt-5 sm:mt-6">
+            <Link
+              href={localizeHref("/contatti#form-contatti", locale)}
+              className={`${ui.btnGhostOnDark} inline-flex`}
+              title={linkTitles.formContatti(locale)}
+            >
+              {copy.cta}
+            </Link>
           </p>
         </motion.div>
       </div>

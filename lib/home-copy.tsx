@@ -104,16 +104,6 @@ export const homeCopy = {
         "Architectural design, implementation plans, planning amendments and compliance analysis.",
         "/servizi#urbanistica-architettura",
       ],
-      [
-        "Italy-based technical services",
-        "Building permits (SCIA/CILA), cadastral filings and related Italian procedures.",
-        "/servizi#servizi-tecnici",
-      ],
-      [
-        "Property support",
-        "Technical support for transactions, appraisals, valuations and due diligence.",
-        "/servizi#assistenza-immobiliare",
-      ],
     ] as [string, string, string][],
     allServices: "All services",
     projectsTitle: "Projects",

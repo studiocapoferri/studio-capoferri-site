@@ -75,7 +75,7 @@ const localBusinessJsonLd = {
   alternateName: site.name,
   legalName: site.legalName,
   description:
-    "Structural engineers in Adro, near Brescia, for steel buildings in Northern Italy: calculations, fabrication shop drawings, construction supervision and site safety, including work with EU partners. / Studio tecnico di ingegneria civile, architettura e strutture in acciaio ad Adro (Brescia). Progettazione strutturale, disegni d'officina, direzione lavori e sicurezza cantieri in Lombardia, Nord Italia e collaborazioni europee.",
+    "Structural engineers in Adro, near Brescia, for steel buildings in Northern Italy: calculations, fabrication shop drawings, construction supervision and site safety, including work with EU partners. / Studio di progettazione strutturale ad Adro (Brescia): strutture in acciaio, cemento armato e muratura. Calcolo, disegni d'officina, direzione lavori e sicurezza cantieri in Lombardia, Nord Italia e collaborazioni europee.",
   url: site.url,
   telephone: site.phoneTel,
   email: site.email,

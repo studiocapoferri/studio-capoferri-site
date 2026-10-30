@@ -36,7 +36,7 @@ export function HomeProjectsSection({ locale }: { locale: Locale }) {
         <p className="mt-8 sm:mt-12">
           <Link
             href={localizeHref("/progetti", locale)}
-            className={`${ui.btnOnDark} inline-flex w-full sm:w-auto`}
+            className={`${ui.btnGhostOnDark} inline-flex w-full sm:w-auto`}
             title={linkTitles.tuttiProgetti(locale)}
           >
             {t.projectsCta}

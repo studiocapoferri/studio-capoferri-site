@@ -18,7 +18,7 @@ export function HomeServicesSection({ locale }: { locale: Locale }) {
           </div>
           <p className="home-split-header__right">{t.servicesIntro}</p>
         </div>
-        <div className="grid gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-14">
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12 lg:gap-x-12 lg:gap-y-14">
           {t.serviceCards.map(([title, description, href]) => (
             <Link
               key={title}

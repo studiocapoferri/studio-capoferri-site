@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "sync:static": "node scripts/sync-static.cjs",
+    "optimize:images": "node scripts/optimize-images.cjs",
     "predev": "node scripts/sync-static.cjs",
-    "prebuild": "node scripts/sync-static.cjs",
-    "prebuild:static": "node scripts/sync-static.cjs",
+    "prebuild": "node scripts/optimize-images.cjs && node scripts/sync-static.cjs",
+    "prebuild:static": "node scripts/optimize-images.cjs && node scripts/sync-static.cjs",
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "build:static": "cross-env STATIC_EXPORT=1 next build && node scripts/fix-en-html-lang.cjs",

@@ -16,15 +16,17 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
     {
       text: (
         <>
-          <strong>Studio Capoferri</strong> è uno studio di ingegneria civile ad Adro (Brescia), Italia. Da oltre quarant&apos;anni
-          progettiamo strutture (acciaio, cemento armato, muratura) in Franciacorta e nel Nord e Centro Italia. Calcolo,
-          disegni d&apos;officina, direzione lavori. Architettura e urbanistica quando l&apos;incarico lo richiede.
+          <strong>Studio Capoferri</strong> è uno studio di progettazione strutturale ad Adro (Brescia), Italia. Da oltre
+          quarant&apos;anni progettiamo strutture (acciaio, cemento armato, muratura) in Franciacorta e nel Nord e Centro
+          Italia. Calcolo, disegni d&apos;officina, direzione lavori. Architettura e urbanistica quando l&apos;incarico lo
+          richiede.
         </>
       ),
       textMobile: (
         <>
-          <strong>Studio Capoferri</strong> è uno studio di ingegneria civile ad Adro (Brescia), Italia. Da oltre quarant&apos;anni
-          progettiamo strutture in acciaio, cemento armato e muratura in Franciacorta e nel Nord e Centro Italia.
+          <strong>Studio Capoferri</strong> è uno studio di progettazione strutturale ad Adro (Brescia), Italia. Da oltre
+          quarant&apos;anni progettiamo strutture in acciaio, cemento armato e muratura in Franciacorta e nel Nord e Centro
+          Italia.
         </>
       ),
       image: "struttura",
@@ -53,6 +55,7 @@ export const homeChiSiamo: { title: string; blocks: homeChiSiamoBlock[] } = {
 export const homeServiziIntro =
   "Acciaio, cemento armato, muratura per imprese generali e committenze tecniche. Calcolo, disegni d'officina, direzione lavori. Architettura, pratiche e sicurezza di cantiere quando l'incarico lo richiede.";
 
+/** Home pillars only (full catalogue lives on /servizi). */
 export const homeServiceCards = [
   {
     title: "Progettazione strutturale",
@@ -61,19 +64,9 @@ export const homeServiceCards = [
     href: "/servizi#progettazione-strutturale",
   },
   {
-    title: "Urbanistica e architettura",
-    description: "Progettazione architettonica, piani attuativi, varianti urbanistiche e analisi di conformità.",
-    href: "/servizi#urbanistica-architettura",
-  },
-  {
     title: "Direzione lavori",
     description: "Supervisione tecnica, assistenza in cantiere, verifiche strutturali e relazioni tecniche.",
     href: "/servizi#direzione-lavori",
-  },
-  {
-    title: "Servizi tecnici",
-    description: "Pratiche edilizie, catastali, Sovrintendenza, collaudi amministrativi e successioni.",
-    href: "/servizi#servizi-tecnici",
   },
   {
     title: "Sicurezza cantieri",
@@ -81,9 +74,9 @@ export const homeServiceCards = [
     href: "/servizi#sicurezza-cantieri",
   },
   {
-    title: "Assistenza immobiliare",
-    description: "Supporto tecnico per compravendite, perizie, stime immobiliari e valutazioni.",
-    href: "/servizi#assistenza-immobiliare",
+    title: "Urbanistica e architettura",
+    description: "Progettazione architettonica, piani attuativi, varianti urbanistiche e analisi di conformità.",
+    href: "/servizi#urbanistica-architettura",
   },
 ] as const;
 
@@ -172,10 +165,10 @@ export const chiSiamoPage = {
   title: "Chi siamo",
   paragraphs: [
     <>
-      <strong>Studio Capoferri</strong> è uno studio di ingegneria civile ad Adro (Brescia), Italia. Da oltre quarant&apos;anni
-      progettiamo strutture in acciaio, cemento armato e muratura per imprese generali, general contractor, architetti e
-      studi tecnici: ville e case, capannoni, silos agricoli e industriali, sopraelevazioni, carpenterie speciali e
-      interventi su edifici esistenti.
+      <strong>Studio Capoferri</strong> è uno studio di progettazione strutturale ad Adro (Brescia), Italia. Da oltre
+      quarant&apos;anni progettiamo strutture in acciaio, cemento armato e muratura per imprese generali, general
+      contractor, architetti e studi tecnici: ville e case, capannoni, silos agricoli e industriali, sopraelevazioni,
+      carpenterie speciali e interventi su edifici esistenti.
       Lavoriamo soprattutto in Franciacorta e nel Nord e Centro Italia, con sedi operative e cantieri che richiedono
       risposta rapida e continuità sul progetto.
     </>,

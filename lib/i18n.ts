@@ -113,9 +113,9 @@ export const chromeCopy = {
       locationMobile: "Adro (BS) - Franciacorta",
       line1: "Progettazione integrata",
       line2: "dalla fattibilità al cantiere",
-      support: "Progettazione strutture in acciaio, ingegneria civile e architettura.",
-      /** Single line on mobile (nowrap in HeroHome). */
-      supportMobile: "Strutture in acciaio - ingegneria civile - architettura",
+      support: "Progettazione strutturale in acciaio, cemento armato e muratura.",
+      supportMobile: "Strutture in acciaio · calcolo · direzione lavori",
+      cta: "Contattaci",
     },
   },
   en: {
@@ -183,7 +183,8 @@ export const chromeCopy = {
       line1: "Integrated design",
       line2: "from feasibility to site",
       support: "Structural engineers for steel in Northern Italy.",
-      supportMobile: "Structural engineers - steel - Northern Italy",
+      supportMobile: "Structural engineers · steel · Northern Italy",
+      cta: "Get in touch",
     },
   },
 } as const;

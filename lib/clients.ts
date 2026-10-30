@@ -11,7 +11,7 @@ export type ClientLogo = {
 };
 
 /**
- * Selected clients on the home strip (dark graphite).
+ * Selected clients on the home strip (dark graphite). Cap ~10 for restraint.
  * Pending confirmation (kept local only, not listed): Ariotti, Magnetti, Muzzolon, Pezt Co.
  */
 export const homeClients: ClientLogo[] = [
@@ -86,26 +86,6 @@ export const homeClients: ClientLogo[] = [
     height: 215,
   },
   {
-    id: "cre-system",
-    name: "Cre System",
-    src: "/assets/clienti/cre-system.webp",
-    href: "https://www.cresystemsrl.com/",
-    altIt: "Logo Cre System, cliente Studio Capoferri",
-    altEn: "Cre System logo, Studio Capoferri client",
-    width: 800,
-    height: 144,
-  },
-  {
-    id: "st-performance",
-    name: "Studio Performance",
-    src: "/assets/clienti/st-performance.webp",
-    href: "https://stperformance.it/",
-    altIt: "Logo Studio Performance, cliente Studio Capoferri",
-    altEn: "Studio Performance logo, Studio Capoferri client",
-    width: 799,
-    height: 280,
-  },
-  {
     id: "tecnosida",
     name: "Tecnosida",
     src: "/assets/clienti/tecnosida.webp",
@@ -116,16 +96,6 @@ export const homeClients: ClientLogo[] = [
     height: 188,
   },
   {
-    id: "roversi",
-    name: "Roversi Scale",
-    src: "/assets/clienti/roversi.webp",
-    href: "https://www.roversiscale.it/",
-    altIt: "Logo Roversi Scale, cliente Studio Capoferri",
-    altEn: "Roversi Scale logo, Studio Capoferri client",
-    width: 612,
-    height: 168,
-  },
-  {
     id: "spinelli",
     name: "Spinelli S.r.l.",
     src: "/assets/clienti/spinelli.webp",
@@ -134,16 +104,6 @@ export const homeClients: ClientLogo[] = [
     altEn: "Spinelli S.r.l. logo, Studio Capoferri client",
     width: 160,
     height: 32,
-  },
-  {
-    id: "prismac",
-    name: "Prismac",
-    src: "/assets/clienti/prismac-w.png",
-    href: "https://www.prismacsrl.it/",
-    altIt: "Logo Prismac, cliente Studio Capoferri",
-    altEn: "Prismac logo, Studio Capoferri client",
-    width: 350,
-    height: 71,
   },
   {
     id: "cibin",
