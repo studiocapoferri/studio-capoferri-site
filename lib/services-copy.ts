@@ -10,7 +10,7 @@ export const servicesCopy = {
         id: "progettazione-strutturale",
         heading: "Progettazione strutturale",
         paragraphs: [
-          "Progettiamo edifici e carpenterie per imprese generali e committenze civili e industriali: ville, capannoni, silos agricoli e industriali, sopraelevazioni, ampliamenti, interventi su esistenti. Il riferimento normativo è NTC ed Eurocodici.",
+          "Progettiamo edifici e carpenterie per imprese generali e committenze civili e industriali: ville, capannoni, silos metallici, sopraelevazioni, ampliamenti, interventi su esistenti. Riferimento normativo: NTC ed Eurocodici. Dove serve, consegniamo anche i disegni costruttivi d'officina per la fabbricazione e il montaggio.",
         ],
         items: [
           [
@@ -19,7 +19,7 @@ export const servicesCopy = {
           ],
           [
             "Strutture civili e industriali",
-            "Edifici residenziali, commerciali, industriali e infrastrutture — anche silos per mangimi o impianti chimici: luci, carichi, sequenza di montaggio.",
+            "Edifici residenziali, commerciali, industriali e infrastrutture. Anche silos metallici per stoccaggio industriale (granuli, farine e altri materiali): geometria, carichi, sostegni e sequenza di montaggio.",
           ],
           [
             "Modellazione FEM",
@@ -39,7 +39,7 @@ export const servicesCopy = {
           ],
           [
             "Disegni costruttivi d'officina",
-            "Tavole esecutive per la fabbricazione e il montaggio delle strutture metalliche.",
+            "Tavole esecutive per carpenterie e officine EN 1090: fabbricazione, assemblaggi e montaggio delle strutture metalliche.",
           ],
           [
             "Collaudi strutturali",
@@ -49,6 +49,16 @@ export const servicesCopy = {
             "Certificazioni in ambienti di lavoro",
             "Analisi e validazione di sicurezza per strutture soggette alle norme sugli ambienti lavorativi.",
           ],
+        ],
+        related: [
+          {
+            href: "/progetti/industriali/silos-metallici",
+            label: "Silos metallici: realizzazioni",
+          },
+          {
+            href: "/progettazione-strutturale-per-carpenterie",
+            label: "Progettazione strutturale per carpenterie",
+          },
         ],
       },
       {
@@ -130,12 +140,12 @@ export const servicesCopy = {
         id: "sicurezza-cantieri",
         heading: "Sicurezza cantieri",
         paragraphs: [
-          "Coordinamento della sicurezza in progettazione e in esecuzione, per cantieri in Italia.",
+          "Coordinamento della sicurezza in fase di progettazione (CSP) e di esecuzione (CSE) per cantieri in Italia: piani di sicurezza, gestione dei rischi e interfaccia con impresa e committenza.",
         ],
         items: [
           [
             "CSP e CSE",
-            "Piani di sicurezza e gestione dei rischi in fase di progettazione e di cantiere.",
+            "Ruoli di coordinatore per la sicurezza: PSC, gestione interferenze e aggiornamenti in cantiere secondo la normativa vigente.",
           ],
         ],
       },
@@ -167,7 +177,7 @@ export const servicesCopy = {
         id: "progettazione-strutturale",
         heading: "Structural design",
         paragraphs: [
-          "We design buildings and steelwork for civil and industrial commissions: houses, halls, agricultural and industrial silos, vertical extensions, additions, work on existing fabric. Design is to NTC and Eurocodes.",
+          "We design buildings and steelwork for civil and industrial commissions: houses, halls, metal silos, vertical extensions, additions, work on existing fabric. Design is to NTC and Eurocodes. Where required, we also deliver fabrication shop drawings for workshop and erection.",
         ],
         items: [
           [
@@ -176,7 +186,7 @@ export const servicesCopy = {
           ],
           [
             "Civil and industrial structures",
-            "Houses, commercial and industrial buildings, infrastructure — including feed and chemical-plant silos: spans, loads, erection sequence.",
+            "Houses, commercial and industrial buildings, infrastructure. Including metal silos for industrial storage (granules, flour and other materials): geometry, loads, supports and erection sequence.",
           ],
           [
             "FEM modelling",
@@ -196,7 +206,7 @@ export const servicesCopy = {
           ],
           [
             "Fabrication shop drawings",
-            "Executive drawings for fabrication and erection of steel structures.",
+            "Executive drawings for EN 1090 fabricators and workshops: fabrication, assemblies and erection of steel structures.",
           ],
           [
             "Structural testing",
@@ -206,6 +216,16 @@ export const servicesCopy = {
             "Workplace certification",
             "Safety analysis and validation for structures subject to workplace regulations.",
           ],
+        ],
+        related: [
+          {
+            href: "/progetti/industriali/silos-metallici",
+            label: "Metal silos: selected works",
+          },
+          {
+            href: "/progettazione-strutturale-per-carpenterie",
+            label: "Structural design for fabricators",
+          },
         ],
       },
       {
@@ -287,12 +307,12 @@ export const servicesCopy = {
         id: "sicurezza-cantieri",
         heading: "Site safety",
         paragraphs: [
-          "Safety coordination in design and on site, for works in Italy.",
+          "Safety coordination in design (CSP) and on site (CSE) for works in Italy: safety plans, risk management and interface with contractor and client.",
         ],
         items: [
           [
             "CSP and CSE",
-            "Safety plans and risk management during design and construction.",
+            "Safety coordinator roles: PSC, interference management and site updates under current Italian regulations.",
           ],
         ],
       },

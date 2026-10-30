@@ -131,6 +131,20 @@ export function LocalizedServicesPageContent() {
                     </div>
                   ) : null}
                   <FeatureList items={section.items} />
+                  {"related" in section && section.related ? (
+                    <ul className="mt-5 list-none space-y-2 border-t border-[#1c1e21]/10 pl-0 pt-4">
+                      {section.related.map((link) => (
+                        <li key={link.href}>
+                          <Link
+                            href={localizeHref(link.href, locale)}
+                            className="text-[0.95rem] font-medium text-[#b01010] underline-offset-4 hover:underline"
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </section>
               );
             })}

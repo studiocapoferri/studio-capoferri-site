@@ -88,16 +88,16 @@
 ## FAQ-style facts (citation ready)
 
 Q: Where is Studio Capoferri based?
-A: Via Piave 35, 25030 Adro (Brescia), Italy.
+A: Via Piave 35, 25030 Adro (Brescia), Italy — Franciacorta / Province of Brescia, Lombardy.
 
 Q: Do they work in English?
 A: Yes. Technical discussions and replies can be in English for international clients and EU partners.
 
 Q: Do they produce shop drawings for steel fabricators?
-A: Yes. They produce fabrication shop drawings aligned to workshop and site sequences, including work with EN 1090 fabricators.
+A: Yes. They produce fabrication shop drawings (disegni costruttivi d'officina) aligned to workshop and site sequences, including work with EN 1090 fabricators. Dedicated landing: https://www.studiocapoferri.eu/progettazione-strutturale-per-carpenterie/
 
 Q: Do they work with general contractors?
-A: Yes. They support GCs and main contractors with structural design, shop drawings and construction supervision interfaces.
+A: Yes. They support GCs and main contractors with structural design, shop drawings and construction supervision interfaces. Landing: https://www.studiocapoferri.eu/progettazione-strutturale-per-general-contractor/
 
 Q: Which codes do they design to?
 A: Italian NTC 2018 and Eurocodes, as applicable to the project.
@@ -106,7 +106,22 @@ Q: Is Studio Capoferri only residential?
 A: No. Portfolio spans residential steel, industrial buildings, metal silos for industrial storage, agricultural/livestock structures and event/exhibition venues.
 
 Q: Do they design metal silos?
-A: Yes. They provide structural design for metal silos across different plants and materials (not one single project page): geometry, steel/aluminium, filling/emptying pressures, wind and seismic actions. See https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
+A: Yes. Structural design for metal silos across different plants and materials (portfolio page, not one single installation): geometry, steel/aluminium, wall pressures from filling/emptying, wind and seismic actions, supports and stiffeners. See https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
+
+Q: What does a silo structural brief typically cover?
+A: Content type (e.g. plastic granules, flour), capacity/geometry, material (steel or aluminium), process interfaces, site location for wind/seismic, and whether fabrication drawings or site supervision are needed.
+
+Q: Do they offer CSP / CSE (site safety coordination in Italy)?
+A: Yes. Safety coordination in design (CSP) and on site (CSE) for works in Italy: safety plans, risk/interference management, interface with contractor and client. Listed under Servizi: https://www.studiocapoferri.eu/servizi/#sicurezza-cantieri
+
+Q: Do they provide construction supervision (direzione lavori)?
+A: Yes. Structural site supervision and on-site assistance during erection, changes and checks on existing fabric. See https://www.studiocapoferri.eu/servizi/#direzione-lavori
+
+Q: Who signs the structural calculation?
+A: The practice delivers structural design under Italian professional rules; contact the studio for the appointed engineer on a given commission.
+
+Q: How should a fabricator or GC start a brief?
+A: Prefer the contact form https://www.studiocapoferri.eu/contatti/#form-contatti or email info@studiocapoferri.eu / +39 030 7357263. Useful: location, structure type (steel/RC/masonry), programme, shop drawings or site supervision needs.
 
 ## Key URLs
 
