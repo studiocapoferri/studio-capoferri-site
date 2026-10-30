@@ -8,9 +8,11 @@ import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } fr
 import { ui } from "@/lib/ui";
 
 const contactImage = {
-  src: "/assets/superstudio-village-entrata-esterno.webp",
-  altIt: "Ingresso di Superstudio Village a Milano, struttura in acciaio progettata da Studio Capoferri",
-  altEn: "Entrance to Superstudio Village in Milan, steel structure designed by Studio Capoferri",
+  src: "/assets/superstudio-maxi/progettazione-industriale-ricettivo.webp",
+  altIt: "Pavimentazione degli spazi espositivi, Superstudio Maxi Famagosta — Studio Capoferri",
+  altEn: "Flooring of the exhibition spaces, Superstudio Maxi Famagosta — Studio Capoferri",
+  captionIt: "Superstudio Maxi, Milano",
+  captionEn: "Superstudio Maxi, Milan",
 } as const;
 
 export function HomeContactsSection({ locale }: { locale: Locale }) {
@@ -96,7 +98,7 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
                 />
               </div>
               <figcaption className="mt-2.5 shrink-0 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
-                {locale === "en" ? "Superstudio Village, Milan" : "Superstudio Village, Milano"}
+                {locale === "en" ? contactImage.captionEn : contactImage.captionIt}
               </figcaption>
             </figure>
           </div>

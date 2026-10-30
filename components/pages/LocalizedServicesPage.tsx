@@ -20,9 +20,9 @@ const sectionMedia: Record<string, { src: string; altIt: string; altEn: string }
     altEn: "Steel lattice structure, structural design by Studio Capoferri",
   },
   "urbanistica-architettura": {
-    src: "/assets/superstudio-village-entrata-esterno.webp",
-    altIt: "Ingresso di Superstudio Village a Milano, architettura e struttura in acciaio",
-    altEn: "Entrance to Superstudio Village in Milan, architecture and steel structure",
+    src: "/assets/superstudio-maxi/progettazione-industriale-ricettivo.webp",
+    altIt: "Pavimentazione degli spazi espositivi, Superstudio Maxi Famagosta",
+    altEn: "Flooring of the exhibition spaces, Superstudio Maxi Famagosta",
   },
   "direzione-lavori": {
     src: "/assets/industriale/copertura-edificio-verniciatura-maranello/montaggio-copertura-spaziale-acciaio-verniciatura-maranello.webp",
