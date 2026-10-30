@@ -41,7 +41,7 @@ function CaseOutboundLinks({ area, slug, locale }: { area: ProjectArea; slug: st
           {
             href: "/contatti",
             label: isEn ? "Contact" : "Contatti",
-            hint: isEn ? "Brief, phone and form" : "Brief, recapiti e form",
+            hint: isEn ? "Contacts and form" : "Contatti e form",
             title: linkTitles.contatti(locale),
           },
         ]}
