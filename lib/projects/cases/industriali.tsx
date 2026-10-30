@@ -500,7 +500,7 @@ export const industrialiCaseStudies = {
         "A selection of metal silos designed by Studio Capoferri across different plants: geometry, materials, storage pressures, wind and seismic actions.",
       body: [
         "The images on this page are not a single project. They show several metal silos we have designed for different plants and stored materials: indoor and outdoor units, with different sizes, supports and operating conditions.",
-        "Every stored product needs its own silo. Height, diameter and capacity follow the process and the space available on site. Steel and aluminium give different answers; the content, from plastic granules to flour, sets the load cases.",
+        "Every stored product needs its own silo. Height, diameter and capacity follow the process and the space available on site. Steel and aluminium give different answers; the content (from plastic granules to flour) sets the load cases.",
         "Our structural design treats geometry, materials and use as one problem. The calculation goes beyond product weight: wall pressures, filling and emptying cycles, wind and seismic actions, and the stability of supports and stiffeners. Thicknesses, connections, frames and anchors are detailed as one system, with fabrication and erection in mind.",
       ],
       bullets: [
@@ -519,8 +519,8 @@ export const industrialiCaseStudies = {
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Ogni materiale da stoccare richiede un silo dedicato. Altezze, diametri e capacità seguono le esigenze di
-          processo e gli spazi disponibili. Acciaio e alluminio offrono risposte diverse; il contenuto, dai granuli
-          plastici alle farine, fissa le condizioni di carico.
+          processo e gli spazi disponibili. Acciaio e alluminio offrono risposte diverse; il contenuto (dai granuli
+          plastici alle farine) fissa le condizioni di carico.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Nella <strong>progettazione strutturale</strong> trattiamo geometria, materiali e utilizzo come un unico
