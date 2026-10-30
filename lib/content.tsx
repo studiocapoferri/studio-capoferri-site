@@ -165,23 +165,16 @@ export const chiSiamoPage = {
   title: "Studio di progettazione strutturale",
   paragraphs: [
     <>
-      <strong>Studio Capoferri</strong> è uno studio di progettazione strutturale ad Adro (Brescia), Italia. Da oltre
-      quarant&apos;anni progettiamo strutture in acciaio, cemento armato e muratura per imprese generali, general
-      contractor, architetti e studi tecnici: ville e case, capannoni, silos agricoli e industriali, sopraelevazioni,
-      carpenterie speciali e interventi su edifici esistenti.
-      Lavoriamo soprattutto in Franciacorta e nel Nord e Centro Italia, con sedi operative e cantieri che richiedono
-      risposta rapida e continuità sul progetto.
+      <strong>Studio Capoferri</strong> è uno studio di progettazione strutturale ad Adro (Brescia). Da oltre
+      quarant&apos;anni lavoriamo con imprese generali, general contractor, architetti e studi tecnici su strutture in
+      acciaio, cemento armato e muratura: residenziale, industriale, silos, sopraelevazioni e interventi su esistenti.
+      Sede in Franciacorta; commesse soprattutto in Lombardia (Brescia, Bergamo, Milano) e nelle regioni vicine.
     </>,
     <>
-      Restiamo sul lavoro dal modello al cantiere. Il calcolo strutturale segue NTC ed Eurocodici; produciamo disegni
-      d&apos;officina e seguiamo il montaggio quando serve. Offriamo direzione lavori, verifiche su strutture esistenti e
-      supporto in fase esecutiva. Architettura, urbanistica e pratiche edilizie entrano quando l&apos;incarico è
-      integrato e non solo strutturale.
-    </>,
-    <>
-      Le commesse vanno dal piccolo intervento al capannone industriale. Operiamo in Lombardia (Brescia, Bergamo,
-      Milano) e nelle regioni vicine. Lo stesso team segue calcolo, officina e montaggio: meno passaggi intermedi, più
-      chiarezza su tempi, dettagli e responsabilità.
+      Restiamo sul lavoro dal calcolo al cantiere: NTC ed Eurocodici, disegni d&apos;officina, direzione lavori e
+      verifiche su esistenti. Architettura, urbanistica e pratiche edilizie entrano quando l&apos;incarico è
+      integrato. Lo stesso team segue modello, officina e montaggio: meno passaggi, più chiarezza su tempi e
+      responsabilità.
     </>,
   ],
 };
