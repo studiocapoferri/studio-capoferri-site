@@ -24,23 +24,27 @@ function ExternalBrandMark({
   brand: NonNullable<(typeof projectCaseStudies)[keyof typeof projectCaseStudies]["externalBrand"]>;
   locale: Locale;
 }) {
+  const label = locale === "en" ? "Client" : "Cliente";
   return (
-    <a
-      href={brand.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={linkTitles.external(brand.imageAlt, locale)}
-      className="inline-flex shrink-0 self-start pt-1 opacity-90 transition-opacity hover:opacity-100 sm:pt-1.5"
-    >
-      <Image
-        src={brand.imageSrc}
-        alt={brand.imageAlt}
-        width={280}
-        height={80}
-        className={`h-auto w-auto brightness-0 ${brand.imageClassName ?? "max-h-12 sm:max-h-14"}`}
-        unoptimized
-      />
-    </a>
+    <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 sm:mt-6">
+      <span className="text-[0.72rem] font-medium uppercase tracking-[0.08em] text-[#888]">{label}</span>
+      <a
+        href={brand.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={linkTitles.external(brand.imageAlt, locale)}
+        className="inline-flex opacity-90 transition-opacity hover:opacity-100"
+      >
+        <Image
+          src={brand.imageSrc}
+          alt={brand.imageAlt}
+          width={280}
+          height={80}
+          className={`h-auto w-auto brightness-0 ${brand.imageClassName ?? "max-h-9 sm:max-h-10"}`}
+          unoptimized
+        />
+      </a>
+    </p>
   );
 }
 
@@ -153,6 +157,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
       <main id="main-content" className="section-shell">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
+            <div className={`mx-auto w-full ${ui.articleMax}`}>
               <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Percorso di navigazione">
                 <Link href="/progetti" title={linkTitles.breadcrumbProgetti("it")} className="font-medium text-[#1c1e21] hover:underline">
                   Progetti
@@ -165,16 +170,8 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 <span className="text-[#444]">{cs.metaTitle}</span>
               </nav>
 
-              <div
-                className={`reveal-block home-plate home-plate--well mb-6 sm:mb-8 ${
-                  cs.externalBrand ? "flex flex-wrap items-start justify-between gap-x-6 gap-y-3" : ""
-                }`}
-              >
-                <h1
-                  className={`font-display reveal-title min-w-0 ${ui.caseStudyTitle} ${
-                    cs.externalBrand ? "mb-0 flex-1" : ui.pageTitleLead
-                  }`}
-                >
+              <div className="reveal-block home-plate home-plate--well mb-6 sm:mb-8">
+                <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${cs.externalBrand ? "mb-0" : ui.pageTitleLead}`}>
                   {cs.heading}
                 </h1>
                 {cs.externalBrand ? <ExternalBrandMark brand={cs.externalBrand} locale="it" /> : null}
@@ -182,11 +179,11 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
 
               <div className="lazy-section">
                 <article className={`reveal-block home-plate home-plate--well ${ui.bodyMuted}`}>{cs.body}</article>
-
                 <ProjectImageLightbox images={cs.gallery} className="mt-10" />
                 <CaseOutboundLinks area={area} slug={slug} locale="it" />
                 <ContactCtaSection locale="it" title="Un intervento simile" description="Stesso tipo di opera, o un vincolo analogo." />
               </div>
+            </div>
           </div>
         </div>
       </main>
@@ -206,6 +203,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
     <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
+          <div className={`mx-auto w-full ${ui.articleMax}`}>
             <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Breadcrumb">
               <Link href={localizeHref("/progetti", locale)} title={linkTitles.breadcrumbProgetti(locale)} className="font-medium text-[#1c1e21] hover:underline">
                 {locale === "en" ? "Projects" : "Progetti"}
@@ -217,16 +215,8 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
               <span className="text-[#444]">{heading}</span>
             </nav>
-            <div
-              className={`reveal-block home-plate home-plate--well mb-6 sm:mb-8 ${
-                cs.externalBrand ? "flex flex-wrap items-start justify-between gap-x-6 gap-y-3" : ""
-              }`}
-            >
-              <h1
-                className={`font-display reveal-title min-w-0 ${ui.caseStudyTitle} ${
-                  cs.externalBrand ? "mb-0 flex-1" : ui.pageTitleLead
-                }`}
-              >
+            <div className="reveal-block home-plate home-plate--well mb-6 sm:mb-8">
+              <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${cs.externalBrand ? "mb-0" : ui.pageTitleLead}`}>
                 {heading}
               </h1>
               {cs.externalBrand ? <ExternalBrandMark brand={cs.externalBrand} locale={locale} /> : null}
@@ -254,6 +244,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 description={locale === "en" ? "The same kind of structure, or a comparable constraint." : "Stesso tipo di opera, o un vincolo analogo."}
               />
             </div>
+          </div>
         </div>
       </div>
     </main>
