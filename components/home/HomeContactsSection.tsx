@@ -8,9 +8,9 @@ import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass, site } fr
 import { ui } from "@/lib/ui";
 
 const contactImage = {
-  src: "/assets/home-chi-siamo-struttura-acciaio-chiuduno.webp",
-  altIt: "Intradosso delle travature reticolari in acciaio a Chiuduno (BG), progettazione strutturale Studio Capoferri",
-  altEn: "Underside of steel lattice trusses in Chiuduno (BG), structural steel design by Studio Capoferri",
+  src: "/assets/superstudio-village-entrata-esterno.webp",
+  altIt: "Ingresso di Superstudio Village a Milano, struttura in acciaio progettata da Studio Capoferri",
+  altEn: "Entrance to Superstudio Village in Milan, steel structure designed by Studio Capoferri",
 } as const;
 
 export function HomeContactsSection({ locale }: { locale: Locale }) {
@@ -36,7 +36,7 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
                 />
               </div>
               <figcaption className="mt-2.5 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
-                {locale === "en" ? "Steel structure" : "Struttura in acciaio"}
+                {locale === "en" ? "Superstudio Village, Milan" : "Superstudio Village, Milano"}
               </figcaption>
             </figure>
 
