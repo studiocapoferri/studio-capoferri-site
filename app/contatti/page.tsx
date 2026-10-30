@@ -3,7 +3,7 @@ import { LocalizedContactsPageContent } from "@/components/pages/LocalizedContac
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contatti",
+  title: "Contatti ad Adro (Brescia)",
   description:
     "Contatta lo Studio Capoferri per richiedere un preventivo o fissare un appuntamento. Recapiti, indirizzo e orari della sede ad Adro (BS).",
   path: "/contatti",

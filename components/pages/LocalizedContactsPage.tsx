@@ -61,7 +61,7 @@ export function LocalizedContactsPageContent() {
         <div className={layoutContentMaxClass}>
           <header className="reveal-block mb-8 sm:mb-10">
             <h1 className={`font-display reveal-title ${ui.pageTitle}`}>
-              {isEn ? "Contact structural engineers in Italy" : "Contatti"}
+              {isEn ? "Contact structural engineers in Italy" : "Contatti ad Adro (Brescia)"}
             </h1>
             <p className="mt-3 max-w-[36rem] text-left text-[0.98rem] text-[#555] sm:mt-4 sm:text-[1.05rem]">
               {isEn

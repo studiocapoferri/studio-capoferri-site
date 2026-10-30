@@ -13,8 +13,8 @@ import { ui } from "@/lib/ui";
 const heroImage = {
   src: "/assets/hero-struttura-new.webp",
   srcMobile: "/assets/hero-struttura-new-720.webp",
-  altIt: "Interno industriale con struttura in acciaio e luce naturale, progetto Studio Capoferri - progettazione strutturale in Lombardia",
-  altEn: "Industrial interior with steel structure and natural light - Studio Capoferri structural engineers, Lombardy",
+  altIt: "Interno industriale con struttura in acciaio e luce naturale",
+  altEn: "Industrial interior with steel structure and natural light",
 } as const;
 
 export function HeroHome() {

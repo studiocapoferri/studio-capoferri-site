@@ -3,7 +3,7 @@ import { LocalizedServicesPageContent } from "@/components/pages/LocalizedServic
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Servizi di progettazione e ingegneria",
+  title: "Progettazione strutturale e disegni d'officina",
   description:
     "Progettazione strutturale per imprese generali e general contractor: direzione lavori, disegni d'officina, sicurezza cantieri a Brescia e in Lombardia.",
   path: "/servizi",

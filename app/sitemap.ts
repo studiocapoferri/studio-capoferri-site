@@ -22,7 +22,7 @@ function entry(
       languages: {
         it: pageUrl(path, "it"),
         en: pageUrl(path, "en"),
-        "x-default": pageUrl(path, "en"),
+        "x-default": pageUrl(path, "it"),
       },
     },
   };

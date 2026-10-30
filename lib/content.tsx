@@ -162,7 +162,7 @@ export const zoneFooter = (
 );
 
 export const chiSiamoPage = {
-  title: "Chi siamo",
+  title: "Studio di progettazione strutturale ad Adro",
   paragraphs: [
     <>
       <strong>Studio Capoferri</strong> è uno studio di progettazione strutturale ad Adro (Brescia), Italia. Da oltre

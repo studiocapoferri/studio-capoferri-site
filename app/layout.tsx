@@ -122,7 +122,7 @@ const localBusinessJsonLd = {
     { "@type": "AdministrativeArea", name: "European Union" },
   ],
   availableLanguage: ["Italian", "English"],
-  sameAs: [site.linkedin],
+  sameAs: [site.linkedin, site.mapsUrl],
   knowsAbout: [
     "Structural engineering",
     "Steel structures",

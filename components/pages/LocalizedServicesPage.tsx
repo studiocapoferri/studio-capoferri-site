@@ -3,8 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
+import { FaqList } from "@/components/FaqList";
 import { FeatureList } from "@/components/FeatureList";
 import { useLocale } from "@/components/LocaleProvider";
+import { RelatedPages } from "@/components/RelatedPages";
 import { localizeHref } from "@/lib/i18n";
 import { servicesPageJsonLd } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
@@ -36,10 +38,20 @@ export function LocalizedServicesPageContent() {
   const isEn = locale === "en";
   const copy = servicesCopy[locale];
   const servicesLd = servicesPageJsonLd(locale);
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: copy.faq.map(([q, a]) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
 
   return (
     <main id="main-content" className="section-shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <header className="reveal-block home-plate home-plate--well mb-8 max-w-[42rem] sm:mb-10">
@@ -59,6 +71,11 @@ export function LocalizedServicesPageContent() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a href="#faq" className="link-accent font-medium text-[#1c1e21]">
+                  {copy.faqHeading}
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -119,6 +136,13 @@ export function LocalizedServicesPageContent() {
                       {p}
                     </p>
                   ))}
+                  {"related" in section && section.related ? (
+                    <RelatedPages
+                      locale={locale}
+                      label={isEn ? "Related" : "Approfondimenti"}
+                      links={section.related}
+                    />
+                  ) : null}
                   {media ? (
                     <div className={`${ui.contentImage} relative mt-6 aspect-[16/9] w-full max-w-[48rem]`}>
                       <Image
@@ -131,24 +155,17 @@ export function LocalizedServicesPageContent() {
                     </div>
                   ) : null}
                   <FeatureList items={section.items} />
-                  {"related" in section && section.related ? (
-                    <ul className="mt-5 list-none space-y-2 border-t border-[#1c1e21]/10 pl-0 pt-4">
-                      {section.related.map((link) => (
-                        <li key={link.href}>
-                          <Link
-                            href={localizeHref(link.href, locale)}
-                            className="text-[0.95rem] font-medium text-[#b01010] underline-offset-4 hover:underline"
-                          >
-                            {link.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
                 </section>
               );
             })}
           </div>
+
+          <section id="faq" className={`reveal-block mt-16 sm:mt-20 ${ui.articleMax} ${scrollAnchorClass}`}>
+            <h2 className={`font-display ${ui.sectionHeadingAccent} tracking-tight sm:text-[1.75rem]`}>
+              {copy.faqHeading}
+            </h2>
+            <FaqList items={copy.faq} />
+          </section>
 
           <ContactCtaSection locale={locale} title={copy.ctaTitle} description={copy.ctaDescription} />
         </div>

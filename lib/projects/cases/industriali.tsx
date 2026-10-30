@@ -552,39 +552,39 @@ export const industrialiCaseStudies = {
     gallery: [
       {
         src: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
-        alt: "Realizzazione: silos metallici rossi in stabilimento, progettazione strutturale Studio Capoferri",
+        alt: "Silos metallici rossi in stabilimento",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp",
-        alt: "Realizzazione: batteria di silos bianchi su telaio in acciaio in impianto produttivo",
+        alt: "Batteria di silos bianchi su telaio in acciaio in impianto produttivo",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp",
-        alt: "Realizzazione: tre silos metallici esterni su basamento in calcestruzzo",
+        alt: "Tre silos metallici esterni su basamento in calcestruzzo",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp",
-        alt: "Realizzazione: montaggio di silos metallici esterni con operatori in cantiere",
+        alt: "Montaggio di silos metallici esterni con operatori in cantiere",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp",
-        alt: "Realizzazione: due silos metallici esterni per stoccaggio industriale",
+        alt: "Due silos metallici esterni per stoccaggio industriale",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp",
-        alt: "Realizzazione: silos metallici esterni a fianco dello stabilimento",
+        alt: "Silos metallici esterni a fianco dello stabilimento",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp",
-        alt: "Realizzazione: silos metallici con scala di accesso e parapetti",
+        alt: "Silos metallici con scala di accesso e parapetti",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp",
-        alt: "Realizzazione: due silos metallici esterni su basamento",
+        alt: "Due silos metallici esterni su basamento in calcestruzzo",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp",
-        alt: "Realizzazione: tre silos metallici esterni, vista dal basso",
+        alt: "Tre silos metallici esterni, vista dal basso",
       },
     ],
   },

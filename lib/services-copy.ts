@@ -1,6 +1,6 @@
 export const servicesCopy = {
   it: {
-    title: "Servizi",
+    title: "Progettazione strutturale, disegni d'officina, direzione lavori",
     lead: "Dal calcolo alla messa in opera: strutture in acciaio, cemento armato e muratura, architettura e pratiche quando servono, direzione lavori e sicurezza di cantiere.",
     fabricatorsNote: "Per carpenterie metalliche e officine EN 1090 vedi",
     gcNote: "Per general contractor e imprese generali in Lombardia vedi",
@@ -54,10 +54,12 @@ export const servicesCopy = {
           {
             href: "/progetti/industriali/silos-metallici",
             label: "Silos metallici",
+            hint: "Selezione su impianti e materiali diversi",
           },
           {
             href: "/progettazione-strutturale-per-carpenterie",
-            label: "Progettazione strutturale per carpenterie",
+            label: "Per carpenterie",
+            hint: "Disegni d'officina e officine EN 1090",
           },
         ],
       },
@@ -163,6 +165,25 @@ export const servicesCopy = {
         ],
       },
     ],
+    faqHeading: "Domande frequenti",
+    faq: [
+      [
+        "Fate CSP e CSE?",
+        "Sì. Coordinamento della sicurezza in progettazione (CSP) e in esecuzione (CSE) per cantieri in Italia: piani di sicurezza, interferenze, interfaccia con impresa e committenza.",
+      ],
+      [
+        "Producete i disegni d'officina?",
+        "Sì. Tavole esecutive per la fabbricazione e il montaggio delle strutture metalliche, anche per carpenterie e officine EN 1090.",
+      ],
+      [
+        "Progettate silos metallici?",
+        "Sì. Geometria, acciaio o alluminio, pressioni di riempimento e svuotamento, vento e sisma, su impianti e materiali diversi.",
+      ],
+      [
+        "Fate direzione lavori?",
+        "Sì. Direzione lavori strutturali e assistenza in cantiere su montaggi, varianti e verifiche su esistenti.",
+      ],
+    ],
     ctaTitle: "Per un incarico",
     ctaDescription: "Oggetto, tempi e vincoli dell'intervento.",
   },
@@ -221,10 +242,12 @@ export const servicesCopy = {
           {
             href: "/progetti/industriali/silos-metallici",
             label: "Metal silos",
+            hint: "Selected works across plants and materials",
           },
           {
             href: "/progettazione-strutturale-per-carpenterie",
-            label: "Structural design for fabricators",
+            label: "For fabricators",
+            hint: "Shop drawings and EN 1090 workshops",
           },
         ],
       },
@@ -329,6 +352,25 @@ export const servicesCopy = {
           ],
         ],
       },
+    ],
+    faqHeading: "Questions",
+    faq: [
+      [
+        "Do you offer CSP and CSE?",
+        "Yes. Safety coordination in design (CSP) and on site (CSE) for works in Italy: safety plans, interference management and the interface with contractor and client.",
+      ],
+      [
+        "Do you produce shop drawings?",
+        "Yes. Fabrication drawings for workshop and erection of steel structures, including work with EN 1090 fabricators.",
+      ],
+      [
+        "Do you design metal silos?",
+        "Yes. Geometry, steel or aluminium, filling and emptying pressures, wind and seismic actions, across different plants and materials.",
+      ],
+      [
+        "Do you provide construction supervision?",
+        "Yes. Structural site supervision and on-site assistance during erection, changes and checks on existing fabric.",
+      ],
     ],
     ctaTitle: "To start a brief",
     ctaDescription: "Scope, programme and constraints of the work.",

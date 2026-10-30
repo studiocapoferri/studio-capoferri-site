@@ -103,21 +103,21 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/superstudio-maxi/strutture-acciaio-milano-brescia.webp": "Event hall with steel roof, Superstudio Maxi Famagosta",
   "/assets/superstudio-maxi/architettura-urbanistica-brescia.webp": "Projection hall of the Superstudio Maxi complex in Milan Famagosta",
   "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp":
-    "Selected work: red metal silos inside a plant, structural design by Studio Capoferri",
+    "Red metal silos inside a plant",
   "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp":
-    "Selected work: white metal silos on a steel frame inside a production plant",
+    "White metal silos on a steel frame inside a production plant",
   "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp":
-    "Selected work: three outdoor metal silos on a concrete plinth",
+    "Three outdoor metal silos on a concrete plinth",
   "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp":
-    "Selected work: erection of outdoor metal silos with site crew",
+    "Erection of outdoor metal silos with site crew",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp":
-    "Selected work: two outdoor metal silos for industrial storage",
+    "Two outdoor metal silos for industrial storage",
   "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp":
-    "Selected work: outdoor metal silos beside a plant facade",
+    "Outdoor metal silos beside a plant facade",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp":
-    "Selected work: metal silos with access ladder and safety railings",
+    "Metal silos with access ladder and safety railings",
   "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp":
-    "Selected work: three outdoor metal silos, low-angle view",
+    "Three outdoor metal silos, low-angle view",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp":
-    "Selected work: two outdoor metal silos on a concrete base",
+    "Two outdoor metal silos on a concrete base",
 };

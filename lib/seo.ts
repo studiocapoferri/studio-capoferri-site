@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
 import { itAreaByEn, itCaseByEn, localizedPathname, toItalianPath } from "@/lib/locale-paths";
-import { projectCaseStudies } from "@/lib/projects";
+import { isProjectArea, projectCaseStudies, projectCategories } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 export const defaultOgImage = "/assets/superstudio-village-acciaio-pre-fabbricato.webp";
 export const steelLandingSlugs = ["brescia", "bergamo", "milano"] as const;
+
+export function caseOgImage(area: string, slug: string): string | undefined {
+  if (!isProjectArea(area)) return undefined;
+  return (
+    projectCategories[area].cases.find((entry) => entry.slug === slug)?.cover ??
+    projectCaseStudies[`${area}/${slug}` as keyof typeof projectCaseStudies]?.gallery[0]?.src
+  );
+}
 export type SeoLocale = "it" | "en";
 
 type PageMetadataInput = {
@@ -47,7 +55,7 @@ export function buildPageMetadata({
       languages: {
         it: pageUrl(path, "it"),
         en: pageUrl(path, "en"),
-        "x-default": pageUrl(path, "en"),
+        "x-default": pageUrl(path, "it"),
       },
     },
     ...(keywords ? { keywords } : {}),
@@ -126,7 +134,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   contatti: {
-    title: "Contact our structural engineers in Italy",
+    title: "Contact structural engineers in Italy",
     description:
       "Write to structural engineers in Adro, near Brescia, for steel design, fabrication shop drawings and site support on projects in Italy.",
     path: "/contatti",
@@ -267,6 +275,7 @@ const englishProjectCaseMetadata: Record<string, BaseMetadataInput> = Object.fro
       title: cs.en.heading,
       description: cs.en.metaDescription,
       path: `/progetti/${key}`,
+      image: caseOgImage(key.split("/")[0], key.split("/")[1]),
     },
   ]),
 );

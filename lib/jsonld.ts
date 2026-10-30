@@ -269,7 +269,7 @@ export function contactPageJsonLd(locale: SeoLocale = "it") {
     "@type": "ContactPage",
     "@id": `${pageUrl("/contatti", locale)}#contactpage`,
     url: pageUrl("/contatti", locale),
-    name: locale === "en" ? "Contact Studio Capoferri" : "Contatti Studio Capoferri",
+    name: locale === "en" ? "Contact structural engineers in Italy" : "Contatti ad Adro (Brescia)",
     description:
       locale === "en"
         ? "Contact structural engineers in Adro, near Brescia, for steel buildings, fabrication shop drawings and site support in Italy."
@@ -287,7 +287,7 @@ export function servicesPageJsonLd(locale: SeoLocale = "it") {
     "@type": "CollectionPage",
     "@id": `${pageUrl("/servizi", locale)}#services`,
     url: pageUrl("/servizi", locale),
-    name: locale === "en" ? "Structural design and shop drawings" : "Servizi di ingegneria e progettazione",
+    name: locale === "en" ? "Structural design and shop drawings" : "Progettazione strutturale, disegni d'officina, direzione lavori",
     description:
       locale === "en"
         ? "Structural engineers in Northern Italy: steel design, fabrication shop drawings, construction supervision and site safety."

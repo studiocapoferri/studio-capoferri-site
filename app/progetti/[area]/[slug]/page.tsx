@@ -8,7 +8,7 @@ import {
   projectCategories,
   projectAreas,
 } from "@/lib/projects";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, caseOgImage } from "@/lib/seo";
 
 type Props = { params: Promise<{ area: string; slug: string }> };
 
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: cs.metaTitle,
     description: cs.metaDescription,
     path: `/progetti/${area}/${slug}`,
-    image: cs.gallery[0]?.src,
+    image: caseOgImage(area, slug),
   });
 }
 

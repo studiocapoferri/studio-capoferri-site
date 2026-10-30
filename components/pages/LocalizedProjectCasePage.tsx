@@ -5,8 +5,9 @@ import Link from "next/link";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
 import { FeatureList } from "@/components/FeatureList";
 import { useLocale } from "@/components/LocaleProvider";
+import { RelatedPages } from "@/components/RelatedPages";
 import { ProjectImageLightbox } from "@/components/projects/ProjectImageLightbox";
-import { localizeHref } from "@/lib/i18n";
+import { localizeHref, type Locale } from "@/lib/i18n";
 import { caseStudyJsonLd } from "@/lib/jsonld";
 import { linkTitles } from "@/lib/link-seo";
 import { areaCopy } from "@/lib/project-area-copy";
@@ -15,6 +16,77 @@ import { galleryAltEnBySrc } from "@/lib/gallery-alts-en";
 import { getEnglishCaseMetadata } from "@/lib/seo";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
+
+function CaseOutboundLinks({ area, slug, locale }: { area: ProjectArea; slug: string; locale: Locale }) {
+  const isEn = locale === "en";
+
+  if (slug === "silos-metallici") {
+    return (
+      <RelatedPages
+        locale={locale}
+        label={isEn ? "Related" : "Approfondimenti"}
+        links={[
+          {
+            href: "/progettazione-strutturale-per-carpenterie",
+            label: isEn ? "For fabricators" : "Per carpenterie",
+            hint: isEn ? "Shop drawings and EN 1090 workshops" : "Disegni d'officina e officine EN 1090",
+            title: linkTitles.fabricators(locale),
+          },
+          {
+            href: "/servizi",
+            label: isEn ? "Services" : "Servizi",
+            hint: isEn ? "Structural design, site supervision, CSP/CSE" : "Calcolo, direzione lavori, CSP/CSE",
+            title: linkTitles.scopriServizi(locale),
+          },
+          {
+            href: "/contatti",
+            label: isEn ? "Contact" : "Contatti",
+            hint: isEn ? "Brief, phone and form" : "Brief, recapiti e form",
+            title: linkTitles.contatti(locale),
+          },
+        ]}
+      />
+    );
+  }
+
+  if (area === "industriali") {
+    return (
+      <p className={`reveal-block mt-8 ${ui.bodyMuted}`}>
+        {isEn ? "For steel fabricators and general contractors, see also " : "Per carpenterie metalliche e imprese generali vedi anche "}
+        <Link
+          href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
+          title={linkTitles.fabricators(locale)}
+          className="link-accent"
+        >
+          {isEn ? "structural engineers for EN 1090 fabricators" : "progettazione per carpenterie"}
+        </Link>{" "}
+        {isEn ? "and" : "e"}{" "}
+        <Link
+          href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+          title={linkTitles.generalContractor(locale)}
+          className="link-accent"
+        >
+          {isEn ? "structural engineers for general contractors" : "progettazione per general contractor"}
+        </Link>
+        .
+      </p>
+    );
+  }
+
+  return (
+    <p className={`reveal-block mt-8 ${ui.bodyMuted}`}>
+      {isEn ? "For general contractors, see also " : "Per imprese generali e general contractor vedi anche "}
+      <Link
+        href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
+        title={linkTitles.generalContractor(locale)}
+        className="link-accent"
+      >
+        {isEn ? "structural engineers for general contractors in Italy" : "progettazione strutturale per general contractor"}
+      </Link>
+      .
+    </p>
+  );
+}
 
 export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; slug: string }) {
   const locale = useLocale();
@@ -83,41 +155,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 <article className={`reveal-block home-plate home-plate--well ${ui.bodyMuted}`}>{cs.body}</article>
 
                 <ProjectImageLightbox images={cs.gallery} className="mt-10" />
-                <p className={`reveal-block mt-8 ${ui.bodyMuted}`}>
-                  {area === "industriali" ? (
-                    <>
-                      Per carpenterie metalliche e imprese generali vedi anche{" "}
-                      <Link
-                        href="/progettazione-strutturale-per-carpenterie"
-                        title={linkTitles.fabricators("it")}
-                        className="link-accent"
-                      >
-                        progettazione per carpenterie
-                      </Link>{" "}
-                      e{" "}
-                      <Link
-                        href="/progettazione-strutturale-per-general-contractor"
-                        title={linkTitles.generalContractor("it")}
-                        className="link-accent"
-                      >
-                        progettazione per general contractor
-                      </Link>
-                      .
-                    </>
-                  ) : (
-                    <>
-                      Per imprese generali e general contractor vedi anche{" "}
-                      <Link
-                        href="/progettazione-strutturale-per-general-contractor"
-                        title={linkTitles.generalContractor("it")}
-                        className="link-accent"
-                      >
-                        progettazione strutturale per general contractor
-                      </Link>
-                      .
-                    </>
-                  )}
-                </p>
+                <CaseOutboundLinks area={area} slug={slug} locale="it" />
                 <ContactCtaSection locale="it" title="Un intervento simile" description="Stesso tipo di opera, o un vincolo analogo." />
               </div>
             </div>
@@ -178,41 +216,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 )}
               </article>
               <ProjectImageLightbox images={gallery} className="mt-10" />
-              <p className={`reveal-block mt-8 ${ui.bodyMuted}`}>
-                {area === "industriali" ? (
-                  <>
-                    For steel fabricators and general contractors, see also{" "}
-                    <Link
-                      href={localizeHref("/progettazione-strutturale-per-carpenterie", locale)}
-                      title={linkTitles.fabricators(locale)}
-                      className="link-accent"
-                    >
-                      structural engineers for EN 1090 fabricators
-                    </Link>{" "}
-                    and{" "}
-                    <Link
-                      href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
-                      title={linkTitles.generalContractor(locale)}
-                      className="link-accent"
-                    >
-                      structural engineers for general contractors
-                    </Link>
-                    .
-                  </>
-                ) : (
-                  <>
-                    For general contractors, see also{" "}
-                    <Link
-                      href={localizeHref("/progettazione-strutturale-per-general-contractor", locale)}
-                      title={linkTitles.generalContractor(locale)}
-                      className="link-accent"
-                    >
-                      structural engineers for general contractors in Italy
-                    </Link>
-                    .
-                  </>
-                )}
-              </p>
+              <CaseOutboundLinks area={area} slug={slug} locale={locale} />
               <ContactCtaSection
                 locale={locale}
                 title={locale === "en" ? "A similar brief" : "Un intervento simile"}
