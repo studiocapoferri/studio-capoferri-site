@@ -17,6 +17,33 @@ import { getEnglishCaseMetadata } from "@/lib/seo";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
+function ExternalBrandMark({
+  brand,
+  locale,
+}: {
+  brand: NonNullable<(typeof projectCaseStudies)[keyof typeof projectCaseStudies]["externalBrand"]>;
+  locale: Locale;
+}) {
+  return (
+    <a
+      href={brand.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={linkTitles.external(brand.imageAlt, locale)}
+      className="inline-flex shrink-0 opacity-90 transition-opacity hover:opacity-100"
+    >
+      <Image
+        src={brand.imageSrc}
+        alt={brand.imageAlt}
+        width={280}
+        height={80}
+        className={`h-auto w-auto brightness-0 ${brand.imageClassName ?? "max-h-14"}`}
+        unoptimized
+      />
+    </a>
+  );
+}
+
 function CaseOutboundLinks({ area, slug, locale }: { area: ProjectArea; slug: string; locale: Locale }) {
   const isEn = locale === "en";
 
@@ -139,24 +166,20 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 <span className="text-[#444]">{cs.metaTitle}</span>
               </nav>
 
-              <div className="reveal-block home-plate home-plate--well mb-6 sm:mb-8">
-                <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${ui.pageTitleLead}`}>{cs.heading}</h1>
+              <div
+                className={`reveal-block home-plate home-plate--well mb-6 sm:mb-8 ${
+                  cs.externalBrand ? "flex flex-wrap items-center justify-between gap-x-6 gap-y-3" : ""
+                }`}
+              >
+                <h1
+                  className={`font-display reveal-title min-w-0 ${ui.caseStudyTitle} ${
+                    cs.externalBrand ? "mb-0 flex-1" : ui.pageTitleLead
+                  }`}
+                >
+                  {cs.heading}
+                </h1>
+                {cs.externalBrand ? <ExternalBrandMark brand={cs.externalBrand} locale="it" /> : null}
               </div>
-
-              {cs.externalBrand ? (
-                <div className="reveal-block mb-8 text-center">
-                  <a href={cs.externalBrand.href} target="_blank" rel="noopener noreferrer" title={linkTitles.external(cs.externalBrand.imageAlt, "it")} className="inline-block opacity-90 transition-opacity hover:opacity-100">
-                    <Image
-                      src={cs.externalBrand.imageSrc}
-                      alt={cs.externalBrand.imageAlt}
-                      width={280}
-                      height={80}
-                      className={`mx-auto h-auto w-auto brightness-0 ${cs.externalBrand.imageClassName ?? "max-h-14"}`}
-                      unoptimized
-                    />
-                  </a>
-                </div>
-              ) : null}
 
               <div className="lazy-section">
                 <article className={`reveal-block home-plate home-plate--well ${ui.bodyMuted}`}>{cs.body}</article>
@@ -197,23 +220,20 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
               <span className="text-[#444]">{heading}</span>
             </nav>
-            <div className="reveal-block home-plate home-plate--well mb-6 sm:mb-8">
-              <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${ui.pageTitleLead}`}>{heading}</h1>
+            <div
+              className={`reveal-block home-plate home-plate--well mb-6 sm:mb-8 ${
+                cs.externalBrand ? "flex flex-wrap items-center justify-between gap-x-6 gap-y-3" : ""
+              }`}
+            >
+              <h1
+                className={`font-display reveal-title min-w-0 ${ui.caseStudyTitle} ${
+                  cs.externalBrand ? "mb-0 flex-1" : ui.pageTitleLead
+                }`}
+              >
+                {heading}
+              </h1>
+              {cs.externalBrand ? <ExternalBrandMark brand={cs.externalBrand} locale={locale} /> : null}
             </div>
-            {cs.externalBrand ? (
-              <div className="reveal-block mb-8 text-center">
-                <a href={cs.externalBrand.href} target="_blank" rel="noopener noreferrer" title={linkTitles.external(cs.externalBrand.imageAlt, locale)} className="inline-block opacity-90 transition-opacity hover:opacity-100">
-                  <Image
-                    src={cs.externalBrand.imageSrc}
-                    alt={cs.externalBrand.imageAlt}
-                    width={280}
-                    height={80}
-                    className={`mx-auto h-auto w-auto brightness-0 ${cs.externalBrand.imageClassName ?? "max-h-14"}`}
-                    unoptimized
-                  />
-                </a>
-              </div>
-            ) : null}
             <div className="lazy-section">
               <article className="reveal-block home-plate home-plate--well">
                 {body ? (
