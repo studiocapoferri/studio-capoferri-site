@@ -1,6 +1,6 @@
 export const servicesCopy = {
   it: {
-    title: "Progettazione strutturale, disegni d'officina, direzione lavori",
+    title: "Progettazione strutturale e disegni d'officina",
     lead: "Dal calcolo alla messa in opera: strutture in acciaio, cemento armato e muratura, architettura e pratiche quando servono, direzione lavori e sicurezza di cantiere.",
     fabricatorsNote: "Per carpenterie metalliche e officine EN 1090 vedi",
     gcNote: "Per general contractor e imprese generali in Lombardia vedi",

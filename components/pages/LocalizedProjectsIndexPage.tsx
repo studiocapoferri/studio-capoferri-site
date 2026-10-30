@@ -44,7 +44,7 @@ export function LocalizedProjectsPageContent() {
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
             <div className="home-plate home-plate--well mb-8 sm:mb-14">
-              <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>Progetti in acciaio in Lombardia</h1>
+              <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>Progetti</h1>
               <p className={`reveal-block max-w-none ${ui.bodyMuted}`}>{progettiIndexIntro}</p>
             </div>
             <div className="fine-divider mb-6 sm:mb-10" />

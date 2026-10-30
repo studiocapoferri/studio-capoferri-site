@@ -3,7 +3,7 @@ import { LocalizedProjectsPageContent } from "@/components/pages/LocalizedProjec
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Progetti in acciaio in Lombardia",
+  title: "Progetti strutturali",
   description:
     "Una galleria dei progetti realizzati dallo Studio Capoferri: strutture residenziali, industriali e ricettive, con sede ad Adro (BS).",
   path: "/progetti",
