@@ -9,8 +9,8 @@ import { ui } from "@/lib/ui";
 
 const contactImage = {
   src: "/assets/superstudio-maxi/progettazione-industriale-ricettivo.webp",
-  altIt: "Pavimentazione degli spazi espositivi, Superstudio Maxi Famagosta — Studio Capoferri",
-  altEn: "Flooring of the exhibition spaces, Superstudio Maxi Famagosta — Studio Capoferri",
+  altIt: "Pavimentazione degli spazi espositivi, Superstudio Maxi Famagosta, Studio Capoferri",
+  altEn: "Flooring of the exhibition spaces, Superstudio Maxi Famagosta, Studio Capoferri",
   captionIt: "Superstudio Maxi, Milano",
   captionEn: "Superstudio Maxi, Milan",
 } as const;
