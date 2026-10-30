@@ -144,14 +144,15 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               </div>
 
               {cs.externalBrand ? (
-                <div className="reveal-block mb-8 rounded-sm bg-[#2a2a2a] px-4 py-5 text-center sm:py-6">
-                  <a href={cs.externalBrand.href} target="_blank" rel="noopener noreferrer" title={linkTitles.external(cs.externalBrand.imageAlt, "it")} className="inline-block">
+                <div className="reveal-block mb-8 text-center">
+                  <a href={cs.externalBrand.href} target="_blank" rel="noopener noreferrer" title={linkTitles.external(cs.externalBrand.imageAlt, "it")} className="inline-block opacity-90 transition-opacity hover:opacity-100">
                     <Image
                       src={cs.externalBrand.imageSrc}
                       alt={cs.externalBrand.imageAlt}
                       width={280}
                       height={80}
-                      className={`mx-auto h-auto w-auto ${cs.externalBrand.imageClassName ?? "max-h-14"}`}
+                      className={`mx-auto h-auto w-auto brightness-0 ${cs.externalBrand.imageClassName ?? "max-h-14"}`}
+                      unoptimized
                     />
                   </a>
                 </div>
@@ -200,14 +201,15 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${ui.pageTitleLead}`}>{heading}</h1>
             </div>
             {cs.externalBrand ? (
-              <div className="reveal-block mb-8 rounded-sm bg-[#2a2a2a] px-4 py-5 text-center sm:py-6">
-                <a href={cs.externalBrand.href} target="_blank" rel="noopener noreferrer" title={linkTitles.external(cs.externalBrand.imageAlt, locale)} className="inline-block">
+              <div className="reveal-block mb-8 text-center">
+                <a href={cs.externalBrand.href} target="_blank" rel="noopener noreferrer" title={linkTitles.external(cs.externalBrand.imageAlt, locale)} className="inline-block opacity-90 transition-opacity hover:opacity-100">
                   <Image
                     src={cs.externalBrand.imageSrc}
                     alt={cs.externalBrand.imageAlt}
                     width={280}
                     height={80}
-                    className={`mx-auto h-auto w-auto ${cs.externalBrand.imageClassName ?? "max-h-14"}`}
+                    className={`mx-auto h-auto w-auto brightness-0 ${cs.externalBrand.imageClassName ?? "max-h-14"}`}
+                    unoptimized
                   />
                 </a>
               </div>
