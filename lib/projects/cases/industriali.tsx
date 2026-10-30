@@ -514,6 +514,7 @@ export const industrialiCaseStudies = {
       href: "https://gpdipiazzon.it/",
       imageSrc: "/assets/clienti/gp-piazzon.webp",
       imageAlt: "Logo GP di Piazzon",
+      imageClassName: "max-h-24 sm:max-h-28",
     },
     body: (
       <>

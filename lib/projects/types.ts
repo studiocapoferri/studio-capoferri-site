@@ -34,5 +34,11 @@ export type ProjectCaseStudy = {
   en: CaseStudyEnCopy;
   body: ReactNode;
   gallery: { src: string; alt: string }[];
-  externalBrand?: { href: string; imageSrc: string; imageAlt: string };
+  externalBrand?: {
+    href: string;
+    imageSrc: string;
+    imageAlt: string;
+    /** Override default max-h-14 on the dark brand bar (e.g. square marks). */
+    imageClassName?: string;
+  };
 };
