@@ -30,14 +30,14 @@ function ExternalBrandMark({
       target="_blank"
       rel="noopener noreferrer"
       title={linkTitles.external(brand.imageAlt, locale)}
-      className="inline-flex shrink-0 opacity-90 transition-opacity hover:opacity-100"
+      className="inline-flex shrink-0 self-start pt-1 opacity-90 transition-opacity hover:opacity-100 sm:pt-1.5"
     >
       <Image
         src={brand.imageSrc}
         alt={brand.imageAlt}
         width={280}
         height={80}
-        className={`h-auto w-auto brightness-0 ${brand.imageClassName ?? "max-h-14"}`}
+        className={`h-auto w-auto brightness-0 ${brand.imageClassName ?? "max-h-12 sm:max-h-14"}`}
         unoptimized
       />
     </a>
@@ -153,7 +153,6 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
       <main id="main-content" className="section-shell">
         <div className={layoutGutterXClass}>
           <div className={layoutContentMaxClass}>
-            <div className={`mx-auto w-full ${ui.articleMax}`}>
               <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Percorso di navigazione">
                 <Link href="/progetti" title={linkTitles.breadcrumbProgetti("it")} className="font-medium text-[#1c1e21] hover:underline">
                   Progetti
@@ -168,7 +167,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
 
               <div
                 className={`reveal-block home-plate home-plate--well mb-6 sm:mb-8 ${
-                  cs.externalBrand ? "flex flex-wrap items-center justify-between gap-x-6 gap-y-3" : ""
+                  cs.externalBrand ? "flex flex-wrap items-start justify-between gap-x-6 gap-y-3" : ""
                 }`}
               >
                 <h1
@@ -188,7 +187,6 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 <CaseOutboundLinks area={area} slug={slug} locale="it" />
                 <ContactCtaSection locale="it" title="Un intervento simile" description="Stesso tipo di opera, o un vincolo analogo." />
               </div>
-            </div>
           </div>
         </div>
       </main>
@@ -208,7 +206,6 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
     <main id="main-content" className="section-shell">
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
-          <div className={`mx-auto w-full ${ui.articleMax}`}>
             <nav className="reveal-faint mb-6 text-[0.82rem] text-[#666] sm:text-sm" aria-label="Breadcrumb">
               <Link href={localizeHref("/progetti", locale)} title={linkTitles.breadcrumbProgetti(locale)} className="font-medium text-[#1c1e21] hover:underline">
                 {locale === "en" ? "Projects" : "Progetti"}
@@ -222,7 +219,7 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
             </nav>
             <div
               className={`reveal-block home-plate home-plate--well mb-6 sm:mb-8 ${
-                cs.externalBrand ? "flex flex-wrap items-center justify-between gap-x-6 gap-y-3" : ""
+                cs.externalBrand ? "flex flex-wrap items-start justify-between gap-x-6 gap-y-3" : ""
               }`}
             >
               <h1
@@ -257,7 +254,6 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 description={locale === "en" ? "The same kind of structure, or a comparable constraint." : "Stesso tipo di opera, o un vincolo analogo."}
               />
             </div>
-          </div>
         </div>
       </div>
     </main>
