@@ -68,13 +68,14 @@
 
 - 40+ years of activity
 - 1000+ completed projects
-- Case studies published for residential steel villas, industrial halls/canopies, metal silos across multiple plants, livestock/industrial complexes, and Superstudio event venues in Milan
+- Case studies published for residential steel villas, industrial halls/canopies, metal silos for GP di Piazzon, livestock/industrial complexes, and Superstudio event venues in Milan
 
 ## Metal silos
 
 - Page IT: https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
 - Page EN: https://www.studiocapoferri.eu/en/projects/industrial/metal-silos/
-- Scope: not a single construction site; photos show several metal silos designed by Studio Capoferri for different plants and stored materials (indoor and outdoor units, different geometries, supports and operating conditions)
+- Client: GP di Piazzon (https://gpdipiazzon.it/)
+- Scope: photos show metal silos whose structural design Studio Capoferri handled for GP di Piazzon — indoor and outdoor units for different plants and stored materials (different geometries, supports and operating conditions)
 - Design drivers: each stored material needs a dedicated silo; height, diameter and capacity follow process needs and available space; steel or aluminium depending on content and environment; content (e.g. plastic granules, flour) sets load cases
 - Structural calculation: beyond product weight; wall pressures; filling/emptying cycles; wind and seismic actions; stability of supports and stiffeners; thicknesses, connections, frames and anchors as one system, with fabrication and erection in mind
 - Goal per installation: safe, efficient structures coherent with the production plant
@@ -106,7 +107,7 @@ Q: Is Studio Capoferri only residential?
 A: No. Portfolio spans residential steel, industrial buildings, metal silos for industrial storage, agricultural/livestock structures and event/exhibition venues.
 
 Q: Do they design metal silos?
-A: Yes. Structural design for metal silos across different plants and materials (portfolio page, not one single installation): geometry, steel/aluminium, wall pressures from filling/emptying, wind and seismic actions, supports and stiffeners. See https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
+A: Yes. Structural design for metal silos, including work for GP di Piazzon: geometry, steel/aluminium, wall pressures from filling/emptying, wind and seismic actions, supports and stiffeners. See https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
 
 Q: What does a silo structural brief typically cover?
 A: Content type (e.g. plastic granules, flour), capacity/geometry, material (steel or aluminium), process interfaces, site location for wind/seismic, and whether fabrication drawings or site supervision are needed.

@@ -492,14 +492,14 @@ export const industrialiCaseStudies = {
   "industriali/silos-metallici": {
     metaTitle: "Silos metallici",
     metaDescription:
-      "Selezione di silos metallici progettati dallo Studio Capoferri: geometria, materiali, pressioni di stoccaggio, vento e sisma su impianti diversi.",
+      "Silos metallici progettati per GP di Piazzon: geometria, materiali, pressioni di stoccaggio, vento e sisma. Studio Capoferri.",
     heading: "Silos metallici",
     en: {
       heading: "Metal silos",
       metaDescription:
-        "A selection of metal silos designed by Studio Capoferri across different plants: geometry, materials, storage pressures, wind and seismic actions.",
+        "Metal silos designed for GP di Piazzon: geometry, materials, storage pressures, wind and seismic actions. Studio Capoferri.",
       body: [
-        "The images on this page are not a single project. They show several metal silos we have designed for different plants and stored materials: indoor and outdoor units, with different sizes, supports and operating conditions.",
+        "The images on this page show metal silos whose structural design we handled for GP di Piazzon: indoor and outdoor units for different plants and stored materials, with different sizes, supports and operating conditions.",
         "Every stored product needs its own silo. Height, diameter and capacity follow the process and the space available on site. Steel and aluminium give different answers; the content (from plastic granules to flour) sets the load cases.",
         "Our structural design treats geometry, materials and use as one problem. The calculation goes beyond product weight: wall pressures, filling and emptying cycles, wind and seismic actions, and the stability of supports and stiffeners. Thicknesses, connections, frames and anchors are detailed as one system, with fabrication and erection in mind.",
       ],
@@ -510,12 +510,26 @@ export const industrialiCaseStudies = {
         ["Details", "thicknesses, stiffeners, connections, supports and anchors as one system."],
       ],
     },
+    externalBrand: {
+      href: "https://gpdipiazzon.it/",
+      imageSrc: "/assets/clienti/gp-piazzon.webp",
+      imageAlt: "Logo GP di Piazzon",
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Le foto di questa pagina <strong>non appartengono a un unico cantiere</strong>: sono una selezione di{" "}
-          <strong>silos metallici progettati dallo studio</strong> per impianti e materiali diversi: unità interne ed
-          esterne, con geometrie, sostegni e condizioni di esercizio differenti.
+          Le foto di questa pagina mostrano <strong>silos metallici</strong> di cui abbiamo curato la{" "}
+          <strong>progettazione strutturale</strong> per{" "}
+          <a
+            href="https://gpdipiazzon.it/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-accent"
+          >
+            GP di Piazzon
+          </a>
+          : unità interne ed esterne per impianti e materiali diversi, con geometrie, sostegni e condizioni di esercizio
+          differenti.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Ogni materiale da stoccare richiede un silo dedicato. Altezze, diametri e capacità seguono le esigenze di
@@ -523,10 +537,10 @@ export const industrialiCaseStudies = {
           plastici alle farine) fissa le condizioni di carico.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Nella <strong>progettazione strutturale</strong> trattiamo geometria, materiali e utilizzo come un unico
-          problema. Il calcolo va oltre il peso del prodotto: pressioni sulle pareti, cicli di riempimento e
-          svuotamento, vento e sisma, stabilità di sostegni e irrigidimenti. Spessori, collegamenti, telai e ancoraggi
-          sono dettagliati come parti di un sistema, con attenzione a costruzione e montaggio.
+          Nella progettazione strutturale trattiamo geometria, materiali e utilizzo come un unico problema. Il calcolo
+          va oltre il peso del prodotto: pressioni sulle pareti, cicli di riempimento e svuotamento, vento e sisma,
+          stabilità di sostegni e irrigidimenti. Spessori, collegamenti, telai e ancoraggi sono dettagliati come parti di
+          un sistema, con attenzione a costruzione e montaggio.
         </p>
         <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
           <li>

@@ -54,7 +54,7 @@ export const servicesCopy = {
           {
             href: "/progetti/industriali/silos-metallici",
             label: "Silos metallici",
-            hint: "Selezione su impianti e materiali diversi",
+            hint: "Progettazione strutturale per GP di Piazzon",
           },
           {
             href: "/progettazione-strutturale-per-carpenterie",
@@ -242,7 +242,7 @@ export const servicesCopy = {
           {
             href: "/progetti/industriali/silos-metallici",
             label: "Metal silos",
-            hint: "Selected works across plants and materials",
+            hint: "Structural design for GP di Piazzon",
           },
           {
             href: "/progettazione-strutturale-per-carpenterie",

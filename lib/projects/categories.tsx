@@ -76,7 +76,7 @@ export const projectCategories: Record<
         title: "Silos metallici",
         caption: "Silos metallici",
         cover: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
-        alt: "Selezione di silos metallici progettati da Studio Capoferri",
+        alt: "Silos metallici progettati per GP di Piazzon, Studio Capoferri",
         href: "/progetti/industriali/silos-metallici",
       },
       {
