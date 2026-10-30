@@ -2,11 +2,21 @@
  * Sincronizza contenuti statici per Next.js:
  * - assets/ → public/assets/
  * - llms.txt / llms-full.txt / CNAME se presenti (robots è generato da app/robots.ts)
+ * - sitemap.xml statica stile Pagnoni (generate-sitemap.cjs)
  */
+const { spawnSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
 const root = path.join(__dirname, "..");
+
+const sitemapGen = spawnSync(process.execPath, [path.join(__dirname, "generate-sitemap.cjs")], {
+  stdio: "inherit",
+  env: process.env,
+});
+if (sitemapGen.status !== 0) {
+  process.exit(sitemapGen.status ?? 1);
+}
 
 const assetsSrc = path.join(root, "assets");
 const assetsDest = path.join(root, "public", "assets");
