@@ -13,9 +13,9 @@ export function HomeAboutSection({ locale }: { locale: Locale }) {
       <div className={layoutContentMaxClass}>
         <div className="reveal-block">
           <h2 className={homeTitleCls}>{t.aboutTitle}</h2>
-          <div className="mt-8 grid grid-cols-1 items-start gap-8 md:mt-10 md:grid-cols-2 md:items-stretch md:gap-x-[clamp(2rem,4vw,3.5rem)] md:gap-y-0">
-            <figure className="m-0 order-2 flex flex-col md:order-1 md:h-full">
-              <div className="photo-alive relative aspect-[4/3] w-full flex-1 overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1] md:aspect-auto md:min-h-[18rem]">
+          <div className="mt-8 grid grid-cols-1 gap-8 md:mt-10 md:grid-cols-2 md:items-stretch md:gap-x-[clamp(2rem,4vw,3.5rem)]">
+            <figure className="m-0 order-2 flex min-h-0 flex-col md:order-1">
+              <div className="photo-alive relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1] md:aspect-auto md:min-h-0 md:flex-1">
                 <Image
                   src={homeChiSiamoImages.cantiere.src}
                   alt={locale === "en" ? homeChiSiamoImages.cantiere.altEn : homeChiSiamoImages.cantiere.alt}
@@ -29,7 +29,7 @@ export function HomeAboutSection({ locale }: { locale: Locale }) {
                 {locale === "en" ? "Steel structures" : "Strutture in acciaio"}
               </figcaption>
             </figure>
-            <div className="home-split-header__right order-1 space-y-4 md:order-2 sm:space-y-5">
+            <div className="home-split-header__right order-1 space-y-4 sm:space-y-5 md:order-2">
               {t.aboutBlocks.map((block, idx) => (
                 <p key={idx} className="m-0">
                   {block.textMobile ? (

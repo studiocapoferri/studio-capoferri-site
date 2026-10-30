@@ -23,24 +23,9 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
       <div className={layoutContentMaxClass}>
         <div className="reveal-block">
           <h2 className={homeTitleCls}>{t.contactsTitle}</h2>
-          <div className="mt-8 grid grid-cols-1 items-start gap-8 md:mt-10 md:grid-cols-2 md:gap-x-[clamp(2rem,4vw,3.5rem)]">
-            <figure className="m-0">
-              <div className="photo-alive relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1]">
-                <Image
-                  src={contactImage.src}
-                  alt={locale === "en" ? contactImage.altEn : contactImage.altIt}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                  unoptimized
-                />
-              </div>
-              <figcaption className="mt-2.5 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
-                {locale === "en" ? "Superstudio Village, Milan" : "Superstudio Village, Milano"}
-              </figcaption>
-            </figure>
-
-            <div>
+          <div className="mt-8 grid grid-cols-1 gap-8 md:mt-10 md:grid-cols-2 md:items-stretch md:gap-x-[clamp(2rem,4vw,3.5rem)]">
+            {/* Desktop: testo a sinistra. Mobile: sotto la foto. */}
+            <div className="order-2 md:order-1">
               <ul className="m-0 flex list-none flex-col gap-2 p-0 text-[0.95rem] text-[#444] sm:text-base">
                 <li>
                   <a
@@ -97,6 +82,23 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
                 </Link>
               </p>
             </div>
+
+            {/* Desktop: foto a destra. Mobile: sopra. Altezza = blocco testo+CTA. */}
+            <figure className="m-0 order-1 flex min-h-0 flex-col md:order-2">
+              <div className="photo-alive relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1] md:aspect-auto md:min-h-0 md:flex-1">
+                <Image
+                  src={contactImage.src}
+                  alt={locale === "en" ? contactImage.altEn : contactImage.altIt}
+                  fill
+                  className="object-cover object-center"
+                  sizes="(min-width:768px) 50vw, 100vw"
+                  unoptimized
+                />
+              </div>
+              <figcaption className="mt-2.5 shrink-0 text-[0.68rem] font-medium uppercase tracking-[0.08em] text-[#6a6a6a]">
+                {locale === "en" ? "Superstudio Village, Milan" : "Superstudio Village, Milano"}
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
