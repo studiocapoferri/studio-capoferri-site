@@ -53,7 +53,7 @@ export const servicesCopy = {
         related: [
           {
             href: "/progetti/industriali/silos-metallici",
-            label: "Silos metallici: realizzazioni",
+            label: "Silos metallici",
           },
           {
             href: "/progettazione-strutturale-per-carpenterie",
@@ -220,7 +220,7 @@ export const servicesCopy = {
         related: [
           {
             href: "/progetti/industriali/silos-metallici",
-            label: "Metal silos: selected works",
+            label: "Metal silos",
           },
           {
             href: "/progettazione-strutturale-per-carpenterie",

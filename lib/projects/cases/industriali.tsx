@@ -490,12 +490,12 @@ export const industrialiCaseStudies = {
     ],
   },
   "industriali/silos-metallici": {
-    metaTitle: "Silos metallici: realizzazioni",
+    metaTitle: "Silos metallici",
     metaDescription:
       "Selezione di silos metallici progettati dallo Studio Capoferri: geometria, materiali, pressioni di stoccaggio, vento e sisma su impianti diversi.",
-    heading: "Silos metallici: realizzazioni",
+    heading: "Silos metallici",
     en: {
-      heading: "Metal silos: selected works",
+      heading: "Metal silos",
       metaDescription:
         "A selection of metal silos designed by Studio Capoferri across different plants: geometry, materials, storage pressures, wind and seismic actions.",
       body: [

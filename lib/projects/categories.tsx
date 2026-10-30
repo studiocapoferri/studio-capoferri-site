@@ -73,7 +73,7 @@ export const projectCategories: Record<
     cases: [
       {
         slug: "silos-metallici",
-        title: "Silos metallici: realizzazioni",
+        title: "Silos metallici",
         caption: "Silos su impianti diversi",
         cover: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
         alt: "Selezione di silos metallici progettati da Studio Capoferri",
