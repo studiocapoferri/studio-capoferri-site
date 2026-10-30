@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 
 /**
- * IBM Plex Sans — unica famiglia tipografica.
- * 400 corpo, 500 titoli (Medium), 600 UI / Semibold.
+ * IBM Plex Sans — corpo e UI.
+ * 400 corpo, 500 titoli UI / Medium, 600 Semibold.
  */
 export const fontSans = localFont({
   src: [
@@ -15,5 +15,16 @@ export const fontSans = localFont({
   adjustFontFallback: "Arial",
 });
 
-/** Alias: titoli usano la stessa famiglia (pesi 500/600 via CSS). */
-export const fontDisplay = fontSans;
+/**
+ * Newsreader — titoli display (H1/H2, nomi, cifre).
+ * Serif editoriale già in repo; non requesta Google Fonts a runtime.
+ */
+export const fontDisplay = localFont({
+  src: [
+    { path: "../fonts/newsreader-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/newsreader-latin-500-normal.woff2", weight: "500", style: "normal" },
+  ],
+  variable: "--font-display",
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
+});

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
+import { HomeCertificationsSection } from "@/components/home/HomeCertificationsSection";
 import { useLocale } from "@/components/LocaleProvider";
 import { chiSiamoPage } from "@/lib/content";
 import { chiSiamoEnParagraphs } from "@/lib/about-copy";
@@ -60,12 +61,12 @@ export function LocalizedAboutPageContent() {
                           </p>
                           {bio ? <p className={`mt-3 ${ui.bodyMuted}`}>{bio}</p> : null}
                           {person.linkedin ? (
-                            <p className="mt-3">
+                            <p className="mt-3 text-sm">
                               <a
                                 href={person.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="link-accent text-sm"
+                                className="link-accent"
                                 title={linkedinLabel}
                               >
                                 LinkedIn
@@ -80,7 +81,13 @@ export function LocalizedAboutPageContent() {
               </ul>
             </section>
           </article>
+        </div>
+      </div>
 
+      <HomeCertificationsSection locale={locale} />
+
+      <div className={layoutGutterXClass}>
+        <div className={layoutContentMaxClass}>
           <ContactCtaSection locale={locale} />
         </div>
       </div>

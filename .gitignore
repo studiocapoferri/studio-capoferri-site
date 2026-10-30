@@ -57,3 +57,13 @@ assets/downloads/_pack/
 _MG_*.png
 _MG_*.jpg
 
+# Client logos pending confirmation (keep local until approved)
+assets/clienti/fonderie-ariotti.svg
+assets/clienti/magnetti.svg
+assets/clienti/muzzolon.webp
+assets/clienti/peztco.webp
+
+# Source dumps (processed into assets/clienti/)
+tecnoprogetti-25-scaled.png
+1630611852066.jpeg
+

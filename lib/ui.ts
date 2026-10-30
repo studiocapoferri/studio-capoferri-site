@@ -1,6 +1,6 @@
 /**
  * Token UI condivisi: tipografia corpo, titoli, pulsanti, form.
- * I titoli display usano la classe `.font-display` (IBM Plex Sans Medium/Semibold).
+ * I titoli display usano la classe `.font-display` (Newsreader); corpo/UI = IBM Plex Sans.
  */
 export const ui = {
   /** Sfondo brand scuro, piatto (footer, sezioni scure, hero fallback) */

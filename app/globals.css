@@ -93,7 +93,8 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-body), system-ui, sans-serif;
+  font-family: var(--font-display), "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
 }
 
 /* Content lists: keep structure, no bullets */
