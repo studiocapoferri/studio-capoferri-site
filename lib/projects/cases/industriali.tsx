@@ -88,12 +88,12 @@ export const industrialiCaseStudies = {
     ],
   },
   "industriali/lamiere-da-getto-spinelli": {
-    metaTitle: "Lamiere da getto in acciaio - Spinelli S.r.l. - Adro (BS)",
+    metaTitle: "Lamiere da getto in acciaio - Adro (BS)",
     metaDescription:
       "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata. Studio Capoferri.",
-    heading: "Lamiere da getto in acciaio - Spinelli S.r.l. - Adro (BS)",
+    heading: "Lamiere da getto in acciaio - Adro (BS)",
     en: {
-      heading: "Steel decking for concrete slabs - Spinelli S.r.l. - Adro (BS)",
+      heading: "Steel decking for concrete slabs - Adro (BS)",
       metaDescription:
         "Review and design of steel decking for concrete slabs for Spinelli S.r.l. in Adro (BS): structural analysis, experimental testing and load tables.",
       body: [
