@@ -24,7 +24,7 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
         <div className="reveal-block">
           <h2 className={homeTitleCls}>{t.contactsTitle}</h2>
           <div className="mt-8 grid grid-cols-1 items-start gap-8 md:mt-10 md:grid-cols-2 md:gap-x-[clamp(2rem,4vw,3.5rem)]">
-            <figure className="m-0 order-2 md:order-1">
+            <figure className="m-0">
               <div className="photo-alive relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-[#1c1e21]/12 bg-[#e8e6e1]">
                 <Image
                   src={contactImage.src}
@@ -40,7 +40,7 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
               </figcaption>
             </figure>
 
-            <div className="order-1 md:order-2">
+            <div>
               <ul className="m-0 flex list-none flex-col gap-2 p-0 text-[0.95rem] text-[#444] sm:text-base">
                 <li>
                   <a

@@ -19,14 +19,10 @@ const sizeClass: Record<string, string> = {
   steelera: "h-8 sm:h-11",
   "gp-piazzon": "h-10 sm:h-16",
   arcameccanica: "h-8 sm:h-12",
-  "cre-system": "h-7 sm:h-11",
-  "st-performance": "h-8 sm:h-12",
   tecnosida: "h-8 sm:h-12",
-  roversi: "h-8 sm:h-12",
   tecnoprogetti: "h-8 sm:h-12",
   superstudio: "h-7 sm:h-11",
   spinelli: "h-6 sm:h-9",
-  prismac: "h-7 sm:h-10",
   cibin: "h-10 sm:h-[4.75rem]",
 };
 
@@ -35,9 +31,7 @@ const sizeClass: Record<string, string> = {
  * Positive = down. Applied from sm up (mobile uses tighter cells).
  */
 const opticalClass: Record<string, string> = {
-  "st-performance": "sm:translate-y-[2px]",
   tecnosida: "sm:translate-y-[3px]",
-  roversi: "sm:translate-y-[1px]",
   spinelli: "sm:translate-y-[4px]",
   tecnoprogetti: "sm:translate-y-px",
 };
@@ -49,11 +43,7 @@ const skipInvert = new Set([
   "steelera",
   "gp-piazzon",
   "arcameccanica",
-  "cre-system",
-  "st-performance",
   "tecnosida",
-  "roversi",
-  "prismac",
   "tecnoprogetti",
   "cibin",
 ]);

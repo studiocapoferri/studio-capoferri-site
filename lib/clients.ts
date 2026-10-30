@@ -12,7 +12,7 @@ export type ClientLogo = {
 
 /**
  * Selected clients on the home strip (dark graphite). Cap ~10 for restraint.
- * Pending confirmation (kept local only, not listed): Ariotti, Magnetti, Muzzolon, Pezt Co.
+ * Parked local only (not on strip): Ariotti, Magnetti, Muzzolon, Pezt Co., Cre System, Roversi, ST Performance, Prismac.
  */
 export const homeClients: ClientLogo[] = [
   {
