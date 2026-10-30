@@ -30,6 +30,7 @@ export const itToEnPath: Record<string, string> = {
   "/progetti/industriali/capannone-erbusco": "/projects/industrial/industrial-warehouse-erbusco",
   "/progetti/industriali/ampliamento-complesso-zootecnico": "/projects/industrial/livestock-complex-extension",
   "/progetti/industriali/centro-direzionale-provaglio-diseo": "/projects/industrial/office-complex-provaglio-diseo",
+  "/progetti/industriali/silos-metallici": "/projects/industrial/metal-silos",
   "/progetti/ricettivi/superstudio-village": "/projects/public-spaces/superstudio-village",
   "/progetti/ricettivi/superstudio-maxi": "/projects/public-spaces/superstudio-maxi",
 };
@@ -55,6 +56,7 @@ export const enCaseByIt: Record<string, string> = {
   "capannone-erbusco": "industrial-warehouse-erbusco",
   "ampliamento-complesso-zootecnico": "livestock-complex-extension",
   "centro-direzionale-provaglio-diseo": "office-complex-provaglio-diseo",
+  "silos-metallici": "metal-silos",
   "superstudio-village": "superstudio-village",
   "superstudio-maxi": "superstudio-maxi",
 };

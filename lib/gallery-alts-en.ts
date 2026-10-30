@@ -102,4 +102,24 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/superstudio-maxi/studio-ingegneria-brescia.webp": "Internal structural detail of the Superstudio Maxi complex in Milan",
   "/assets/superstudio-maxi/strutture-acciaio-milano-brescia.webp": "Event hall with steel roof, Superstudio Maxi Famagosta",
   "/assets/superstudio-maxi/architettura-urbanistica-brescia.webp": "Projection hall of the Superstudio Maxi complex in Milan Famagosta",
+  "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp":
+    "Red metal silos inside an industrial plant, structural design by Studio Capoferri",
+  "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp":
+    "White metal silos on a steel support frame inside a production plant",
+  "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp":
+    "Three outdoor metal silos on a concrete plinth, structural design",
+  "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp":
+    "Erection and inspection of outdoor metal silos with site crew",
+  "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp":
+    "Two outdoor metal silos at sunset, industrial storage structures",
+  "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp":
+    "Outdoor metal silos beside the plant facade",
+  "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp":
+    "Two metal silos with access ladder and safety railings",
+  "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp":
+    "Low-angle view of three metal silos against a clear sky",
+  "/assets/industriale/silos-metallici/silos-esterni-tre-controluce.webp":
+    "Three outdoor metal silos in backlight",
+  "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp":
+    "Two outdoor metal silos on a concrete base",
 };

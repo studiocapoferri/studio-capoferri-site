@@ -72,6 +72,14 @@ export const projectCategories: Record<
     ),
     cases: [
       {
+        slug: "silos-metallici",
+        title: "Silos metallici industriali",
+        caption: "Silos metallici industriali",
+        cover: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
+        alt: "Silos metallici rossi in stabilimento industriale, progettazione strutturale Studio Capoferri",
+        href: "/progetti/industriali/silos-metallici",
+      },
+      {
         slug: "centro-raccolta-rifiuti-chiuduno",
         title: "Centro raccolta rifiuti - Chiuduno (BG)",
         caption: "Centro raccolta rifiuti - Chiuduno (BG)",

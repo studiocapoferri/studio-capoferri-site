@@ -489,5 +489,96 @@ export const industrialiCaseStudies = {
       },
     ],
   },
+  "industriali/silos-metallici": {
+    metaTitle: "Silos metallici industriali",
+    metaDescription:
+      "Progettazione strutturale di silos metallici: geometria, materiali, pressioni di riempimento e svuotamento, vento e sisma. Studio Capoferri.",
+    heading: "Silos metallici industriali",
+    en: {
+      heading: "Industrial metal silos",
+      metaDescription:
+        "Structural design of metal silos: geometry, materials, filling and emptying pressures, wind and seismic actions. Studio Capoferri.",
+      body: [
+        "Every stored material needs its own silo design. Height, diameter and capacity follow the client's process and the space available on site. Steel and aluminium offer different answers; the content — from plastic granules to flour — sets the load cases the structure must carry.",
+        "Studio Capoferri designs the structural system of metal silos: geometry, materials and operating conditions treated as one problem. The calculation goes beyond the weight of the product. Wall pressures, filling and emptying phases, wind and seismic actions, and the stability of supports and stiffeners all shape the solution.",
+        "Details matter: plate thickness, stiffeners, connections, supporting frames and anchors are designed as parts of a single system, with fabrication and erection in mind. The aim is a structure that is safe, efficient and coherent with the production plant.",
+      ],
+      bullets: [
+        ["Geometry and capacity", "sizing tied to process needs and available clearances."],
+        ["Load cases", "product pressures, fill/empty cycles, wind and seismic actions."],
+        ["Materials", "steel or aluminium chosen for the stored product and the environment."],
+        ["Details", "thicknesses, stiffeners, connections, supports and anchors as one system."],
+      ],
+    },
+    body: (
+      <>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          Ogni materiale da stoccare richiede un silo dedicato. Altezze, diametri e capacità seguono le esigenze di
+          processo e gli spazi disponibili in impianto. Acciaio e alluminio offrono risposte diverse; il contenuto — dai
+          granuli plastici alle farine — fissa le condizioni di carico da portare in progetto.
+        </p>
+        <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          In Studio Capoferri ci occupiamo della <strong>progettazione strutturale di silos metallici</strong>: geometria,
+          materiali e condizioni di utilizzo trattati come un unico problema. Il calcolo va oltre il peso del prodotto.
+          Pressioni sulle pareti, fasi di riempimento e svuotamento, azioni di vento e sisma, stabilità di sostegni e
+          irrigidimenti concorrono a definire la soluzione.
+        </p>
+        <ul className="mb-6 list-none space-y-3 text-[0.95rem] text-[#333] sm:text-[1.02rem]">
+          <li>
+            <strong>Geometria e capacità</strong>: dimensionamento legato al processo e agli spazi disponibili.
+          </li>
+          <li>
+            <strong>Condizioni di carico</strong>: pressioni del prodotto, cicli di riempimento/svuotamento, vento e
+            sisma.
+          </li>
+          <li>
+            <strong>Materiali</strong>: acciaio o alluminio in funzione del contenuto e dell&apos;ambiente.
+          </li>
+          <li>
+            <strong>Dettagli</strong>: spessori, irrigidimenti, collegamenti, strutture di sostegno e ancoraggi come
+            parti di un unico sistema.
+          </li>
+        </ul>
+        <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
+          L&apos;obiettivo è una struttura sicura, efficiente e coerente con l&apos;impianto produttivo, con attenzione
+          a costruzione e montaggio.
+        </p>
+      </>
+    ),
+    gallery: [
+      {
+        src: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
+        alt: "Silos metallici rossi all'interno di uno stabilimento industriale, progettazione strutturale Studio Capoferri",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp",
+        alt: "Batteria di silos bianchi su telaio in acciaio all'interno di un impianto produttivo",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp",
+        alt: "Tre silos metallici esterni su basamento in calcestruzzo, progettazione strutturale",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp",
+        alt: "Montaggio e verifica di silos metallici esterni con operatori in cantiere",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp",
+        alt: "Due silos metallici esterni in luce del tramonto, strutture di stoccaggio industriale",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp",
+        alt: "Silos metallici esterni affiancati alla facciata dello stabilimento",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp",
+        alt: "Due silos metallici con scala di accesso e parapetti di sicurezza",
+      },
+      {
+        src: "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp",
+        alt: "Vista dal basso di tre silos metallici contro cielo chiaro",
+      },
+    ],
+  },
 } as Record<CaseStudyKey, ProjectCaseStudy>;
 
