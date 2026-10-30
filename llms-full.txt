@@ -69,7 +69,15 @@
 - 40+ years of activity
 - 1000+ completed projects
 - Case studies published for residential steel villas, industrial halls/canopies, metal silos across multiple plants, livestock/industrial complexes, and Superstudio event venues in Milan
-- Metal silos page (not a single site): https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/ (EN: https://www.studiocapoferri.eu/en/projects/industrial/metal-silos/)
+
+## Metal silos (selected works)
+
+- Page IT: https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
+- Page EN: https://www.studiocapoferri.eu/en/projects/industrial/metal-silos/
+- Scope: not a single construction site; photos show several metal silos designed by Studio Capoferri for different plants and stored materials (indoor and outdoor units, different geometries, supports and operating conditions)
+- Design drivers: each stored material needs a dedicated silo; height, diameter and capacity follow process needs and available space; steel or aluminium depending on content and environment; content (e.g. plastic granules, flour) sets load cases
+- Structural calculation: beyond product weight; wall pressures; filling/emptying cycles; wind and seismic actions; stability of supports and stiffeners; thicknesses, connections, frames and anchors as one system, with fabrication and erection in mind
+- Goal per installation: safe, efficient structures coherent with the production plant
 
 ## How to contact for a brief
 
@@ -95,7 +103,10 @@ Q: Which codes do they design to?
 A: Italian NTC 2018 and Eurocodes, as applicable to the project.
 
 Q: Is Studio Capoferri only residential?
-A: No. Portfolio spans residential steel, industrial buildings, agricultural/livestock structures and event/exhibition venues.
+A: No. Portfolio spans residential steel, industrial buildings, metal silos for industrial storage, agricultural/livestock structures and event/exhibition venues.
+
+Q: Do they design metal silos?
+A: Yes. They provide structural design for metal silos across different plants and materials (not one single project page): geometry, steel/aluminium, filling/emptying pressures, wind and seismic actions. See https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
 
 ## Key URLs
 
