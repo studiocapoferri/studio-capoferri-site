@@ -26,7 +26,7 @@ function ExternalBrandMark({
 }) {
   const label = locale === "en" ? "Client" : "Cliente";
   return (
-    <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 sm:mt-6">
+    <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 sm:mt-5">
       <span className="text-[0.72rem] font-medium uppercase tracking-[0.08em] text-[#888]">{label}</span>
       <a
         href={brand.href}
@@ -170,7 +170,11 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
                 <span className="text-[#444]">{cs.metaTitle}</span>
               </nav>
 
-              <div className="reveal-block home-plate home-plate--well mb-6 sm:mb-8">
+              <div
+                className={`reveal-block home-plate home-plate--well ${
+                  cs.externalBrand ? "mb-4 pb-1 sm:mb-5" : "mb-6 sm:mb-8"
+                }`}
+              >
                 <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${cs.externalBrand ? "mb-0" : ui.pageTitleLead}`}>
                   {cs.heading}
                 </h1>
@@ -215,7 +219,11 @@ export function LocalizedProjectCasePage({ area, slug }: { area: ProjectArea; sl
               <span className="mx-2 text-[#aaa]" aria-hidden>/</span>
               <span className="text-[#444]">{heading}</span>
             </nav>
-            <div className="reveal-block home-plate home-plate--well mb-6 sm:mb-8">
+            <div
+              className={`reveal-block home-plate home-plate--well ${
+                cs.externalBrand ? "mb-4 pb-1 sm:mb-5" : "mb-6 sm:mb-8"
+              }`}
+            >
               <h1 className={`font-display reveal-title ${ui.caseStudyTitle} ${cs.externalBrand ? "mb-0" : ui.pageTitleLead}`}>
                 {heading}
               </h1>
