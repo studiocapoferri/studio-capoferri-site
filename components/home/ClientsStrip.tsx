@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Locale } from "@/lib/i18n";
-import { homeClients } from "@/lib/clients";
+import { homeClients, type ClientLogo } from "@/lib/clients";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
@@ -10,36 +10,33 @@ const copy = {
 } as const;
 
 /**
- * Per-logo height — mobile stays in a tight band so the 2-col grid reads evenly;
- * sm+ can breathe a bit more for mark-heavy logos.
+ * Larger marks; max-width keeps six per row from colliding under justify-between.
  */
 const sizeClass: Record<string, string> = {
-  "fonderie-ariotti": "h-7 sm:h-10",
-  "pb-srl": "h-9 sm:h-14",
-  baroni: "h-10 sm:h-16",
-  steelera: "h-8 sm:h-11",
-  "gp-piazzon": "h-10 sm:h-16",
-  arcameccanica: "h-8 sm:h-12",
-  tecnosida: "h-8 sm:h-12",
-  tecnoprogetti: "h-8 sm:h-12",
-  superstudio: "h-7 sm:h-11",
-  spinelli: "h-6 sm:h-9",
-  cibin: "h-10 sm:h-[4.75rem]",
+  "fonderie-ariotti": "h-10 sm:h-14",
+  "pb-srl": "h-12 sm:h-16",
+  tecnoprogetti: "h-10 sm:h-14",
+  "gp-piazzon": "h-12 sm:h-16",
+  superstudio: "h-10 sm:h-14",
+  baroni: "h-12 sm:h-16",
+  steelera: "h-10 sm:h-14",
+  spinelli: "h-9 sm:h-12",
+  muzzolon: "h-10 sm:h-14",
+  tecnosida: "h-10 sm:h-14",
+  arcameccanica: "h-10 sm:h-14",
+  cibin: "h-12 sm:h-16",
 };
 
-/**
- * Optical vertical nudge: tagline logos center above wordmark-only ones.
- * Positive = down. Applied from sm up (mobile uses tighter cells).
- */
 const opticalClass: Record<string, string> = {
-  tecnosida: "sm:translate-y-[3px]",
-  spinelli: "sm:translate-y-[4px]",
-  tecnoprogetti: "sm:translate-y-px",
+  tecnosida: "sm:translate-y-[2px]",
+  spinelli: "sm:translate-y-[3px]",
+  muzzolon: "sm:translate-y-px",
 };
 
-/** Already white-on-transparent — do not apply brightness-0 invert. */
+/** Already white-on-transparent (or white-on-black) — do not invert. */
 const skipInvert = new Set([
   "fonderie-ariotti",
+  "muzzolon",
   "baroni",
   "pb-srl",
   "steelera",
@@ -50,43 +47,55 @@ const skipInvert = new Set([
   "cibin",
 ]);
 
+const ROWS = [homeClients.slice(0, 6), homeClients.slice(6, 12)] as const;
+
+function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) {
+  return (
+    <a
+      href={client.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={client.name}
+      className="group inline-flex items-center opacity-80 transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100 sm:opacity-75"
+    >
+      <Image
+        src={client.src}
+        alt={locale === "en" ? client.altEn : client.altIt}
+        width={client.width}
+        height={client.height}
+        className={`${sizeClass[client.id] ?? "h-10 sm:h-14"} ${opticalClass[client.id] ?? ""} w-auto max-w-[9.5rem] object-contain object-center sm:max-w-[11.5rem]${
+          skipInvert.has(client.id) ? "" : " brightness-0 invert"
+        }`}
+        loading="lazy"
+        unoptimized
+      />
+    </a>
+  );
+}
+
 export function ClientsStrip({ locale }: { locale: Locale }) {
   const t = copy[locale];
 
   return (
-    <section className={`lazy-section ${ui.brandGradient} ${layoutGutterXClass} py-8 sm:py-11`}>
+    <section className={`lazy-section ${ui.brandGradient} ${layoutGutterXClass} py-9 sm:py-12`}>
       <div className={`${layoutContentMaxClass} reveal-block`}>
-        <p className="eyebrow mb-6 text-center text-[0.68rem] tracking-[0.16em] text-white/55 sm:mb-8">
+        <p className="eyebrow mb-7 text-center text-[0.68rem] tracking-[0.16em] text-white/55 sm:mb-9">
           {t.eyebrow}
         </p>
-        <ul className="m-0 grid list-none grid-cols-2 items-center justify-items-center gap-x-5 gap-y-6 p-0 sm:grid-cols-5 sm:gap-x-10 sm:gap-y-10">
-          {homeClients.map((client) => (
-            <li
-              key={client.id}
-              className="flex h-[3.75rem] w-full max-w-[9.5rem] items-center justify-center sm:h-[5.5rem] sm:max-w-[11rem]"
+        <div className="flex flex-col gap-8 sm:gap-10 lg:gap-11">
+          {ROWS.map((row) => (
+            <ul
+              key={row.map((c) => c.id).join("-")}
+              className="m-0 grid w-full list-none grid-cols-2 items-center justify-items-center gap-x-5 gap-y-8 p-0 sm:grid-cols-3 sm:gap-x-7 sm:gap-y-9 lg:flex lg:items-center lg:justify-between lg:gap-0 lg:gap-y-0"
             >
-              <a
-                href={client.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={client.name}
-                className="group flex h-full w-full items-center justify-center px-1 opacity-80 transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100 sm:px-0 sm:opacity-75"
-              >
-                <Image
-                  src={client.src}
-                  alt={locale === "en" ? client.altEn : client.altIt}
-                  width={client.width}
-                  height={client.height}
-                  className={`${sizeClass[client.id] ?? "h-8 sm:h-11"} ${opticalClass[client.id] ?? ""} w-auto max-w-[92%] object-contain object-center sm:max-w-full${
-                    skipInvert.has(client.id) ? "" : " brightness-0 invert"
-                  }`}
-                  loading="lazy"
-                  unoptimized
-                />
-              </a>
-            </li>
+              {row.map((client) => (
+                <li key={client.id} className="flex h-[4.25rem] items-center sm:h-[5.75rem]">
+                  <ClientMark client={client} locale={locale} />
+                </li>
+              ))}
+            </ul>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

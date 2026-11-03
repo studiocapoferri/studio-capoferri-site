@@ -11,8 +11,9 @@ export type ClientLogo = {
 };
 
 /**
- * Selected clients on the home strip (dark graphite). Cap ~10–11 for restraint.
- * Parked local only (not on strip): Magnetti, Muzzolon, Pezt Co., Cre System, Roversi, ST Performance, Prismac.
+ * Optical order: compact marks break up wide wordmarks.
+ * Row ends: Baroni / Cibin (flush with header EN).
+ * Parked local: Magnetti, Pezt Co., Cre System, Roversi, ST Performance, Prismac.
  * Fonderie Ariotti: autorizzazione scritta 03/11/2026 (sito + LinkedIn, senza alterazioni).
  */
 export const homeClients: ClientLogo[] = [
@@ -27,6 +28,16 @@ export const homeClients: ClientLogo[] = [
     height: 47,
   },
   {
+    id: "pb-srl",
+    name: "PB S.r.l. Carpenteria",
+    src: "/assets/clienti/pb-srl.webp",
+    href: "https://www.pbsrlcarpenteria.com/",
+    altIt: "Logo PB S.r.l. Carpenteria, cliente Studio Capoferri",
+    altEn: "PB S.r.l. Carpenteria logo, Studio Capoferri client",
+    width: 400,
+    height: 227,
+  },
+  {
     id: "tecnoprogetti",
     name: "Tecnoprogetti",
     src: "/assets/clienti/tecnoprogetti.webp",
@@ -37,6 +48,16 @@ export const homeClients: ClientLogo[] = [
     height: 110,
   },
   {
+    id: "gp-piazzon",
+    name: "GP di Piazzon",
+    src: "/assets/clienti/gp-piazzon.webp",
+    href: "https://gpdipiazzon.it/",
+    altIt: "Logo GP di Piazzon, cliente Studio Capoferri",
+    altEn: "GP di Piazzon logo, Studio Capoferri client",
+    width: 512,
+    height: 512,
+  },
+  {
     id: "superstudio",
     name: "Superstudio",
     src: "/assets/clienti/superstudio.svg",
@@ -45,16 +66,6 @@ export const homeClients: ClientLogo[] = [
     altEn: "Superstudio logo, Studio Capoferri client",
     width: 168,
     height: 32,
-  },
-  {
-    id: "pb-srl",
-    name: "PB S.r.l. Carpenteria",
-    src: "/assets/clienti/pb-srl.webp",
-    href: "https://www.pbsrlcarpenteria.com/",
-    altIt: "Logo PB S.r.l. Carpenteria, cliente Studio Capoferri",
-    altEn: "PB S.r.l. Carpenteria logo, Studio Capoferri client",
-    width: 400,
-    height: 227,
   },
   {
     id: "baroni",
@@ -77,23 +88,23 @@ export const homeClients: ClientLogo[] = [
     height: 297,
   },
   {
-    id: "gp-piazzon",
-    name: "GP di Piazzon",
-    src: "/assets/clienti/gp-piazzon.webp",
-    href: "https://gpdipiazzon.it/",
-    altIt: "Logo GP di Piazzon, cliente Studio Capoferri",
-    altEn: "GP di Piazzon logo, Studio Capoferri client",
-    width: 512,
-    height: 512,
+    id: "spinelli",
+    name: "Spinelli S.r.l.",
+    src: "/assets/clienti/spinelli.webp",
+    href: "https://spinellisrl.eu/",
+    altIt: "Logo Spinelli S.r.l., cliente Studio Capoferri",
+    altEn: "Spinelli S.r.l. logo, Studio Capoferri client",
+    width: 160,
+    height: 32,
   },
   {
-    id: "arcameccanica",
-    name: "AR.CA Meccanica",
-    src: "/assets/clienti/arcameccanica.webp",
-    href: "https://www.arcameccanica.com/",
-    altIt: "Logo AR.CA Meccanica, cliente Studio Capoferri",
-    altEn: "AR.CA Meccanica logo, Studio Capoferri client",
-    width: 720,
+    id: "muzzolon",
+    name: "Muzzolon Industries",
+    src: "/assets/clienti/muzzolon.webp",
+    href: "https://muzzolonindustries.com/",
+    altIt: "Logo Muzzolon Industries, cliente Studio Capoferri",
+    altEn: "Muzzolon Industries logo, Studio Capoferri client",
+    width: 800,
     height: 215,
   },
   {
@@ -107,14 +118,14 @@ export const homeClients: ClientLogo[] = [
     height: 188,
   },
   {
-    id: "spinelli",
-    name: "Spinelli S.r.l.",
-    src: "/assets/clienti/spinelli.webp",
-    href: "https://spinellisrl.eu/",
-    altIt: "Logo Spinelli S.r.l., cliente Studio Capoferri",
-    altEn: "Spinelli S.r.l. logo, Studio Capoferri client",
-    width: 160,
-    height: 32,
+    id: "arcameccanica",
+    name: "AR.CA Meccanica",
+    src: "/assets/clienti/arcameccanica.webp",
+    href: "https://www.arcameccanica.com/",
+    altIt: "Logo AR.CA Meccanica, cliente Studio Capoferri",
+    altEn: "AR.CA Meccanica logo, Studio Capoferri client",
+    width: 720,
+    height: 215,
   },
   {
     id: "cibin",
