@@ -10,21 +10,21 @@ const copy = {
 } as const;
 
 /**
- * Compact on mobile (2-col), larger from sm+ (justify-between row).
+ * Desktop sizes first; max-sm: shrinks only on phones so tablet/desktop stay large.
  */
 const sizeClass: Record<string, string> = {
-  "fonderie-ariotti": "h-7 sm:h-16",
-  "pb-srl": "h-8 sm:h-16",
-  tecnoprogetti: "h-7 sm:h-16",
-  "gp-piazzon": "h-8 sm:h-16",
-  superstudio: "h-6 sm:h-14",
-  baroni: "h-8 sm:h-16",
-  steelera: "h-6 sm:h-14",
-  spinelli: "h-5 sm:h-12",
-  muzzolon: "h-6 sm:h-14",
-  tecnosida: "h-6 sm:h-14",
-  arcameccanica: "h-6 sm:h-14",
-  cibin: "h-8 sm:h-16",
+  "fonderie-ariotti": "h-16 max-sm:h-7",
+  "pb-srl": "h-16 max-sm:h-8",
+  tecnoprogetti: "h-16 max-sm:h-7",
+  "gp-piazzon": "h-16 max-sm:h-8",
+  superstudio: "h-14 max-sm:h-6",
+  baroni: "h-16 max-sm:h-8",
+  steelera: "h-14 max-sm:h-6",
+  spinelli: "h-12 max-sm:h-5",
+  muzzolon: "h-14 max-sm:h-6",
+  tecnosida: "h-14 max-sm:h-6",
+  arcameccanica: "h-14 max-sm:h-6",
+  cibin: "h-16 max-sm:h-8",
 };
 
 const opticalClass: Record<string, string> = {
@@ -63,7 +63,7 @@ function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) 
         alt={locale === "en" ? client.altEn : client.altIt}
         width={client.width}
         height={client.height}
-        className={`${sizeClass[client.id] ?? "h-6 sm:h-14"} ${opticalClass[client.id] ?? ""} w-auto max-w-[6.5rem] object-contain object-center sm:max-w-[11.5rem]${
+        className={`${sizeClass[client.id] ?? "h-14 max-sm:h-6"} ${opticalClass[client.id] ?? ""} w-auto max-w-[11.5rem] max-sm:max-w-[6.5rem] object-contain object-center${
           skipInvert.has(client.id) ? "" : " brightness-0 invert"
         }`}
         loading="lazy"
@@ -89,7 +89,7 @@ export function ClientsStrip({ locale }: { locale: Locale }) {
               className="m-0 grid w-full list-none grid-cols-2 items-center justify-items-center gap-x-5 gap-y-8 p-0 sm:grid-cols-3 sm:gap-x-7 sm:gap-y-9 lg:flex lg:items-center lg:justify-between lg:gap-0 lg:gap-y-0"
             >
               {row.map((client) => (
-                <li key={client.id} className="flex h-[3.25rem] items-center sm:h-[5.75rem]">
+                <li key={client.id} className="flex h-[5.75rem] items-center max-sm:h-[3.25rem]">
                   <ClientMark client={client} locale={locale} />
                 </li>
               ))}
