@@ -56,7 +56,7 @@ function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) 
       target="_blank"
       rel="noopener noreferrer"
       title={client.name}
-      className="group inline-flex items-center opacity-65 transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100"
+      className="group inline-flex items-center opacity-[0.65] transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100"
     >
       <Image
         src={client.src}
