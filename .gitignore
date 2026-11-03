@@ -58,7 +58,6 @@ _MG_*.png
 _MG_*.jpg
 
 # Client logos pending / parked (keep local until used on strip again)
-assets/clienti/fonderie-ariotti.svg
 assets/clienti/magnetti.svg
 assets/clienti/muzzolon.webp
 assets/clienti/peztco.webp

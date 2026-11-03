@@ -11,10 +11,21 @@ export type ClientLogo = {
 };
 
 /**
- * Selected clients on the home strip (dark graphite). Cap ~10 for restraint.
- * Parked local only (not on strip): Ariotti, Magnetti, Muzzolon, Pezt Co., Cre System, Roversi, ST Performance, Prismac.
+ * Selected clients on the home strip (dark graphite). Cap ~10–11 for restraint.
+ * Parked local only (not on strip): Magnetti, Muzzolon, Pezt Co., Cre System, Roversi, ST Performance, Prismac.
+ * Fonderie Ariotti: autorizzazione scritta 03/11/2026 (sito + LinkedIn, senza alterazioni).
  */
 export const homeClients: ClientLogo[] = [
+  {
+    id: "fonderie-ariotti",
+    name: "Fonderie Ariotti",
+    src: "/assets/clienti/fonderie-ariotti.svg",
+    href: "https://www.fonderieariotti.com/",
+    altIt: "Logo Fonderie Ariotti, cliente Studio Capoferri",
+    altEn: "Fonderie Ariotti logo, Studio Capoferri client",
+    width: 400,
+    height: 47,
+  },
   {
     id: "tecnoprogetti",
     name: "Tecnoprogetti",

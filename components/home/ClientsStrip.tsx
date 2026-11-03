@@ -14,6 +14,7 @@ const copy = {
  * sm+ can breathe a bit more for mark-heavy logos.
  */
 const sizeClass: Record<string, string> = {
+  "fonderie-ariotti": "h-7 sm:h-10",
   "pb-srl": "h-9 sm:h-14",
   baroni: "h-10 sm:h-16",
   steelera: "h-8 sm:h-11",
@@ -38,6 +39,7 @@ const opticalClass: Record<string, string> = {
 
 /** Already white-on-transparent — do not apply brightness-0 invert. */
 const skipInvert = new Set([
+  "fonderie-ariotti",
   "baroni",
   "pb-srl",
   "steelera",
