@@ -13,9 +13,9 @@ const copy = {
  * Larger marks; max-width keeps six per row from colliding under justify-between.
  */
 const sizeClass: Record<string, string> = {
-  "fonderie-ariotti": "h-10 sm:h-14",
+  "fonderie-ariotti": "h-11 sm:h-16",
   "pb-srl": "h-12 sm:h-16",
-  tecnoprogetti: "h-10 sm:h-14",
+  tecnoprogetti: "h-11 sm:h-16",
   "gp-piazzon": "h-12 sm:h-16",
   superstudio: "h-10 sm:h-14",
   baroni: "h-12 sm:h-16",
