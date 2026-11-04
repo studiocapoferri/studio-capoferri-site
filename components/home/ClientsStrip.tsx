@@ -13,9 +13,9 @@ const copy = {
  * Desktop sizes first; max-sm: shrinks only on phones so tablet/desktop stay large.
  */
 const sizeClass: Record<string, string> = {
+  tecnoprogetti: "h-16 max-sm:h-7",
   "fonderie-ariotti": "h-16 max-sm:h-7",
   "pb-srl": "h-16 max-sm:h-8",
-  tecnoprogetti: "h-16 max-sm:h-7",
   "gp-piazzon": "h-16 max-sm:h-8",
   superstudio: "h-14 max-sm:h-6",
   baroni: "h-16 max-sm:h-8",
@@ -24,7 +24,7 @@ const sizeClass: Record<string, string> = {
   muzzolon: "h-28 max-sm:h-14",
   tecnosida: "h-14 max-sm:h-6",
   arcameccanica: "h-14 max-sm:h-6",
-  cibin: "h-16 max-sm:h-8",
+  prismac: "h-14 max-sm:h-6",
 };
 
 const opticalClass: Record<string, string> = {
@@ -49,7 +49,7 @@ const skipInvert = new Set([
   "arcameccanica",
   "tecnosida",
   "tecnoprogetti",
-  "cibin",
+  "prismac",
 ]);
 
 const ROWS = [homeClients.slice(0, 6), homeClients.slice(6, 12)] as const;

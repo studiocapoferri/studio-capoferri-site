@@ -12,11 +12,21 @@ export type ClientLogo = {
 
 /**
  * Optical order: compact marks break up wide wordmarks.
- * Row ends: Baroni / Cibin (flush with header EN).
- * Parked local: Magnetti, Pezt Co., Cre System, Roversi, ST Performance, Prismac.
+ * Row ends: Baroni / Prismac (flush with header EN).
+ * Parked local: Magnetti, Pezt Co., Cre System, Roversi, ST Performance, Cibin.
  * Fonderie Ariotti: autorizzazione scritta 03/11/2026 (sito + LinkedIn, senza alterazioni).
  */
 export const homeClients: ClientLogo[] = [
+  {
+    id: "tecnoprogetti",
+    name: "Tecnoprogetti",
+    src: "/assets/clienti/tecnoprogetti.webp",
+    href: "https://www.tecnoprogetti.org/",
+    altIt: "Logo Tecnoprogetti, cliente Studio Capoferri",
+    altEn: "Tecnoprogetti logo, Studio Capoferri client",
+    width: 552,
+    height: 110,
+  },
   {
     id: "fonderie-ariotti",
     name: "Fonderie Ariotti",
@@ -36,16 +46,6 @@ export const homeClients: ClientLogo[] = [
     altEn: "PB S.r.l. Carpenteria logo, Studio Capoferri client",
     width: 400,
     height: 227,
-  },
-  {
-    id: "tecnoprogetti",
-    name: "Tecnoprogetti",
-    src: "/assets/clienti/tecnoprogetti.webp",
-    href: "https://www.tecnoprogetti.org/",
-    altIt: "Logo Tecnoprogetti, cliente Studio Capoferri",
-    altEn: "Tecnoprogetti logo, Studio Capoferri client",
-    width: 552,
-    height: 110,
   },
   {
     id: "gp-piazzon",
@@ -128,13 +128,13 @@ export const homeClients: ClientLogo[] = [
     height: 215,
   },
   {
-    id: "cibin",
-    name: "Cibin Studio7",
-    src: "/assets/clienti/cibin.webp",
-    href: "https://www.studiocibin.com/",
-    altIt: "Logo Cibin Studio7, cliente Studio Capoferri",
-    altEn: "Cibin Studio7 logo, Studio Capoferri client",
-    width: 119,
-    height: 140,
+    id: "prismac",
+    name: "Prismac",
+    src: "/assets/clienti/prismac.webp",
+    href: "https://www.prismacsrl.it/",
+    altIt: "Logo Prismac, cliente Studio Capoferri",
+    altEn: "Prismac logo, Studio Capoferri client",
+    width: 350,
+    height: 71,
   },
 ];
