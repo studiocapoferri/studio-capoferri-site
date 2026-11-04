@@ -52,8 +52,6 @@ const skipInvert = new Set([
   "prismac",
 ]);
 
-const ROWS = [homeClients.slice(0, 6), homeClients.slice(6, 12)] as const;
-
 function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) {
   return (
     <a
@@ -61,7 +59,7 @@ function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) 
       target="_blank"
       rel="noopener noreferrer"
       title={client.name}
-      className="group inline-flex items-center opacity-[0.65] transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100"
+      className="group inline-flex items-center justify-center opacity-[0.65] transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100"
     >
       <Image
         src={client.src}
@@ -89,20 +87,17 @@ export function ClientsStrip({ locale }: { locale: Locale }) {
         <p className="eyebrow mb-7 text-center text-[0.68rem] tracking-[0.16em] text-white/55 sm:mb-9">
           {t.eyebrow}
         </p>
-        <div className="flex flex-col gap-8 sm:gap-10 lg:gap-11">
-          {ROWS.map((row) => (
-            <ul
-              key={row.map((c) => c.id).join("-")}
-              className="m-0 grid w-full list-none grid-cols-2 items-center justify-items-center gap-x-5 gap-y-8 p-0 sm:grid-cols-3 sm:gap-x-7 sm:gap-y-9 lg:flex lg:items-center lg:justify-between lg:gap-0 lg:gap-y-0"
+        {/* 2×6 mobile → 3×4 tablet → 4×3 desktop: equal cells, marks centered */}
+        <ul className="m-0 grid w-full list-none grid-cols-2 items-center justify-items-center gap-x-5 gap-y-8 p-0 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-12">
+          {homeClients.map((client) => (
+            <li
+              key={client.id}
+              className="flex h-[5.75rem] w-full items-center justify-center max-sm:h-[3.25rem]"
             >
-              {row.map((client) => (
-                <li key={client.id} className="flex h-[5.75rem] items-center max-sm:h-[3.25rem]">
-                  <ClientMark client={client} locale={locale} />
-                </li>
-              ))}
-            </ul>
+              <ClientMark client={client} locale={locale} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
