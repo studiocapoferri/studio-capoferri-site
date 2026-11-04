@@ -60,24 +60,4 @@ Verifica dopo il deploy della regola:
 curl -sI https://www.studiocapoferri.eu/ | findstr /i "content-security x-frame x-content referrer permissions strict-transport"
 ```
 
-### Cloudflare (redirect 301 legacy)
-
-I soft-redirect HTML su GitHub Pages restano un fallback (`200` + meta refresh + `noindex`). I **301 veri** vanno impostati su Cloudflare (proxy arancione).
-
-1. Rigenera il CSV dal repo (dopo modifiche a `lib/legacy-redirects.json` / `lib/static-path-redirects.json`):
-
-```bash
-npm run generate:cloudflare-redirects
-```
-
-2. File generato: `ops/cloudflare-bulk-redirects.csv` (nessuna riga di header; formato Bulk Redirects Cloudflare).
-3. Dashboard → **Bulk redirects** → Create Bulk Redirect List → importa il CSV → collega la list a una Bulk Redirect Rule sul dominio.
-4. Fonte dati: JSON in `lib/` + alias di `next.config.ts` (es. `/en/contacts/` → `/en/contact/`).
-
-Verifica esempio:
-
-```bash
-curl -sI https://www.studiocapoferri.eu/en/contacts/ | findstr /i "HTTP location"
-```
-
-Atteso: `301` e `Location: …/en/contact/`.
+I redirect 301 legacy sono un passo separato (Redirect Rules / Bulk Redirects) e non dipendono da `_headers`.
