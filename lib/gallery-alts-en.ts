@@ -1,5 +1,9 @@
 /** English gallery/card alts keyed by image src. */
 export const galleryAltEnBySrc: Record<string, string> = {
+  "/assets/residenza-privata-acciaio.webp":
+    "Private steel residence in Pollenza (MC), structural design by Studio Capoferri",
+  "/assets/progetto-superstudio.webp":
+    "Superstudio Village in Milan Bovisa, structural design of the building complex",
   "/assets/residenziale/architettura-bergamo.webp": "Architectural volumes of the private steel residence in Pollenza (MC)",
   "/assets/residenziale/ingegneria-civile-brescia.webp": "Steel structure erection for the residential villa in Pollenza (MC)",
   "/assets/residenziale/ingegneria-urbanistica.webp": "Integrated steel villa design with landscape insertion in Pollenza (MC)",
@@ -103,21 +107,21 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/superstudio-maxi/strutture-acciaio-milano-brescia.webp": "Event hall with steel roof, Superstudio Maxi Famagosta",
   "/assets/superstudio-maxi/architettura-urbanistica-brescia.webp": "Projection hall of the Superstudio Maxi complex in Milan Famagosta",
   "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp":
-    "Red metal silos inside a plant",
+    "Red metal silos inside a plant, structural design for GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp":
-    "White metal silos on a steel frame inside a production plant",
+    "White metal silos on a steel frame inside a production plant, GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp":
-    "Three outdoor metal silos on a concrete plinth",
+    "Three outdoor metal silos on a concrete plinth, structural design by Studio Capoferri for GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp":
-    "Erection of outdoor metal silos with site crew",
+    "Erection of outdoor metal silos with site crew, GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp":
-    "Two outdoor metal silos for industrial storage",
+    "Two outdoor metal silos for industrial storage, GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp":
-    "Outdoor metal silos beside a plant facade",
+    "Outdoor metal silos beside a plant facade, structural design by Studio Capoferri",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp":
-    "Metal silos with access ladder and safety railings",
+    "Metal silos with access ladder and safety railings, GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp":
-    "Three outdoor metal silos, low-angle view",
+    "Three outdoor metal silos, low-angle view, structural design for GP di Piazzon",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp":
-    "Two outdoor metal silos on a concrete base",
+    "Two outdoor metal silos on a concrete base, GP di Piazzon",
 };

@@ -20,7 +20,7 @@ export const ricettiviCaseStudies = {
     externalBrand: {
       href: "https://www.superstudioevents.com/it/",
       imageSrc: "/assets/superstudio_logo.svg",
-      imageAlt: "Logo Superstudio Events",
+      imageAlt: "Logo Superstudio Events, cliente Studio Capoferri",
     },
     body: (
       <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -33,7 +33,7 @@ export const ricettiviCaseStudies = {
         >
           Superstudio Events S.r.l.
         </a>
-       , costituito da sei edifici con differenti tipologie di intervento. I lavori sono iniziati nel <strong>2023</strong>. In due edifici sono stati previsti interventi
+        , costituito da sei edifici con differenti tipologie di intervento. I lavori sono iniziati nel <strong>2023</strong>. In due edifici sono stati previsti interventi
         di consolidamento strutturale di volte e copertura. Un edificio è stato demolito e ricostruito con nuova struttura in acciaio (altezza massima
         circa <strong>16 m</strong>). Un altro è stato ricostruito con struttura mista in cemento armato e muratura portante; un ulteriore fabbricato con muratura
         portante e copertura collaborante; infine un adeguamento sismico su uno stabile esistente.
@@ -98,7 +98,7 @@ export const ricettiviCaseStudies = {
     externalBrand: {
       href: "https://www.superstudioevents.com/it/venues/superstudio-maxi/",
       imageSrc: "/assets/superstudio_logo.svg",
-      imageAlt: "Logo Superstudio Events",
+      imageAlt: "Logo Superstudio Events, cliente Studio Capoferri",
     },
     body: (
       <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">

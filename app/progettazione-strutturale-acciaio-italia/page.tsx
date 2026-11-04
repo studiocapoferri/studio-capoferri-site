@@ -12,7 +12,7 @@ export const metadata: Metadata = buildPageMetadata({
     "impresa generale costruzione strutture acciaio",
     "progettazione strutturale acciaio Italia partner UE",
     "disegni officina acciaio Germania Belgio Olanda Danimarca",
-    "ingegnere strutturista inglese Italia",
+    "ingegnere strutturale consulenze in inglese",
     "steel design Italia Eurocodici",
   ],
 });

@@ -7,6 +7,7 @@ import { localizeHref } from "@/lib/i18n";
 import { linkTitles } from "@/lib/link-seo";
 import { areaCopy } from "@/lib/project-area-copy";
 import { getCaseStudyKey, projectCaseStudies, projectCategories, type ProjectArea } from "@/lib/projects";
+import { galleryAltEnBySrc } from "@/lib/gallery-alts-en";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
@@ -79,7 +80,7 @@ export function LocalizedProjectAreaPage({ area }: { area: ProjectArea }) {
                   title={enTitle}
                   caption={enTitle}
                   image={p.cover}
-                  alt={locale === "en" ? enTitle : p.alt}
+                  alt={locale === "en" ? (galleryAltEnBySrc[p.cover] ?? p.alt) : p.alt}
                 />
               </div>
               );

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "it_IT",
-    url: site.url,
+    url: `${site.url}/`,
     siteName: site.name,
     title: `Studio Capoferri – ${site.tagline}`,
     description: siteDescription,
@@ -76,7 +76,7 @@ const localBusinessJsonLd = {
   legalName: site.legalName,
   description:
     "Structural engineers in Adro, near Brescia, for steel buildings in Northern Italy: calculations, fabrication shop drawings, construction supervision and site safety, including work with EU partners. / Studio di progettazione strutturale ad Adro (Brescia): strutture in acciaio, cemento armato e muratura. Calcolo, disegni d'officina, direzione lavori e sicurezza cantieri in Lombardia, Nord Italia e collaborazioni europee.",
-  url: site.url,
+  url: `${site.url}/`,
   telephone: site.phoneTel,
   email: site.email,
   vatID: `IT${site.piva}`,
@@ -184,7 +184,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "@id": `${site.url}/#website`,
-              url: site.url,
+              url: `${site.url}/`,
               name: site.name,
               publisher: { "@id": organizationId() },
               inLanguage: ["it-IT", "en"],

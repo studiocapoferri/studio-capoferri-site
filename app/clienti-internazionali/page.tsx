@@ -13,7 +13,7 @@ export const metadata: Metadata = buildPageMetadata({
     "studio ingegneria clienti internazionali",
     "strutture acciaio partner esteri Italia",
     "disegni officina fabricator UE",
-    "ingegnere strutturista inglese Italia",
+    "ingegnere strutturale consulenze in inglese",
   ],
 });
 

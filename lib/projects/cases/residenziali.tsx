@@ -134,7 +134,7 @@ export const residenzialiCaseStudies = {
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/fondazioni-su-pali-villa-acciaio.webp",
-        alt: "Getto di calcestruzzo delle fondazioni su pali (villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Getto di calcestruzzo delle fondazioni su pali, villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/murature-cemento-armato-seminterrato.webp",
@@ -142,7 +142,7 @@ export const residenzialiCaseStudies = {
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/cantiere-villa-acciaio-salsomaggiore.webp",
-        alt: "Vista del cantiere con fondazioni in cemento armato (villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Vista del cantiere con fondazioni in cemento armato, villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
@@ -158,7 +158,7 @@ export const residenzialiCaseStudies = {
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-interne-cartongesso-villa-acciaio.webp",
-        alt: "Finiture interne in cartongesso con posa impianti (villa in acciaio a Salsomaggiore Terme (PR)",
+        alt: "Finiture interne in cartongesso con posa impianti, villa in acciaio a Salsomaggiore Terme (PR)",
       },
       {
         src: "/assets/residenziale/villa-acciaio-salsomaggiore/finiture-esterne-terrazzo-villa-acciaio.webp",

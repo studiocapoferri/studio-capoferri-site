@@ -26,9 +26,9 @@ export const industrialiCaseStudies = {
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Allo studio è stata affidata la parte strutturale dell&apos;intervento: il calcolo delle{" "}
-          <strong>fondazioni</strong>, la progettazione delle <strong>opere in cemento armato</strong>: basamenti e murature
-          perimetrali) e delle <strong>strutture in acciaio</strong>: colonne a traliccio e travature reticolari di
-          copertura, fino ai dettagli necessari al montaggio in cantiere.
+          <strong>fondazioni</strong>, la progettazione delle <strong>opere in cemento armato</strong> (basamenti e murature
+          perimetrali) e delle <strong>strutture in acciaio</strong> (colonne a traliccio e travature reticolari di
+          copertura), fino ai dettagli necessari al montaggio in cantiere.
         </p>
         <p className="copy-rhythm text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           L&apos;insieme di cemento armato e carpenteria metallica definisce un impianto leggero e leggibile, adatto a un
@@ -110,7 +110,7 @@ export const industrialiCaseStudies = {
     externalBrand: {
       href: "https://spinellisrl.eu/",
       imageSrc: "/assets/spinelli-logo.png",
-      imageAlt: "Logo Spinelli S.r.l.",
+      imageAlt: "Logo Spinelli S.r.l., cliente Studio Capoferri",
     },
     body: (
       <>
@@ -513,7 +513,7 @@ export const industrialiCaseStudies = {
     externalBrand: {
       href: "https://gpdipiazzon.it/",
       imageSrc: "/assets/clienti/gp-piazzon.webp",
-      imageAlt: "Logo GP di Piazzon",
+      imageAlt: "Logo GP di Piazzon, cliente Studio Capoferri",
       imageClassName: "max-h-28 sm:max-h-32",
     },
     body: (
@@ -567,39 +567,39 @@ export const industrialiCaseStudies = {
     gallery: [
       {
         src: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
-        alt: "Silos metallici rossi in stabilimento",
+        alt: "Silos metallici rossi in stabilimento, progettazione strutturale per GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp",
-        alt: "Batteria di silos bianchi su telaio in acciaio in impianto produttivo",
+        alt: "Batteria di silos bianchi su telaio in acciaio in impianto produttivo, GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp",
-        alt: "Tre silos metallici esterni su basamento in calcestruzzo",
+        alt: "Tre silos metallici esterni su basamento in calcestruzzo, progetto strutturale Studio Capoferri per GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp",
-        alt: "Montaggio di silos metallici esterni con operatori in cantiere",
+        alt: "Montaggio di silos metallici esterni con operatori in cantiere, GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp",
-        alt: "Due silos metallici esterni per stoccaggio industriale",
+        alt: "Due silos metallici esterni per stoccaggio industriale, GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp",
-        alt: "Silos metallici esterni a fianco dello stabilimento",
+        alt: "Silos metallici esterni a fianco dello stabilimento, progettazione strutturale Studio Capoferri",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp",
-        alt: "Silos metallici con scala di accesso e parapetti",
+        alt: "Silos metallici con scala di accesso e parapetti, GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp",
-        alt: "Due silos metallici esterni su basamento in calcestruzzo",
+        alt: "Due silos metallici esterni su basamento in calcestruzzo, GP di Piazzon",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp",
-        alt: "Tre silos metallici esterni, vista dal basso",
+        alt: "Tre silos metallici esterni, vista dal basso, progetto strutturale per GP di Piazzon",
       },
     ],
   },

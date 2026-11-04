@@ -66,6 +66,6 @@ Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file)
 
 ## Optional
 
-- [llms-full.txt](https://www.studiocapoferri.eu/llms-full.txt): Longer entity sheet, FAQ-style facts and citation-ready NAP for agents
+- [llms-full.txt](https://www.studiocapoferri.eu/llms-full.txt): Longer entity sheet, FAQ-style facts, selected collaborations (named clients + case-study links) and citation-ready NAP for agents
 - [Privacy policy](https://www.studiocapoferri.eu/privacy-policy/): GDPR / cookie notice — EN: https://www.studiocapoferri.eu/en/privacy-policy/
 - [Sitemap](https://www.studiocapoferri.eu/sitemap.xml): Full URL inventory for crawlers

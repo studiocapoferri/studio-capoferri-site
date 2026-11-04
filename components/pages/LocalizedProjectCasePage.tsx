@@ -17,6 +17,12 @@ import { getEnglishCaseMetadata } from "@/lib/seo";
 import { layoutContentMaxClass, layoutGutterXClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
+const brandAltEnBySrc: Record<string, string> = {
+  "/assets/spinelli-logo.png": "Spinelli S.r.l. logo, Studio Capoferri client",
+  "/assets/clienti/gp-piazzon.webp": "GP di Piazzon logo, Studio Capoferri client",
+  "/assets/superstudio_logo.svg": "Superstudio Events logo, Studio Capoferri client",
+};
+
 function ExternalBrandMark({
   brand,
   locale,
@@ -25,6 +31,7 @@ function ExternalBrandMark({
   locale: Locale;
 }) {
   const label = locale === "en" ? "Client" : "Cliente";
+  const alt = locale === "en" ? (brandAltEnBySrc[brand.imageSrc] ?? brand.imageAlt) : brand.imageAlt;
   return (
     <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 sm:mt-5">
       <span className="text-[0.72rem] font-medium uppercase tracking-[0.08em] text-[#888]">{label}</span>
@@ -32,12 +39,12 @@ function ExternalBrandMark({
         href={brand.href}
         target="_blank"
         rel="noopener noreferrer"
-        title={linkTitles.external(brand.imageAlt, locale)}
+        title={linkTitles.external(alt, locale)}
         className="inline-flex opacity-90 transition-opacity hover:opacity-100"
       >
         <Image
           src={brand.imageSrc}
-          alt={brand.imageAlt}
+          alt={alt}
           width={280}
           height={80}
           className={`h-auto w-auto brightness-0 ${brand.imageClassName ?? "max-h-9 sm:max-h-10"}`}

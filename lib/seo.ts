@@ -96,7 +96,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
     ],
   },
   "chi-siamo": {
-    title: "About Studio Capoferri — structural engineers in Adro",
+    title: "Structural engineers in Adro near Brescia",
     description:
       "Studio Capoferri works with general contractors, architects and engineering offices from Adro near Brescia: steel buildings, shop drawings and site support across Northern Italy.",
     path: "/chi-siamo",
