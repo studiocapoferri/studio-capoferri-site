@@ -154,7 +154,7 @@ export const zoneFooter = (
       progettazione strutturale dedicata
     </Link>
     . Accettiamo anche commesse all&apos;estero:{" "}
-    <Link href="/contatti#form-contatti" title="Contattaci - Studio Capoferri" className="link-accent">
+    <Link href="/contatti/#form-contatti" title="Contattaci - Studio Capoferri" className="link-accent">
       contattaci
     </Link>
     .

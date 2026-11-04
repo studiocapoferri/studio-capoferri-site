@@ -31,6 +31,12 @@ function splitHash(path: string) {
   };
 }
 
+/** Keep trailing slash before hashes so /contatti#x does not 301 via /contatti and drop the fragment. */
+function withTrailingSlash(pathname: string): string {
+  if (!pathname || pathname === "/") return pathname || "/";
+  return pathname.endsWith("/") ? pathname : `${pathname}/`;
+}
+
 export function localizeHref(href: string, locale: Locale): string {
   if (!href || href.startsWith("#") || href.startsWith("http://") || href.startsWith("https://") || href.startsWith("//")) {
     return href;
@@ -39,12 +45,13 @@ export function localizeHref(href: string, locale: Locale): string {
   const { pathname, hash } = splitHash(href);
   const barePath = pathname.startsWith("/") ? pathname : `/${pathname}`;
   const itPath = toItalianPath(barePath);
-  return `${localizedPathname(itPath, locale)}${hash}`;
+  return `${withTrailingSlash(localizedPathname(itPath, locale))}${hash}`;
 }
 
 export function switchLocalePath(pathname: string, locale: Locale, hash = ""): string {
   const itPath = toItalianPath(pathname || "/");
-  return `${localizedPathname(itPath, locale)}${hash}`;
+  const normalizedHash = hash && !hash.startsWith("#") ? `#${hash}` : hash;
+  return `${withTrailingSlash(localizedPathname(itPath, locale))}${normalizedHash}`;
 }
 
 export const chromeCopy = {
