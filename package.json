@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "sync:static": "node scripts/sync-static.cjs",
+    "generate:cloudflare-redirects": "node scripts/generate-cloudflare-redirects.cjs",
     "optimize:images": "node scripts/optimize-images.cjs",
     "predev": "node scripts/sync-static.cjs",
     "prebuild": "node scripts/optimize-images.cjs && node scripts/sync-static.cjs",
