@@ -75,6 +75,7 @@ for (const [from, to] of Object.entries(legacyRedirects)) {
 <head>
 <meta charset="utf-8">
 <title>Pagina spostata - Studio Capoferri</title>
+<meta name="robots" content="noindex, follow">
 <meta http-equiv="refresh" content="0; url=${target}">
 <link rel="canonical" href="${target}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
