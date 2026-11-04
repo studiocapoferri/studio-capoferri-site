@@ -30,6 +30,9 @@ export function LocalizedAboutPageContent() {
   const title = isEn ? "Structural engineers in Northern Italy" : chiSiamoPage.title;
   const paragraphs = isEn ? chiSiamoEnParagraphs : chiSiamoPage.paragraphs;
   const peopleTitle = isEn ? "Engineers" : "Professionisti";
+  const peopleIntro = isEn
+    ? "The same people who write the calculation stay with fabrication drawings and the site — one team from model to erection."
+    : "Le stesse persone del calcolo restano su disegni d'officina e cantiere: un solo team dal modello al montaggio.";
   const linkedinLabel = isEn ? "LinkedIn profile" : "Profilo LinkedIn";
   const sectionHeading = ui.longFormSectionHeading;
   const aboutLd = aboutPageJsonLd(locale);
@@ -55,24 +58,27 @@ export function LocalizedAboutPageContent() {
               <h2 id="professionisti-heading" className={sectionHeading}>
                 {peopleTitle}
               </h2>
-              <ul className="m-0 flex list-none flex-col gap-12 p-0 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-x-10 sm:gap-y-14">
+              <p className={`mb-8 max-w-[40rem] ${ui.bodyMuted}`}>{peopleIntro}</p>
+              <ul className="m-0 flex list-none flex-col gap-10 border-t border-[#1c1e21]/12 p-0 pt-8 sm:gap-12 sm:pt-10">
                 {professionisti.map((person) => {
                   const bio = isEn ? person.bioEn : person.bioIt;
                   return (
-                    <li key={person.id} className="reveal-block w-full min-w-0 sm:w-[21rem] sm:shrink-0">
-                      <figure className="m-0 w-full max-w-[21rem]">
-                        <div className={`group ${ui.contentImage} relative aspect-[3/4] w-full bg-[#e4e6eb]`}>
+                    <li key={person.id} className="reveal-block">
+                      <figure className="m-0 grid gap-5 sm:grid-cols-[minmax(0,14rem)_minmax(0,1fr)] sm:items-start sm:gap-8 md:grid-cols-[minmax(0,15.5rem)_minmax(0,1fr)] md:gap-10">
+                        <div
+                          className={`group ${ui.contentImage} relative aspect-[3/4] w-full max-w-[16rem] bg-[#e4e6eb] sm:max-w-none`}
+                        >
                           <Image
                             src={person.src}
                             alt={isEn ? person.altEn : person.altIt}
                             fill
                             className="portrait-mann object-cover object-top"
-                            sizes="(min-width:640px) 21rem, 88vw"
+                            sizes="(min-width:640px) 15.5rem, 88vw"
                             unoptimized={person.src.endsWith(".svg")}
                           />
                           <span aria-hidden className="portrait-mann-wash" />
                         </div>
-                        <figcaption className="mt-4 w-full">
+                        <figcaption className="min-w-0 border-l-2 border-[#b01010]/55 pl-4 sm:pl-5">
                           <p className="font-display text-xl font-medium tracking-tight text-[#1c1e21] sm:text-2xl">
                             {person.name}
                           </p>
