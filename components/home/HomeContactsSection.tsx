@@ -94,6 +94,7 @@ export function HomeContactsSection({ locale }: { locale: Locale }) {
                   fill
                   className="object-cover object-center"
                   sizes="(min-width:768px) 50vw, 100vw"
+                  loading="lazy"
                   unoptimized
                 />
               </div>

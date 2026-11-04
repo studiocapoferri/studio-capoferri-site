@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 
 /**
  * IBM Plex Sans — corpo e UI.
- * 400 corpo, 500 titoli UI / Medium, 600 Semibold.
+ * preload: false so the hero image (true LCP) wins the network; display:swap keeps text visible.
  */
 export const fontSans = localFont({
   src: [
@@ -13,11 +13,12 @@ export const fontSans = localFont({
   variable: "--font-body",
   display: "swap",
   adjustFontFallback: "Arial",
+  preload: false,
 });
 
 /**
  * Newsreader — titoli display (H1/H2, nomi, cifre).
- * Serif editoriale già in repo; non requesta Google Fonts a runtime.
+ * Same preload policy as body: avoid five competing font preloads on first paint.
  */
 export const fontDisplay = localFont({
   src: [
@@ -27,4 +28,5 @@ export const fontDisplay = localFont({
   variable: "--font-display",
   display: "swap",
   adjustFontFallback: "Times New Roman",
+  preload: false,
 });
