@@ -2,14 +2,27 @@
 
 import Image from "next/image";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
-import { HomeCertificationsSection } from "@/components/home/HomeCertificationsSection";
 import { useLocale } from "@/components/LocaleProvider";
-import { chiSiamoPage } from "@/lib/content";
 import { chiSiamoEnParagraphs } from "@/lib/about-copy";
+import { certifications, chiSiamoPage } from "@/lib/content";
 import { aboutPageJsonLd } from "@/lib/jsonld";
+import { homeCopy } from "@/lib/home-copy";
 import { professionisti } from "@/lib/professionisti";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
+
+const aboutCredentials = {
+  it: {
+    title: "Abilitazioni dello studio",
+    intro:
+      "Oltre al calcolo strutturale, nel team ci sono le abilitazioni richieste per sicurezza di cantiere, prevenzione incendi e certificazione energetica — e gli strumenti di progettazione che usiamo ogni giorno.",
+  },
+  en: {
+    title: "Practice qualifications",
+    intro:
+      "Beyond structural calculation, the team holds the registrations needed for site safety, fire prevention and energy certification — plus the design tools we use every day.",
+  },
+} as const;
 
 export function LocalizedAboutPageContent() {
   const locale = useLocale();
@@ -20,6 +33,10 @@ export function LocalizedAboutPageContent() {
   const linkedinLabel = isEn ? "LinkedIn profile" : "Profilo LinkedIn";
   const sectionHeading = ui.longFormSectionHeading;
   const aboutLd = aboutPageJsonLd(locale);
+  const cred = aboutCredentials[locale];
+  const credItems = isEn
+    ? homeCopy.en.certifications
+    : certifications.map((item) => [item.title, item.text] as [string, string]);
 
   return (
     <main id="main-content" className="section-shell">
@@ -83,11 +100,30 @@ export function LocalizedAboutPageContent() {
                 })}
               </ul>
             </section>
+
+            <section
+              id="abilitazioni"
+              className={scrollAnchorClass}
+              aria-labelledby="abilitazioni-heading"
+            >
+              <h2 id="abilitazioni-heading" className={sectionHeading}>
+                {cred.title}
+              </h2>
+              <p className={`mb-6 ${ui.bodyMuted}`}>{cred.intro}</p>
+              <ul className="m-0 grid list-none grid-cols-1 gap-5 p-0 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
+                {credItems.map(([itemTitle, text]) => (
+                  <li key={itemTitle} className="border-l-2 border-[#b01010]/55 pl-4">
+                    <p className="font-display m-0 text-base font-medium tracking-tight text-[#1c1e21] sm:text-lg">
+                      {itemTitle}
+                    </p>
+                    <p className="mt-1 text-[0.88rem] leading-snug text-[#555] sm:text-[0.95rem]">{text}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
           </article>
         </div>
       </div>
-
-      <HomeCertificationsSection locale={locale} />
 
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
