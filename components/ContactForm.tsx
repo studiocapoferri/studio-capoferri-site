@@ -36,6 +36,8 @@ export function ContactForm({
   const [city, setCity] = useState(defaultCity);
   const [message, setMessage] = useState("");
   const [privacy, setPrivacy] = useState(false);
+  /** Formspree honeypot — leave empty; bots that fill it are dropped. */
+  const [gotcha, setGotcha] = useState("");
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
@@ -61,6 +63,11 @@ export function ContactForm({
       ev.preventDefault();
       setTouched({ name: true, email: true, message: true, privacy: true });
       if (!valid) return;
+      // Honeypot tripped: fake success, do not hit Formspree.
+      if (gotcha.trim()) {
+        setStatus("success");
+        return;
+      }
 
       setStatus("submitting");
       try {
@@ -76,6 +83,7 @@ export function ContactForm({
             message,
             locale,
             language: locale === "en" ? "English" : "Italian",
+            _gotcha: gotcha,
           }),
         });
         if (res.ok) {
@@ -92,6 +100,7 @@ export function ContactForm({
           setCity(defaultCity);
           setMessage("");
           setPrivacy(false);
+          setGotcha("");
           setTouched({});
         } else {
           setStatus("error");
@@ -100,7 +109,7 @@ export function ContactForm({
         setStatus("error");
       }
     },
-    [city, copy.noSubject, defaultCity, defaultSubject, email, formId, locale, message, name, subject, valid]
+    [city, copy.noSubject, defaultCity, defaultSubject, email, formId, gotcha, locale, message, name, subject, valid]
   );
 
   if (status === "success") {
@@ -113,6 +122,18 @@ export function ContactForm({
 
   return (
     <form id={formId} onSubmit={onSubmit} className="grid w-full gap-3 sm:gap-4 md:grid-cols-2" noValidate>
+      <div className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+        <label htmlFor={formId ? `${formId}-gotcha` : "contact-gotcha"}>Website</label>
+        <input
+          id={formId ? `${formId}-gotcha` : "contact-gotcha"}
+          name="_gotcha"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={gotcha}
+          onChange={(e) => setGotcha(e.target.value)}
+        />
+      </div>
       <div>
         <label htmlFor="name" className="mb-1 block text-sm font-medium text-[#333]">
           {copy.name} <span className="text-red-700">*</span>

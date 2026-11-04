@@ -41,6 +41,8 @@ export function CarpenterieRfqForm() {
   const [scopes, setScopes] = useState<string[]>([]);
   const [message, setMessage] = useState("");
   const [privacy, setPrivacy] = useState(false);
+  /** Formspree honeypot — leave empty; bots that fill it are dropped. */
+  const [gotcha, setGotcha] = useState("");
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   /** Always true after success so blocked auto-downloads still have a clickable fallback. */
@@ -92,6 +94,10 @@ export function CarpenterieRfqForm() {
       ev.preventDefault();
       setTouched({ name: true, email: true, message: true, privacy: true });
       if (!valid) return;
+      if (gotcha.trim()) {
+        setStatus("success");
+        return;
+      }
 
       setStatus("submitting");
       try {
@@ -116,6 +122,7 @@ export function CarpenterieRfqForm() {
             locale,
             language: locale === "en" ? "English" : "Italian",
             routing: "Chiara Rebessi — richieste carpenterie / elaborati officina",
+            _gotcha: gotcha,
             ...(carpenterieDownloadHref
               ? { samples_pack_url: `${site.url}${carpenterieDownloadHref}` }
               : {}),
@@ -133,6 +140,7 @@ export function CarpenterieRfqForm() {
             setDownloadReady(true);
           }
           setStatus("success");
+          setGotcha("");
         } else {
           setStatus("error");
         }
@@ -144,6 +152,7 @@ export function CarpenterieRfqForm() {
       company,
       copy.successDownload,
       email,
+      gotcha,
       locale,
       location,
       message,
@@ -186,6 +195,18 @@ export function CarpenterieRfqForm() {
       className="grid w-full gap-3 sm:gap-4 md:grid-cols-2"
       noValidate
     >
+      <div className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+        <label htmlFor="rfq-gotcha">Website</label>
+        <input
+          id="rfq-gotcha"
+          name="_gotcha"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={gotcha}
+          onChange={(e) => setGotcha(e.target.value)}
+        />
+      </div>
       <div>
         <label htmlFor="rfq-company" className="mb-1 block text-sm font-medium text-[#333]">
           {copy.company}
