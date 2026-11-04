@@ -19,7 +19,7 @@ import { ui } from "@/lib/ui";
 
 const brandAltEnBySrc: Record<string, string> = {
   "/assets/spinelli-logo.png": "Spinelli S.r.l. logo, Studio Capoferri client",
-  "/assets/clienti/gp-piazzon.webp": "GP di Piazzon logo, Studio Capoferri client",
+  "/assets/clienti/gp-piazzon.webp": "G.P. DI PIAZZON S.R.L. logo, Studio Capoferri client",
   "/assets/superstudio_logo.svg": "Superstudio Events logo, Studio Capoferri client",
 };
 

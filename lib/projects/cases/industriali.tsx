@@ -492,14 +492,14 @@ export const industrialiCaseStudies = {
   "industriali/silos-metallici": {
     metaTitle: "Silos metallici",
     metaDescription:
-      "Silos metallici progettati per GP di Piazzon: geometria, materiali, pressioni di stoccaggio, vento e sisma. Studio Capoferri.",
+      "Silos metallici progettati per G.P. DI PIAZZON S.R.L.: geometria, materiali, pressioni di stoccaggio, vento e sisma. Studio Capoferri.",
     heading: "Silos metallici",
     en: {
       heading: "Metal silos",
       metaDescription:
-        "Metal silos designed for GP di Piazzon: geometry, materials, storage pressures, wind and seismic actions. Studio Capoferri.",
+        "Metal silos designed for G.P. DI PIAZZON S.R.L.: geometry, materials, storage pressures, wind and seismic actions. Studio Capoferri.",
       body: [
-        "The images on this page show metal silos whose structural design we handled for GP di Piazzon: indoor and outdoor units for different plants and stored materials, with different sizes, supports and operating conditions.",
+        "The images on this page show metal silos whose structural design we handled for G.P. DI PIAZZON S.R.L.: indoor and outdoor units for different plants and stored materials, with different sizes, supports and operating conditions.",
         "Every stored product needs its own silo. Height, diameter and capacity follow the process and the space available on site. Steel and aluminium give different answers; the content (from plastic granules to flour) sets the load cases.",
         "Our structural design treats geometry, materials and use as one problem. The calculation goes beyond product weight: wall pressures, filling and emptying cycles, wind and seismic actions, and the stability of supports and stiffeners. Thicknesses, connections, frames and anchors are detailed as one system, with fabrication and erection in mind.",
       ],
@@ -513,7 +513,7 @@ export const industrialiCaseStudies = {
     externalBrand: {
       href: "https://gpdipiazzon.it/",
       imageSrc: "/assets/clienti/gp-piazzon.webp",
-      imageAlt: "Logo GP di Piazzon, cliente Studio Capoferri",
+      imageAlt: "Logo G.P. DI PIAZZON S.R.L., cliente Studio Capoferri",
       imageClassName: "max-h-28 sm:max-h-32",
     },
     body: (
@@ -527,7 +527,7 @@ export const industrialiCaseStudies = {
             rel="noopener noreferrer"
             className="link-accent"
           >
-            GP di Piazzon
+            G.P. DI PIAZZON S.R.L.
           </a>
           : unità interne ed esterne per impianti e materiali diversi, con geometrie, sostegni e condizioni di esercizio
           differenti.
@@ -567,23 +567,23 @@ export const industrialiCaseStudies = {
     gallery: [
       {
         src: "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp",
-        alt: "Silos metallici rossi in stabilimento, progettazione strutturale per GP di Piazzon",
+        alt: "Silos metallici rossi in stabilimento, progettazione strutturale per G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp",
-        alt: "Batteria di silos bianchi su telaio in acciaio in impianto produttivo, GP di Piazzon",
+        alt: "Batteria di silos bianchi su telaio in acciaio in impianto produttivo, G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp",
-        alt: "Tre silos metallici esterni su basamento in calcestruzzo, progetto strutturale Studio Capoferri per GP di Piazzon",
+        alt: "Tre silos metallici esterni su basamento in calcestruzzo, progetto strutturale Studio Capoferri per G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp",
-        alt: "Montaggio di silos metallici esterni con operatori in cantiere, GP di Piazzon",
+        alt: "Montaggio di silos metallici esterni con operatori in cantiere, G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp",
-        alt: "Due silos metallici esterni per stoccaggio industriale, GP di Piazzon",
+        alt: "Due silos metallici esterni per stoccaggio industriale, G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp",
@@ -591,15 +591,15 @@ export const industrialiCaseStudies = {
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp",
-        alt: "Silos metallici con scala di accesso e parapetti, GP di Piazzon",
+        alt: "Silos metallici con scala di accesso e parapetti, G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp",
-        alt: "Due silos metallici esterni su basamento in calcestruzzo, GP di Piazzon",
+        alt: "Due silos metallici esterni su basamento in calcestruzzo, G.P. DI PIAZZON S.R.L.",
       },
       {
         src: "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp",
-        alt: "Tre silos metallici esterni, vista dal basso, progetto strutturale per GP di Piazzon",
+        alt: "Tre silos metallici esterni, vista dal basso, progetto strutturale per G.P. DI PIAZZON S.R.L.",
       },
     ],
   },

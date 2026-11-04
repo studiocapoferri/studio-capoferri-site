@@ -107,21 +107,21 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/superstudio-maxi/strutture-acciaio-milano-brescia.webp": "Event hall with steel roof, Superstudio Maxi Famagosta",
   "/assets/superstudio-maxi/architettura-urbanistica-brescia.webp": "Projection hall of the Superstudio Maxi complex in Milan Famagosta",
   "/assets/industriale/silos-metallici/silos-rossi-interni-stabilimento.webp":
-    "Red metal silos inside a plant, structural design for GP di Piazzon",
+    "Red metal silos inside a plant, structural design for G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-dettaglio-campo.webp":
-    "White metal silos on a steel frame inside a production plant, GP di Piazzon",
+    "White metal silos on a steel frame inside a production plant, G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-esterni-tre-unita.webp":
-    "Three outdoor metal silos on a concrete plinth, structural design by Studio Capoferri for GP di Piazzon",
+    "Three outdoor metal silos on a concrete plinth, structural design by Studio Capoferri for G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-esterni-montaggio-operai.webp":
-    "Erection of outdoor metal silos with site crew, GP di Piazzon",
+    "Erection of outdoor metal silos with site crew, G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita-tramonto.webp":
-    "Two outdoor metal silos for industrial storage, GP di Piazzon",
+    "Two outdoor metal silos for industrial storage, G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-esterni-tre-facciata.webp":
     "Outdoor metal silos beside a plant facade, structural design by Studio Capoferri",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita-scala.webp":
-    "Metal silos with access ladder and safety railings, GP di Piazzon",
+    "Metal silos with access ladder and safety railings, G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-esterni-tre-cielo-blu.webp":
-    "Three outdoor metal silos, low-angle view, structural design for GP di Piazzon",
+    "Three outdoor metal silos, low-angle view, structural design for G.P. DI PIAZZON S.R.L.",
   "/assets/industriale/silos-metallici/silos-esterni-due-unita.webp":
-    "Two outdoor metal silos on a concrete base, GP di Piazzon",
+    "Two outdoor metal silos on a concrete base, G.P. DI PIAZZON S.R.L.",
 };
