@@ -104,8 +104,8 @@ export const homeClients: ClientLogo[] = [
     href: "https://muzzolonindustries.com/",
     altIt: "Logo Muzzolon Industries, cliente Studio Capoferri",
     altEn: "Muzzolon Industries logo, Studio Capoferri client",
-    width: 800,
-    height: 215,
+    width: 1200,
+    height: 1168,
   },
   {
     id: "tecnosida",

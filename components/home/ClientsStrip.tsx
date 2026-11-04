@@ -21,7 +21,7 @@ const sizeClass: Record<string, string> = {
   baroni: "h-16 max-sm:h-8",
   steelera: "h-14 max-sm:h-6",
   spinelli: "h-12 max-sm:h-5",
-  muzzolon: "h-14 max-sm:h-6",
+  muzzolon: "h-[4.25rem] max-sm:h-9",
   tecnosida: "h-14 max-sm:h-6",
   arcameccanica: "h-14 max-sm:h-6",
   cibin: "h-16 max-sm:h-8",
