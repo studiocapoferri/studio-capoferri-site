@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Clienti internazionali",
   description:
-    "Studio Capoferri per general contractor, imprese generali e partner UE: strutture in acciaio, disegni d'officina e supporto in cantiere in Nord Italia, con confronti tecnici in inglese.",
+    "General contractor e partner UE: acciaio, disegni d'officina e cantiere in Nord Italia. Confronti tecnici in inglese.",
   path: "/clienti-internazionali",
   keywords: [
     "general contractor Italia",

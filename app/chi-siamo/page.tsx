@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Lo studio",
   description:
-    "Studio di progettazione strutturale ad Adro (BS) per imprese generali, general contractor e studi tecnici: strutture in acciaio, disegni d'officina, direzione lavori.",
+    "Studio strutturale ad Adro (BS) per imprese generali e studi tecnici: acciaio, disegni d'officina, direzione lavori.",
   path: "/chi-siamo",
 });
 

@@ -9,7 +9,7 @@ export const industrialiCaseStudies = {
     en: {
       heading: "Waste collection centre - Chiuduno (BG)",
       metaDescription:
-        "Urban separate-waste collection centre in Chiuduno (BG): Studio Capoferri handled structural design of foundations, reinforced-concrete works and steel structures.",
+        "Waste collection centre in Chiuduno (BG): structural design of foundations, RC works and steel frame by Studio Capoferri.",
       body: [
         "For the Municipality of Chiuduno (BG), Studio Capoferri handled the structural design of the new urban separate-waste collection centre (recycling island), built under a public contract with Servizi Comunali SpA as client.",
         "The studio was responsible for the structural scope of the works: foundation design, reinforced-concrete elements (bases and perimeter walls) and the steel frame: lattice columns and roof trusses, through to the detailing needed for site erection.",
@@ -90,7 +90,7 @@ export const industrialiCaseStudies = {
   "industriali/lamiere-da-getto-spinelli": {
     metaTitle: "Lamiere da getto in acciaio - Adro (BS)",
     metaDescription:
-      "Revisione e progettazione di lamiere da getto in acciaio per Spinelli S.r.l. a Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata. Studio Capoferri.",
+      "Lamiere da getto per Spinelli S.r.l. ad Adro (BS): analisi strutturale, prove sperimentali e tabelle di portata.",
     heading: "Lamiere da getto in acciaio - Adro (BS)",
     en: {
       heading: "Steel decking for concrete slabs - Adro (BS)",
@@ -187,7 +187,7 @@ export const industrialiCaseStudies = {
       },
       {
         src: "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.webp",
-        alt: "Getto di calcestruzzo sui campioni di prova nello stabilimento Spinelli a Adro (BS)",
+        alt: "Getto di calcestruzzo sui campioni di prova nello stabilimento Spinelli ad Adro (BS)",
       },
     ],
   },
@@ -352,7 +352,7 @@ export const industrialiCaseStudies = {
     en: {
       heading: "Livestock complex - Castegnato (BS)",
       metaDescription:
-        "Structural design for a livestock complex extension in Castegnato (BS) with large-span steel trusses, fast erection and precise integration with the existing buildings.",
+        "Livestock complex extension in Castegnato (BS): large-span steel trusses, fast erection and integration with existing buildings.",
       body: [
         "Working on existing structures requires a balance between structural constraints, logistics and continuity of operations. In the extension of this livestock complex in Castegnato (BS), the objective was to increase the covered area while ensuring maximum internal flexibility.",
         "The solution focuses on the development of new steel trusses with a clear span of almost 16 metres. The absence of intermediate supports makes it possible to optimise the space for the operational needs of the sector.",
@@ -413,12 +413,12 @@ export const industrialiCaseStudies = {
   "industriali/centro-direzionale-provaglio-diseo": {
     metaTitle: "Centro direzionale - Provaglio d'Iseo (BS)",
     metaDescription:
-      "Riqualificazione di edificio industriale a Provaglio d'Iseo (BS) come sede principale di un'importante azienda elettronica quotata in borsa, soppalco metallico oltre 5.000 mq.",
+      "Sede direzionale a Provaglio d'Iseo (BS): riqualificazione industriale con soppalco metallico oltre 5.000 mq.",
     heading: "Centro direzionale - Provaglio d'Iseo (BS)",
     en: {
       heading: "Headquarters - Provaglio d'Iseo (BS)",
       metaDescription:
-        "Redevelopment of an industrial building in Provaglio d'Iseo (BS) as the main headquarters of a major listed electronics company: steel mezzanine of more than 5,000 square metres.",
+        "Headquarters in Provaglio d'Iseo (BS): industrial redevelopment with a steel mezzanine of more than 5,000 m².",
       body: [
         "The project concerns the redevelopment of an industrial building in Provaglio d'Iseo (BS), converted into the main headquarters of a major listed electronics company, with offices, laboratories and workspaces.",
         "It started from an approved base scheme developed by the lead designer. Studio Capoferri focused its contribution on full optimisation, adapting the design solutions to the real construction dynamics of the site.",

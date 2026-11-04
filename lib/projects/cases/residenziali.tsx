@@ -81,7 +81,7 @@ export const residenzialiCaseStudies = {
     en: {
       heading: "Steel villa - Salsomaggiore Terme (PR)",
       metaDescription:
-        "Steel villa in Salsomaggiore Terme (PR) with piled foundations, mixed reinforced-concrete and steel structure, dry construction systems and photovoltaic-ready roof.",
+        "Steel villa in Salsomaggiore Terme (PR): piled foundations, mixed RC/steel frame, dry systems and PV-ready roof.",
       body: [
         "Studio Capoferri handled the structural side of a steel residential building in Salsomaggiore Terme (PR), from the design stage through construction.",
         "Poor ground conditions required a dedicated solution from the very beginning: a system of piled foundations defined from the early stages in line with the mixed reinforced-concrete and steel structure planned above ground.",

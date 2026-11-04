@@ -91,18 +91,18 @@ export const homeCopy = {
       [
         "Structural design",
         "Steel structures, reinforced concrete and masonry. FEM analysis, BIM modelling, seismic checks and fire design.",
-        "/servizi#progettazione-strutturale",
+        "/servizi/#progettazione-strutturale",
       ],
       [
         "Construction supervision",
         "Technical supervision, site support, structural assessments and technical reports.",
-        "/servizi#direzione-lavori",
+        "/servizi/#direzione-lavori",
       ],
-      ["Site safety", "Safety coordination (CSP/CSE), safety plans and risk management.", "/servizi#sicurezza-cantieri"],
+      ["Site safety", "Safety coordination (CSP/CSE), safety plans and risk management.", "/servizi/#sicurezza-cantieri"],
       [
         "Planning and architecture",
         "Architectural design, implementation plans, planning amendments and compliance analysis.",
-        "/servizi#urbanistica-architettura",
+        "/servizi/#urbanistica-architettura",
       ],
     ] as [string, string, string][],
     allServices: "All services",

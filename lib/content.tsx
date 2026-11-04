@@ -61,22 +61,22 @@ export const homeServiceCards = [
     title: "Progettazione strutturale",
     description:
       "Strutture in acciaio, cemento armato e muratura. Analisi FEM, modellazione BIM, verifiche sismiche e progettazione antincendio.",
-    href: "/servizi#progettazione-strutturale",
+    href: "/servizi/#progettazione-strutturale",
   },
   {
     title: "Direzione lavori",
     description: "Supervisione tecnica, assistenza in cantiere, verifiche strutturali e relazioni tecniche.",
-    href: "/servizi#direzione-lavori",
+    href: "/servizi/#direzione-lavori",
   },
   {
     title: "Sicurezza cantieri",
     description: "Coordinamento sicurezza (CSP/CSE), piani di sicurezza e gestione rischi.",
-    href: "/servizi#sicurezza-cantieri",
+    href: "/servizi/#sicurezza-cantieri",
   },
   {
     title: "Urbanistica e architettura",
     description: "Progettazione architettonica, piani attuativi, varianti urbanistiche e analisi di conformità.",
-    href: "/servizi#urbanistica-architettura",
+    href: "/servizi/#urbanistica-architettura",
   },
 ] as const;
 

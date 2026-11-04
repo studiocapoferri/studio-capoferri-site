@@ -41,7 +41,7 @@ export const steelLandingBrescia: SteelLandingConfig = {
   city: "Brescia",
   metaTitle: "Progettazione strutture in acciaio a Brescia e in Lombardia",
   metaDescription:
-    "Studio di ingegneria specializzato in progettazione di strutture in acciaio a Brescia e in Lombardia: ville, capannoni, sopraelevazioni, carpenteria metallica. Calcolo strutturale NTC 2018, disegni d'officina, direzione lavori. 40+ anni di esperienza ad Adro (BS).",
+    "Strutture in acciaio a Brescia e Lombardia: ville, capannoni, sopraelevazioni. NTC 2018, disegni d'officina e direzione lavori. Sede ad Adro (BS).",
   keywords: [
     "progettazione strutture in acciaio Brescia",
     "strutture in acciaio Lombardia",
@@ -106,7 +106,7 @@ export const steelLandingBergamo: SteelLandingConfig = {
   city: "Bergamo",
   metaTitle: "Progettazione strutture in acciaio a Bergamo e in Lombardia",
   metaDescription:
-    "Progettazione strutture in acciaio a Bergamo e provincia: ville, capannoni, sopraelevazioni e carpenteria metallica. Calcolo strutturale NTC 2018, disegni d'officina, direzione lavori. Studio Capoferri, 40+ anni di esperienza in Lombardia.",
+    "Strutture in acciaio a Bergamo e provincia: ville, capannoni, sopraelevazioni. NTC 2018, disegni d'officina, direzione lavori. Studio Capoferri, oltre 40 anni.",
   keywords: [
     "progettazione strutture in acciaio Bergamo",
     "strutture in acciaio Bergamo",
@@ -171,7 +171,7 @@ export const steelLandingMilano: SteelLandingConfig = {
   city: "Milano",
   metaTitle: "Progettazione strutture in acciaio a Milano e in Lombardia",
   metaDescription:
-    "Progettazione strutture in acciaio a Milano e hinterland: ville, capannoni, sopraelevazioni, spazi per eventi e carpenteria metallica. Calcolo strutturale NTC 2018, disegni d'officina, direzione lavori. Studio Capoferri, 40+ anni di esperienza.",
+    "Strutture in acciaio a Milano e hinterland: ville, capannoni, spazi eventi. NTC 2018, disegni d'officina, direzione lavori. Studio Capoferri, oltre 40 anni.",
   keywords: [
     "progettazione strutture in acciaio Milano",
     "strutture in acciaio Milano",

@@ -85,7 +85,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "": {
     title: "Structural engineers in Northern Italy",
     description:
-      "Structural engineers in Adro, near Brescia, for steel buildings in Northern Italy: calculations, fabrication shop drawings and site support. Project discussions in English.",
+      "Structural engineers in Adro near Brescia for steel buildings in Northern Italy: calculations, shop drawings and site support. Discussions in English.",
     path: "/",
     keywords: [
       "structural engineer Northern Italy",
@@ -98,7 +98,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "chi-siamo": {
     title: "Structural engineers in Adro near Brescia",
     description:
-      "Studio Capoferri works with general contractors, architects and engineering offices from Adro near Brescia: steel buildings, shop drawings and site support across Northern Italy.",
+      "Structural engineers in Adro near Brescia for GCs and design offices: steel buildings, shop drawings and site support across Northern Italy.",
     path: "/chi-siamo",
     keywords: [
       "structural engineering practice Italy",
@@ -110,7 +110,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   servizi: {
     title: "Structural engineers for steel design and shop drawings",
     description:
-      "Structural engineers in Northern Italy for general contractors: steel design to NTC and Eurocodes, fabrication shop drawings, construction supervision and site safety.",
+      "Structural engineers in Northern Italy for GCs: steel design to NTC and Eurocodes, shop drawings, construction supervision and site safety.",
     path: "/servizi",
     keywords: [
       "structural engineer Italy",
@@ -147,7 +147,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "clienti-internazionali": {
     title: "Structural engineers for projects in Italy",
     description:
-      "Structural engineers in Northern Italy for general contractors and EU partners building in Italy: steel structures, fabrication shop drawings, Eurocodes, NTC and site support.",
+      "Structural engineers in Northern Italy for GCs and EU partners: steel structures, shop drawings, Eurocodes/NTC and site support.",
     path: "/clienti-internazionali",
     keywords: [
       "general contractors Italy",
@@ -161,7 +161,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutturale-acciaio-italia": {
     title: "Structural engineers in Italy for fabricators",
     description:
-      "Structural engineers in Northern Italy for general contractors and fabricators in Germany, the Netherlands, Belgium and Denmark building in Italy: steel design, fabrication shop drawings, Eurocodes and NTC.",
+      "Structural engineers in Northern Italy for EU fabricators (DE, NL, BE, DK) building in Italy: steel design, shop drawings, Eurocodes and NTC.",
     path: "/progettazione-strutturale-acciaio-italia",
     keywords: [
       "general contractors Italy",
@@ -175,7 +175,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutturale-per-general-contractor": {
     title: "Structural engineers for general contractors in Italy",
     description:
-      "Structural engineers in Northern Italy for general contractors and main contractors: steel design, fabrication shop drawings and construction supervision in Lombardy.",
+      "Structural engineers in Northern Italy for general contractors: steel design, shop drawings and construction supervision in Lombardy.",
     path: "/progettazione-strutturale-per-general-contractor",
     keywords: [
       "general contractor Brescia",
@@ -188,7 +188,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutturale-per-carpenterie": {
     title: "Structural engineers for EN 1090 steel fabricators",
     description:
-      "Structural engineers in Northern Italy for EN 1090 workshops: analysis, 3D/Tekla and fabrication drawings. Request a quote — sample shop drawings download with the form.",
+      "Structural engineers for EN 1090 workshops in Northern Italy: analysis, 3D/Tekla and fabrication drawings. Sample shop drawings via the form.",
     path: "/progettazione-strutturale-per-carpenterie",
     keywords: [
       "structural engineer for steel fabricators Italy",
@@ -206,7 +206,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-brescia": {
     title: "Structural engineer in Brescia",
     description:
-      "Structural engineer in Brescia and Lombardy for steel buildings: villas, industrial halls, vertical extensions and fabrication shop drawings. Based in Adro, province of Brescia.",
+      "Structural engineer in Brescia for steel villas, halls and shop drawings. Based in Adro, Lombardy — 40+ years.",
     path: "/progettazione-strutture-acciaio-brescia",
     keywords: [
       "structural engineer Brescia",
@@ -219,7 +219,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-bergamo": {
     title: "Structural engineer in Bergamo",
     description:
-      "Structural engineer in Bergamo and Lombardy for steel buildings: villas, industrial halls, vertical extensions and fabrication shop drawings. Office in Adro, near Bergamo.",
+      "Structural engineer in Bergamo for steel villas, halls and shop drawings. Office in Adro, near Bergamo.",
     path: "/progettazione-strutture-acciaio-bergamo",
     keywords: [
       "structural engineer Bergamo",
@@ -232,7 +232,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-milano": {
     title: "Structural engineer in Milan",
     description:
-      "Structural engineer in Milan for steel buildings: residences, industrial halls, event venues and fabrication shop drawings across the metropolitan area.",
+      "Structural engineer in Milan for steel residences, halls, event venues and shop drawings across the metro area.",
     path: "/progettazione-strutture-acciaio-milano",
     keywords: [
       "structural engineer Milan",

@@ -76,7 +76,7 @@ export const galleryAltEnBySrc: Record<string, string> = {
   "/assets/industriale/lamiere-da-getto-spinelli/campioni-collaboranti-area-esterna.webp":
     "Composite slab specimens cast in the outdoor area of the plant",
   "/assets/industriale/lamiere-da-getto-spinelli/getto-calcestruzzo-campioni-stabilimento.webp":
-    "Concrete casting on test specimens at the Spinelli plant in Adro (BS)",
+    "Concrete casting on test specimens at the Spinelli plant in Adro (BS), Studio Capoferri",
   "/assets/industriale/ampliamento-complesso-zootecnico/capriate-metalliche-grande-luce-complesso-zootecnico.webp":
     "Long-span steel trusses under erection, livestock complex in Castegnato (BS)",
   "/assets/industriale/ampliamento-complesso-zootecnico/carpenteria-metallica-basamento-cemento-zootecnico.webp":

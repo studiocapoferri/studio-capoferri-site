@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildPageMetadata({
   title: "Progettazione strutturale in acciaio per partner europei",
   description:
-    "Partner strutturale in Nord Italia per general contractor e imprese generali di Germania, Paesi Bassi, Belgio e Danimarca: design in acciaio, shop drawings, Eurocodici/NTC e supporto in cantiere.",
+    "Partner strutturale in Nord Italia per GC e imprese UE (DE, NL, BE, DK): acciaio, shop drawings, Eurocodici/NTC e supporto in cantiere.",
   path: "/progettazione-strutturale-acciaio-italia",
   keywords: [
     "general contractor Italia",

@@ -10,20 +10,20 @@ import { ui } from "@/lib/ui";
 
 const footerServices = {
   it: [
-    { href: "/servizi#progettazione-strutturale", label: "Progettazione strutturale" },
-    { href: "/servizi#urbanistica-architettura", label: "Urbanistica e architettura" },
-    { href: "/servizi#direzione-lavori", label: "Direzione lavori" },
-    { href: "/servizi#servizi-tecnici", label: "Servizi tecnici" },
-    { href: "/servizi#sicurezza-cantieri", label: "Sicurezza cantieri" },
-    { href: "/servizi#assistenza-immobiliare", label: "Assistenza immobiliare" },
+    { href: "/servizi/#progettazione-strutturale", label: "Progettazione strutturale" },
+    { href: "/servizi/#urbanistica-architettura", label: "Urbanistica e architettura" },
+    { href: "/servizi/#direzione-lavori", label: "Direzione lavori" },
+    { href: "/servizi/#servizi-tecnici", label: "Servizi tecnici" },
+    { href: "/servizi/#sicurezza-cantieri", label: "Sicurezza cantieri" },
+    { href: "/servizi/#assistenza-immobiliare", label: "Assistenza immobiliare" },
   ],
   en: [
-    { href: "/servizi#progettazione-strutturale", label: "Structural design" },
-    { href: "/servizi#urbanistica-architettura", label: "Planning and architecture" },
-    { href: "/servizi#direzione-lavori", label: "Construction supervision" },
-    { href: "/servizi#servizi-tecnici", label: "Technical services" },
-    { href: "/servizi#sicurezza-cantieri", label: "Site safety" },
-    { href: "/servizi#assistenza-immobiliare", label: "Property support" },
+    { href: "/servizi/#progettazione-strutturale", label: "Structural design" },
+    { href: "/servizi/#urbanistica-architettura", label: "Planning and architecture" },
+    { href: "/servizi/#direzione-lavori", label: "Construction supervision" },
+    { href: "/servizi/#servizi-tecnici", label: "Technical services" },
+    { href: "/servizi/#sicurezza-cantieri", label: "Site safety" },
+    { href: "/servizi/#assistenza-immobiliare", label: "Property support" },
   ],
 } as const;
 
