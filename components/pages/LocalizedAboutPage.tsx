@@ -4,23 +4,35 @@ import Image from "next/image";
 import { ContactCtaSection } from "@/components/ContactCtaSection";
 import { useLocale } from "@/components/LocaleProvider";
 import { chiSiamoEnParagraphs } from "@/lib/about-copy";
-import { certifications, chiSiamoPage } from "@/lib/content";
+import { chiSiamoPage } from "@/lib/content";
 import { aboutPageJsonLd } from "@/lib/jsonld";
-import { homeCopy } from "@/lib/home-copy";
 import { professionisti } from "@/lib/professionisti";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
 
-const aboutCredentials = {
+/** Coda del team — non il blocco “Abilitazioni” della home. */
+const teamCredentials = {
   it: {
-    title: "Abilitazioni dello studio",
+    title: "Iscrizioni e strumenti del gruppo",
     intro:
-      "Oltre al calcolo strutturale, nel team ci sono le abilitazioni richieste per sicurezza di cantiere, prevenzione incendi e certificazione energetica — e gli strumenti di progettazione che usiamo ogni giorno.",
+      "Restano nelle persone sopra, non in un elenco generico: chi può fare CSP/CSE, chi è in elenco antincendio, chi redige APE — e lo stack di calcolo che usiamo in studio.",
+    items: [
+      ["CSP / CSE", "Coordinamento sicurezza nei cantieri"],
+      ["Prevenzione incendi", "Elenchi del Ministero dell'Interno (art. 16 d.lgs. 139/2006)"],
+      ["Certificazione energetica", "Attestato di Prestazione Energetica (APE)"],
+      ["In studio", "CAD, analisi FEM, calcolo strutturale, modellazione BIM"],
+    ] as const,
   },
   en: {
-    title: "Practice qualifications",
+    title: "Registrations and tools in the team",
     intro:
-      "Beyond structural calculation, the team holds the registrations needed for site safety, fire prevention and energy certification — plus the design tools we use every day.",
+      "They sit with the people above, not in a generic catalogue: who can act as CSP/CSE, who is on the fire-safety lists, who issues APE certificates — and the calculation stack we use in the office.",
+    items: [
+      ["CSP / CSE", "Site safety coordination"],
+      ["Fire prevention", "Ministry of the Interior lists (art. 16, Legislative Decree 139/2006)"],
+      ["Energy certification", "Building Energy Performance Certificate (APE)"],
+      ["In the office", "CAD, FEM analysis, structural calculation, BIM modelling"],
+    ] as const,
   },
 } as const;
 
@@ -36,10 +48,7 @@ export function LocalizedAboutPageContent() {
   const linkedinLabel = isEn ? "LinkedIn profile" : "Profilo LinkedIn";
   const sectionHeading = ui.longFormSectionHeading;
   const aboutLd = aboutPageJsonLd(locale);
-  const cred = aboutCredentials[locale];
-  const credItems = isEn
-    ? homeCopy.en.certifications
-    : certifications.map((item) => [item.title, item.text] as [string, string]);
+  const cred = teamCredentials[locale];
 
   return (
     <main id="main-content" className="section-shell">
@@ -105,27 +114,29 @@ export function LocalizedAboutPageContent() {
                   );
                 })}
               </ul>
-            </section>
 
-            <section
-              id="abilitazioni"
-              className={scrollAnchorClass}
-              aria-labelledby="abilitazioni-heading"
-            >
-              <h2 id="abilitazioni-heading" className={sectionHeading}>
-                {cred.title}
-              </h2>
-              <p className={`mb-6 ${ui.bodyMuted}`}>{cred.intro}</p>
-              <ul className="m-0 grid list-none grid-cols-1 gap-5 p-0 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
-                {credItems.map(([itemTitle, text]) => (
-                  <li key={itemTitle} className="border-l-2 border-[#b01010]/55 pl-4">
-                    <p className="font-display m-0 text-base font-medium tracking-tight text-[#1c1e21] sm:text-lg">
-                      {itemTitle}
-                    </p>
-                    <p className="mt-1 text-[0.88rem] leading-snug text-[#555] sm:text-[0.95rem]">{text}</p>
-                  </li>
-                ))}
-              </ul>
+              <div
+                id="abilitazioni"
+                className={`mt-12 border-t border-[#1c1e21]/12 pt-8 sm:mt-14 sm:pt-10 ${scrollAnchorClass}`}
+                aria-labelledby="abilitazioni-heading"
+              >
+                <h3
+                  id="abilitazioni-heading"
+                  className="font-display m-0 text-lg font-medium tracking-tight text-[#1c1e21] sm:text-xl"
+                >
+                  {cred.title}
+                </h3>
+                <p className={`mt-3 max-w-[40rem] ${ui.bodyMuted}`}>{cred.intro}</p>
+                <ul className="m-0 mt-6 list-none space-y-4 p-0">
+                  {cred.items.map(([itemTitle, text]) => (
+                    <li key={itemTitle} className="text-[0.95rem] leading-snug text-[#444] sm:text-[1.02rem]">
+                      <span className="font-medium text-[#1c1e21]">{itemTitle}</span>
+                      <span className="text-[#888]"> — </span>
+                      {text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </section>
           </article>
         </div>
