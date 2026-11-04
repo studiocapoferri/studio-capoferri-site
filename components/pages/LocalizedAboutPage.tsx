@@ -6,6 +6,7 @@ import { HomeCertificationsSection } from "@/components/home/HomeCertificationsS
 import { useLocale } from "@/components/LocaleProvider";
 import { chiSiamoPage } from "@/lib/content";
 import { chiSiamoEnParagraphs } from "@/lib/about-copy";
+import { aboutPageJsonLd } from "@/lib/jsonld";
 import { professionisti } from "@/lib/professionisti";
 import { layoutContentMaxClass, layoutGutterXClass, scrollAnchorClass } from "@/lib/site";
 import { ui } from "@/lib/ui";
@@ -18,9 +19,11 @@ export function LocalizedAboutPageContent() {
   const peopleTitle = isEn ? "Engineers" : "Professionisti";
   const linkedinLabel = isEn ? "LinkedIn profile" : "Profilo LinkedIn";
   const sectionHeading = ui.longFormSectionHeading;
+  const aboutLd = aboutPageJsonLd(locale);
 
   return (
     <main id="main-content" className="section-shell">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutLd) }} />
       <div className={layoutGutterXClass}>
         <div className={layoutContentMaxClass}>
           <article className={`reveal-block home-plate home-plate--well ${ui.articleMax}`}>

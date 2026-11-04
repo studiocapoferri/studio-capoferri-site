@@ -1,6 +1,7 @@
 import { pageUrl, type SeoLocale } from "@/lib/seo";
 import { site } from "@/lib/site";
 import type { ProjectArea } from "@/lib/projects";
+import { professionisti } from "@/lib/professionisti";
 
 const areaLabels: Record<SeoLocale, Record<ProjectArea, string>> = {
   it: {
@@ -278,6 +279,47 @@ export function contactPageJsonLd(locale: SeoLocale = "it") {
     isPartOf: { "@id": `${site.url}/#website` },
     about: { "@id": organizationId() },
     mainEntity: { "@id": organizationId() },
+  };
+}
+
+export function personId(id: string) {
+  return `${site.url}/#person-${id}`;
+}
+
+/** About page + Person nodes (public bios only). */
+export function aboutPageJsonLd(locale: SeoLocale = "it") {
+  const url = pageUrl("/chi-siamo", locale);
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${url}#aboutpage`,
+    url,
+    name: locale === "en" ? "Structural engineers in Northern Italy" : "Lo studio",
+    description:
+      locale === "en"
+        ? "Studio Capoferri structural engineers in Adro (Brescia): steel design, fabrication drawings and site support."
+        : "Studio Capoferri ad Adro (BS): progettazione strutturale, disegni d'officina e supporto in cantiere.",
+    inLanguage: locale === "en" ? "en" : "it",
+    isPartOf: { "@id": `${site.url}/#website` },
+    about: { "@id": organizationId() },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: professionisti.map((person, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Person",
+          "@id": personId(person.id),
+          name: person.name,
+          jobTitle: locale === "en" ? person.roleEn : person.roleIt,
+          description: locale === "en" ? person.bioEn : person.bioIt,
+          image: `${site.url}${person.src}`,
+          url: `${url}#professionisti`,
+          worksFor: { "@id": organizationId() },
+          ...(person.linkedin ? { sameAs: [person.linkedin] } : {}),
+        },
+      })),
+    },
   };
 }
 
