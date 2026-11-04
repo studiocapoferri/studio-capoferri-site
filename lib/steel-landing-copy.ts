@@ -18,57 +18,81 @@ export const steelLandingCopyEn = {
   faqTitle: "Questions for a structural engineer",
   cities: {
     brescia: {
+      h1: "Structural engineer in Brescia: steel from Adro across the province",
       introLead:
-        "Studio Capoferri is a structural engineering practice specialised in steel structures, with more than 40 years of experience and over 1,000 completed projects. From our base in Adro, in the province of Brescia and in the heart of Franciacorta, we design steel villas, industrial buildings, vertical extensions and steelwork structures throughout Lombardy and Northern Italy.",
-      areaHeading: "Where we work: Brescia, Bergamo, Milan and all of Lombardy",
+        "The office is in Adro, in Franciacorta — site visits across the Brescia province start from here. We design steel houses and vertical extensions, industrial halls (including crane buildings) and shop drawings for local fabricators. Not a remote list of cities we “cover”.",
+      process:
+        "Calculations to NTC 2018 and the Eurocodes, fabrication shop drawings, site supervision and testing. Around Brescia and Franciacorta the site is minutes from the office: we follow erection and variations without a shop-front branch.",
+      scopeTitle: "What we design in the Brescia province",
+      scopeLead:
+        "Day-to-day work is residential and industrial on our home ground: halls in Franciacorta, mezzanines and roofs, steel houses. Published cases:",
+      areaHeading: "From Adro: Franciacorta, the province, then further afield",
       areaBody:
-        "The practice is based in Adro, in the province of Brescia, in a strategic position between Franciacorta, Val Calepio and Lake Iseo. We can respond quickly across Brescia and its province, including Franciacorta, Val Trompia, the Brescia side of Lake Garda and the Brescia plain, and throughout Lombardy: Bergamo, Milan, Monza, Cremona, Mantua, Lecco and Como.",
+        "Based in Adro, between Franciacorta, Val Calepio and Lake Iseo. We work across Brescia and the province — Franciacorta, Val Trompia, the Brescia side of Lake Garda, the plain — from this office, not from a city letterhead.",
       areaBodySecondary:
-        "For projects outside the region, we also work regularly in Veneto, Piedmont and Emilia-Romagna.",
-      ctaHeading: "Do you have a steel project in Brescia or Lombardy?",
+        "Outside the province we also take work in Bergamo, Milan and, on specific commissions, Veneto, Piedmont and Emilia-Romagna.",
+      ctaHeading: "A steel project in Franciacorta or the Brescia province?",
+      faqCostAnswer:
+        "It depends on size, use and whether shop drawings are included. From Adro a first visit in the province is quick; after that, or after a technical call, we send a no-obligation quote for calculation, fabrication drawings and site supervision.",
       faqAreaAnswer:
-        "Yes. Our office is based in Adro, in the province of Brescia, and we operate throughout Lombardy, including Brescia, Bergamo and Milan and their respective provinces, as well as in Veneto, Piedmont and Emilia-Romagna.",
+        "Yes. The office is in Adro (Brescia): Brescia and Franciacorta are the daily radius. We also work across the rest of Lombardy and, on commission, in Veneto, Piedmont and Emilia-Romagna.",
       featuredProjects: [
-        ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
-        ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
-        ["Private steel residence in Pollenza (MC)", "integrated structural and architectural design"],
-        ["Superstudio Village in Milan", "new steel structure around 16 metres high and structural strengthening works"],
+        ["Industrial building in Erbusco (BS)", "two overhead cranes, sandwich panels and shop drawings — Franciacorta"],
+        ["Headquarters mezzanine in Provaglio d'Iseo (BS)", "steel mezzanine and fabrication on an existing industrial building"],
+        ["Steel villa in Salsomaggiore Terme (PR)", "steel frame, piles and a photovoltaic roof — a house type we also design in the province"],
+        ["Superstudio Village in Milan", "when the job leaves the province: new steel structure and strengthening"],
       ] as const,
     },
     bergamo: {
+      h1: "Steel structures across the Bergamo province",
       introLead:
-        "Studio Capoferri is a structural engineering practice specialised in steel structures, with more than 40 years of experience and over 1,000 completed projects. From our base in Adro (Brescia), just a short distance from the province of Bergamo, we design steel villas, industrial buildings, vertical extensions and steelwork structures across Bergamo, Lombardy and Northern Italy.",
-      areaHeading: "Where we work: Bergamo, Brescia, Milan and all of Lombardy",
+        "We design across the whole Bergamo province: the city, hinterland, Isola, the plain, Val Seriana and Val Brembana. Steel houses and vertical extensions, halls and fabrication drawings. The office is in Adro, on the provincial border: we visit the site in the province; calculation stays in the studio.",
+      process:
+        "NTC 2018 and Eurocode calculations, shop drawings, site supervision. For Bergamo clients and contractors it is the same sequence as in Franciacorta — without needing a city-centre engineer.",
+      scopeTitle: "What we design in the Bergamo province",
+      scopeLead:
+        "Residential and industrial across the province: steel houses and villas, halls, mezzanines, roofs. Type cases:",
+      areaHeading: "The whole province: city, plain, Isola, valleys",
       areaBody:
-        "The practice is located in Adro (Brescia), on the border with the province of Bergamo, in a strategic position between Franciacorta and Val Calepio. We can respond quickly across Bergamo and its province, including Val Seriana, Val Brembana, Isola Bergamasca and the Bergamo plain, and throughout Lombardy: Brescia, Milan, Monza, Cremona, Mantua, Lecco and Como.",
+        "Bergamo city and hinterland, Isola Bergamasca, the plain, Val Seriana, Val Brembana, Val Cavallina. We do not have a Bergamo office: we leave from Adro and go to site where needed.",
       areaBodySecondary:
-        "For projects outside the region, we also work regularly in Veneto, Piedmont and Emilia-Romagna.",
-      ctaHeading: "Do you have a steel project in Bergamo or Lombardy?",
+        "Brescia remains the home basin. Milan and the other provinces come by commission.",
+      ctaHeading: "A steel project in the Bergamo province?",
+      faqCostAnswer:
+        "It depends on size and use. For work in the province the first step is a call or a site visit; then a no-obligation quote for calculation, shop drawings and site supervision.",
       faqAreaAnswer:
-        "Yes. Our office is based in Adro (Brescia), on the border with the province of Bergamo, and we operate throughout Lombardy, including Bergamo, Brescia and Milan and their respective provinces, as well as in Veneto, Piedmont and Emilia-Romagna.",
+        "Yes: the whole Bergamo province — city, plain, Isola and the valleys. The office is in Adro, on the provincial border.",
       featuredProjects: [
-        ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
-        ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
-        ["Private steel residence in Pollenza (MC)", "integrated structural and architectural design"],
-        ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high and structural strengthening works"],
+        ["Industrial hall in Erbusco (BS)", "overhead cranes and shop drawings — an industrial type we also take in Bergamo province"],
+        ["Headquarters mezzanine in Provaglio d'Iseo (BS)", "steel mezzanine on an existing building — the same approach on plants in the province"],
+        ["Steel villa in Salsomaggiore Terme (PR)", "frame and photovoltaic roof — steel houses for Bergamo-area clients"],
+        ["Superstudio Maxi in Milan Famagosta", "reuse and new steel, outside the province"],
       ] as const,
     },
     milano: {
+      h1: "Steel structures in Milan: venues, reuse, fabrication",
       introLead:
-        "Studio Capoferri is a structural engineering practice specialised in steel structures, with more than 40 years of experience and over 1,000 completed projects. We design steel villas, industrial buildings, vertical extensions and steelwork structures in Milan, across the wider Milan hinterland and throughout Lombardy, with work on public venues, residential buildings and industrial facilities.",
-      areaHeading: "Where we work: Milan, Brescia, Bergamo and all of Lombardy",
+        "In Milan the published work is not a Franciacorta villa: it is new steel and strengthening on existing buildings. Superstudio Village in Bovisa and Superstudio Maxi in Famagosta — steel frames, consolidations, seismic upgrading — are the public cases. The office stays in Adro; the site is in the city or hinterland.",
+      process:
+        "A Milan quote starts from the building type (hall to convert, event venue, addition, hinterland house) and from existing constraints, not from a rate card. Then NTC 2018 / Eurocode calculations, shop drawings and site supervision with the contractor and fabricator.",
+      scopeTitle: "What we have designed in Milan",
+      scopeLead:
+        "The two Superstudio jobs are the city reference. Alongside: industrial and residential types we also take in the hinterland and Brianza.",
+      areaHeading: "Milan and hinterland — calculation from Adro",
       areaBody:
-        "We operate across the city of Milan and its province, including Bovisa, Famagosta and the northern and southern hinterland, as well as Monza Brianza and the wider metropolitan area. Our office in Adro (Brescia) is strategically positioned for quick access to Milanese construction sites and also supports projects across Brescia, Bergamo, Cremona, Mantua, Lecco and Como.",
+        "Sites in the city (Bovisa, Famagosta) and in the northern/southern hinterland, Monza and Brianza. We do not have a Milan office: calculation is in Franciacorta; we visit the site when needed.",
       areaBodySecondary:
-        "Among the most significant projects in Milan are Superstudio Village in Bovisa and Superstudio Maxi in Famagosta, involving steel structures, strengthening works and seismic upgrading.",
-      ctaHeading: "Do you have a steel project in Milan or Lombardy?",
+        "Brescia and Bergamo remain the home basin. Milan commissions come by type (reuse, venues, steelwork), not because we “cover all of Lombardy”.",
+      ctaHeading: "A reuse or steel structure in Milan?",
+      faqCostAnswer:
+        "In Milan, existing-building constraints, seismic work and site logistics often weigh more than floor area alone. After a brief (building type, district, programme) or a visit, we send a no-obligation quote: calculation, shop drawings, site supervision.",
       faqAreaAnswer:
-        "Yes. We work regularly across Milan and its province, as well as Brescia, Bergamo and the whole of Lombardy. Our base in Adro (Brescia) allows rapid intervention across the wider Milan metropolitan area and throughout Northern Italy.",
+        "Yes, on commission: city and hinterland, as on the Superstudio jobs. The office is in Adro (Brescia) — a Franciacorta structural practice that has already worked in Milan, not a neighbourhood studio.",
       featuredProjects: [
-        ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high, strengthening and reconstruction works"],
-        ["Superstudio Maxi in Famagosta", "conversion of an industrial shed with seismic upgrading and new steel structures"],
-        ["Industrial building in Erbusco (BS)", "structure designed for two overhead cranes, sandwich panels and fabrication drawings"],
-        ["Steel villa in Salsomaggiore Terme (PR)", "piled foundations, steel frame and full photovoltaic roof"],
+        ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high, strengthening and reconstruction"],
+        ["Superstudio Maxi in Famagosta", "industrial hall reuse, seismic upgrading and new steel"],
+        ["Industrial hall in Erbusco (BS)", "crane building — the same approach on hinterland commissions"],
+        ["Steel villa in Salsomaggiore Terme (PR)", "frame and photovoltaic roof — steel houses also outside the city"],
       ] as const,
     },
   },

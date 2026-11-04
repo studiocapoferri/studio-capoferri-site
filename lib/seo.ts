@@ -206,7 +206,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-brescia": {
     title: "Structural engineer in Brescia",
     description:
-      "Structural engineer in Brescia for steel villas, halls and shop drawings. Based in Adro, Lombardy — 40+ years.",
+      "Structural engineer in Adro (Brescia): steel houses, halls and shop drawings across Franciacorta and the province — NTC 2018, site supervision.",
     path: "/progettazione-strutture-acciaio-brescia",
     keywords: [
       "structural engineer Brescia",
@@ -219,7 +219,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-bergamo": {
     title: "Structural engineer in Bergamo",
     description:
-      "Structural engineer in Bergamo for steel villas, halls and shop drawings. Office in Adro, near Bergamo.",
+      "Structural engineer for the whole Bergamo province: city, plain, Isola, valleys. Steel houses, halls, shop drawings from Adro.",
     path: "/progettazione-strutture-acciaio-bergamo",
     keywords: [
       "structural engineer Bergamo",
@@ -232,7 +232,7 @@ const englishStaticMetadata: Record<string, BaseMetadataInput> = {
   "progettazione-strutture-acciaio-milano": {
     title: "Structural engineer in Milan",
     description:
-      "Structural engineer in Milan for steel residences, halls, event venues and shop drawings across the metro area.",
+      "Steel in Milan: Superstudio Bovisa and Famagosta — new frames, strengthening, seismic upgrade. Calculation and shop drawings from Adro.",
     path: "/progettazione-strutture-acciaio-milano",
     keywords: [
       "structural engineer Milan",

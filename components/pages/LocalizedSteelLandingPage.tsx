@@ -29,17 +29,14 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
   const sectionHeading = ui.longFormSectionHeading;
   const faq = isEn
     ? ([
-        [steelLandingCopyEn.faqFixed[0][0], steelLandingCopyEn.faqFixed[0][1]],
+        [steelLandingCopyEn.faqFixed[0][0], cityCopy?.faqCostAnswer ?? steelLandingCopyEn.faqFixed[0][1]],
         [steelLandingCopyEn.faqFixed[1][0], steelLandingCopyEn.faqFixed[1][1]],
         ["Do you design steel structures across Lombardy?", cityCopy?.faqAreaAnswer ?? config.faqAreaAnswer],
         [steelLandingCopyEn.faqFixed[2][0], steelLandingCopyEn.faqFixed[2][1]],
         [steelLandingCopyEn.faqFixed[3][0], steelLandingCopyEn.faqFixed[3][1]],
       ] as const)
     : ([
-        [
-          config.faqCostQuestion,
-          "Il costo dipende da dimensioni, complessità e destinazione d'uso dell'edificio. Dopo un primo sopralluogo o un colloquio tecnico forniamo un preventivo dettagliato e senza impegno per la progettazione strutturale, i disegni costruttivi d'officina e la direzione lavori.",
-        ],
+        [config.faqCostQuestion, config.faqCostAnswer],
         [
           "Quali vantaggi offre una struttura in acciaio rispetto al cemento armato?",
           "L'acciaio garantisce leggerezza, resistenza sismica, tempi di cantiere ridotti grazie alla prefabbricazione in officina e grande flessibilità architettonica.",
@@ -98,22 +95,10 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
         <div className={layoutContentMaxClass}>
           <article className={`reveal-block home-plate home-plate--well ${ui.articleMax}`}>
             <h1 className={`font-display reveal-title ${ui.pageTitle} ${ui.pageTitleLead}`}>
-              {isEn
-                ? steelLandingCopyEn.heroTitle(cityLabel)
-                : `Progettazione di strutture in acciaio a ${config.city} e in Lombardia`}
+              {isEn ? (cityCopy?.h1 ?? steelLandingCopyEn.heroTitle(cityLabel)) : config.h1}
             </h1>
             <p className={`mb-4 ${ui.body}`}>{isEn ? cityCopy?.introLead : config.introLead}</p>
-            <p className={`mb-6 ${ui.body}`}>
-              {isEn ? (
-                steelLandingCopyEn.process
-              ) : (
-                <>
-                  Dal calcolo strutturale secondo <strong>NTC 2018</strong> ed Eurocodici ai disegni costruttivi
-                  d&apos;officina, fino alla direzione lavori e al collaudo: seguiamo ogni fase del progetto, dalla prima
-                  idea al cantiere.
-                </>
-              )}
-            </p>
+            <p className={`mb-6 ${ui.body}`}>{isEn ? cityCopy?.process : config.process}</p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
                 href="#richiesta-preventivo"
@@ -134,12 +119,10 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
 
             <section className={scrollAnchorClass}>
               <h2 className={sectionHeading}>
-                {isEn ? steelLandingCopyEn.scopeTitle : "Cosa progettiamo: dal residenziale all'industriale"}
+                {isEn ? (cityCopy?.scopeTitle ?? steelLandingCopyEn.scopeTitle) : config.scopeTitle}
               </h2>
               <p className={`mb-4 ${ui.bodyMuted}`}>
-                {isEn
-                  ? steelLandingCopyEn.scopeLead
-                  : "Progettiamo strutture in acciaio per ogni destinazione d'uso: ville e residenze private, edifici multipiano, capannoni industriali con carroponte, edifici commerciali e spazi per eventi. Alcuni progetti recenti:"}
+                {isEn ? (cityCopy?.scopeLead ?? steelLandingCopyEn.scopeLead) : config.scopeLead}
               </p>
               <ul className="mt-2 list-none space-y-3 pl-0">
                 {featured.map((p) => (

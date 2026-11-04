@@ -37,11 +37,11 @@ Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file)
 
 ## City / local pages
 
-- [Progettazione strutture in acciaio a Brescia](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-brescia/): Steel structures around Brescia / Franciacorta
-- [Structural engineer Brescia](https://www.studiocapoferri.eu/en/structural-engineer-brescia/): English Brescia landing
-- [Progettazione strutture in acciaio a Bergamo](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-bergamo/): Steel structures Bergamo province
+- [Progettazione strutture in acciaio a Brescia](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-brescia/): Home office in Adro / Franciacorta — halls, houses, shop drawings
+- [Structural engineer Brescia](https://www.studiocapoferri.eu/en/structural-engineer-brescia/): English Brescia landing (Adro / Franciacorta)
+- [Progettazione strutture in acciaio a Bergamo](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-bergamo/): Whole Bergamo province — city, plain, Isola, valleys
 - [Structural engineer Bergamo](https://www.studiocapoferri.eu/en/structural-engineer-bergamo/): English Bergamo landing
-- [Progettazione strutture in acciaio a Milano](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-milano/): Steel structures Milan metro area
+- [Progettazione strutture in acciaio a Milano](https://www.studiocapoferri.eu/progettazione-strutture-acciaio-milano/): Superstudio Bovisa / Famagosta — reuse, venues, steel
 - [Structural engineer Milan](https://www.studiocapoferri.eu/en/structural-engineer-milan/): English Milan landing
 
 ## Project categories
