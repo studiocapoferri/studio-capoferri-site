@@ -21,7 +21,7 @@ const sizeClass: Record<string, string> = {
   baroni: "h-16 max-sm:h-8",
   steelera: "h-14 max-sm:h-6",
   spinelli: "h-12 max-sm:h-5",
-  muzzolon: "h-20 max-sm:h-10",
+  muzzolon: "h-28 max-sm:h-14",
   tecnosida: "h-14 max-sm:h-6",
   arcameccanica: "h-14 max-sm:h-6",
   cibin: "h-16 max-sm:h-8",
@@ -31,6 +31,11 @@ const opticalClass: Record<string, string> = {
   tecnosida: "sm:translate-y-[2px]",
   spinelli: "sm:translate-y-[3px]",
   muzzolon: "sm:translate-y-px",
+};
+
+/** Wider cap for tall/square marks so height can actually grow. */
+const maxWidthClass: Record<string, string> = {
+  muzzolon: "max-w-[14rem] max-sm:max-w-[8.5rem]",
 };
 
 /** Already white-on-transparent (or white-on-black) — do not invert. */
@@ -63,7 +68,9 @@ function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) 
         alt={locale === "en" ? client.altEn : client.altIt}
         width={client.width}
         height={client.height}
-        className={`${sizeClass[client.id] ?? "h-14 max-sm:h-6"} ${opticalClass[client.id] ?? ""} w-auto max-w-[11.5rem] max-sm:max-w-[6.5rem] object-contain object-center${
+        className={`${sizeClass[client.id] ?? "h-14 max-sm:h-6"} ${opticalClass[client.id] ?? ""} w-auto ${
+          maxWidthClass[client.id] ?? "max-w-[11.5rem] max-sm:max-w-[6.5rem]"
+        } object-contain object-center${
           skipInvert.has(client.id) ? "" : " brightness-0 invert"
         }`}
         loading="lazy"

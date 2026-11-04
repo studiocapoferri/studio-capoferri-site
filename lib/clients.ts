@@ -100,7 +100,7 @@ export const homeClients: ClientLogo[] = [
   {
     id: "muzzolon",
     name: "Muzzolon Industries",
-    src: "/assets/clienti/muzzolon.webp",
+    src: "/assets/clienti/muzzolon-full.webp",
     href: "https://muzzolonindustries.com/",
     altIt: "Logo Muzzolon Industries, cliente Studio Capoferri",
     altEn: "Muzzolon Industries logo, Studio Capoferri client",
