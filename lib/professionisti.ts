@@ -85,15 +85,15 @@ export const professionisti: Professionista[] = [
   {
     id: "marco-marini",
     name: "Ing. Marco Marini",
-    roleIt: "Ingegnere ambientale",
-    roleEn: "Environmental engineer",
+    roleIt: "Ingegnere civile",
+    roleEn: "Civil engineer",
     bioIt:
-      "Ingegnere ambientale. Si occupa di progettazione strutturale su edifici e opere di varia tipologia — in acciaio, cemento armato e sistemi misti — con particolare attenzione all'analisi e alla modellazione FEM per la verifica del comportamento strutturale.",
+      "Ingegnere civile. Si occupa di progettazione strutturale su edifici e opere di varia tipologia — in acciaio, cemento armato e sistemi misti — con particolare attenzione all'analisi e alla modellazione FEM per la verifica del comportamento strutturale.",
     bioEn:
-      "Environmental engineer. He works on structural design for buildings and works of various types — steel, reinforced concrete and mixed systems — with a focus on FEM analysis and modelling to verify structural behaviour.",
+      "Civil engineer. He works on structural design for buildings and works of various types — steel, reinforced concrete and mixed systems — with a focus on FEM analysis and modelling to verify structural behaviour.",
     src: placeholderSrc,
-    altIt: "Segnaposto per Ing. Marco Marini, ingegnere ambientale - Studio Capoferri",
-    altEn: "Placeholder for Eng. Marco Marini, environmental engineer - Studio Capoferri",
+    altIt: "Segnaposto per Ing. Marco Marini, ingegnere civile - Studio Capoferri",
+    altEn: "Placeholder for Eng. Marco Marini, civil engineer - Studio Capoferri",
   },
   {
     id: "luca-gulberti",
@@ -101,9 +101,9 @@ export const professionisti: Professionista[] = [
     roleIt: "Ingegnere civile",
     roleEn: "Civil engineer",
     bioIt:
-      "Ingegnere civile specializzato in strutture industriali, con particolare competenza sui tralicci metallici. Opera su due fronti: verifiche decennali per conto di enti certificatori e progettazione di tralicci per telecomunicazioni.",
+      "Ingegnere civile. Si occupa di strutture industriali e di tralicci metallici, dalla progettazione strutturale al supporto tecnico in cantiere.",
     bioEn:
-      "Civil engineer specialised in industrial structures, with particular expertise in steel lattice towers. His work covers two areas: decade inspections on behalf of certification bodies, and structural design of telecommunications towers.",
+      "Civil engineer. He works on industrial structures and steel lattice towers, from structural design through to site support.",
     src: placeholderSrc,
     altIt: "Segnaposto per Ing. Luca Gulberti, ingegnere civile - Studio Capoferri",
     altEn: "Placeholder for Eng. Luca Gulberti, civil engineer - Studio Capoferri",
