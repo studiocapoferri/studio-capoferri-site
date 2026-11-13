@@ -13,32 +13,35 @@ const copy = {
  * Desktop sizes first; max-sm: shrinks only on phones so tablet/desktop stay large.
  */
 const sizeClass: Record<string, string> = {
-  tecnoprogetti: "h-16 max-sm:h-7",
-  "fonderie-ariotti": "h-16 max-sm:h-7",
-  "pb-srl": "h-16 max-sm:h-8",
-  "gp-piazzon": "h-16 max-sm:h-8",
-  superstudio: "h-14 max-sm:h-6",
-  baroni: "h-16 max-sm:h-8",
-  steelera: "h-14 max-sm:h-6",
-  spinelli: "h-12 max-sm:h-5",
-  muzzolon: "h-28 max-sm:h-14",
-  tecnosida: "h-14 max-sm:h-6",
-  arcameccanica: "h-14 max-sm:h-6",
-  prismac: "h-14 max-sm:h-6",
+  tecnoprogetti: "h-14 max-sm:h-8",
+  "fonderie-ariotti": "h-14 max-sm:h-8",
+  "pb-srl": "h-14 max-sm:h-9",
+  "gp-piazzon": "h-14 max-sm:h-9",
+  superstudio: "h-12 max-sm:h-7",
+  baroni: "h-14 max-sm:h-9",
+  steelera: "h-12 max-sm:h-7",
+  spinelli: "h-11 max-sm:h-6",
+  muzzolon: "h-24 max-sm:h-14",
+  tecnosida: "h-12 max-sm:h-7",
+  arcameccanica: "h-12 max-sm:h-7",
+  prismac: "h-12 max-sm:h-7",
 };
 
 const opticalClass: Record<string, string> = {
-  tecnosida: "sm:translate-y-[2px]",
-  spinelli: "sm:translate-y-[3px]",
-  muzzolon: "sm:translate-y-px",
+  tecnosida: "translate-y-[2px]",
+  spinelli: "translate-y-[3px]",
+  muzzolon: "translate-y-px",
 };
 
 /** Wider cap for tall/square marks so height can actually grow. */
 const maxWidthClass: Record<string, string> = {
-  muzzolon: "max-w-[14rem] max-sm:max-w-[8.5rem]",
+  muzzolon: "max-w-[12rem] max-sm:max-w-[8.5rem]",
 };
 
-/** Already white-on-transparent (or white-on-black) — do not invert. */
+/**
+ * Already white-on-transparent (or white-on-black) — do not invert.
+ * Everything else is forced to bright white via brightness-0 invert.
+ */
 const skipInvert = new Set([
   "fonderie-ariotti",
   "muzzolon",
@@ -52,23 +55,33 @@ const skipInvert = new Set([
   "prismac",
 ]);
 
-function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) {
+function ClientMark({
+  client,
+  locale,
+  inertLink,
+}: {
+  client: ClientLogo;
+  locale: Locale;
+  inertLink?: boolean;
+}) {
   return (
     <a
       href={client.href}
       target="_blank"
       rel="noopener noreferrer"
       title={client.name}
-      className="group inline-flex items-center justify-center opacity-[0.65] transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100"
+      tabIndex={inertLink ? -1 : undefined}
+      aria-hidden={inertLink || undefined}
+      className="clients-marquee__item focus-ring inline-flex shrink-0 items-center justify-center px-7 sm:px-10"
     >
       <Image
         src={client.src}
         alt={locale === "en" ? client.altEn : client.altIt}
         width={client.width}
         height={client.height}
-        className={`${sizeClass[client.id] ?? "h-14 max-sm:h-6"} ${opticalClass[client.id] ?? ""} w-auto ${
-          maxWidthClass[client.id] ?? "max-w-[11.5rem] max-sm:max-w-[6.5rem]"
-        } object-contain object-center${
+        className={`${sizeClass[client.id] ?? "h-12 max-sm:h-7"} ${opticalClass[client.id] ?? ""} w-auto ${
+          maxWidthClass[client.id] ?? "max-w-[10.5rem] max-sm:max-w-[7rem]"
+        } object-contain object-center opacity-100${
           skipInvert.has(client.id) ? "" : " brightness-0 invert"
         }`}
         loading="lazy"
@@ -78,26 +91,32 @@ function ClientMark({ client, locale }: { client: ClientLogo; locale: Locale }) 
   );
 }
 
+function ClientsTrack({ locale, ariaHidden }: { locale: Locale; ariaHidden?: boolean }) {
+  return (
+    <div className="clients-marquee__group" aria-hidden={ariaHidden || undefined}>
+      {homeClients.map((client) => (
+        <ClientMark key={client.id} client={client} locale={locale} inertLink={ariaHidden} />
+      ))}
+    </div>
+  );
+}
+
 export function ClientsStrip({ locale }: { locale: Locale }) {
   const t = copy[locale];
 
   return (
-    <section className={`lazy-section ${ui.brandGradient} ${layoutGutterXClass} py-9 sm:py-12`}>
-      <div className={`${layoutContentMaxClass} reveal-block`}>
-        <p className="eyebrow mb-7 text-center text-[0.68rem] tracking-[0.16em] text-white/55 sm:mb-9">
+    <section className={`lazy-section ${ui.brandGradient} py-9 sm:py-12`} aria-label={t.eyebrow}>
+      <div className={`${layoutGutterXClass} mb-7 sm:mb-9`}>
+        <p className={`eyebrow text-center text-[0.68rem] tracking-[0.16em] text-white/55 ${layoutContentMaxClass}`}>
           {t.eyebrow}
         </p>
-        {/* 2×6 mobile → 3×4 tablet → 4×3 desktop: equal cells, marks centered */}
-        <ul className="m-0 grid w-full list-none grid-cols-2 items-center justify-items-center gap-x-5 gap-y-8 p-0 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-12">
-          {homeClients.map((client) => (
-            <li
-              key={client.id}
-              className="flex h-[5.75rem] w-full items-center justify-center max-sm:h-[3.25rem]"
-            >
-              <ClientMark client={client} locale={locale} />
-            </li>
-          ))}
-        </ul>
+      </div>
+
+      <div className="clients-marquee clients-marquee--pause">
+        <div className="clients-marquee__track">
+          <ClientsTrack locale={locale} />
+          <ClientsTrack locale={locale} ariaHidden />
+        </div>
       </div>
     </section>
   );
