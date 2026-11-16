@@ -25,12 +25,15 @@ const sizeClass: Record<string, string> = {
   tecnosida: "h-12 max-sm:h-7",
   arcameccanica: "h-12 max-sm:h-7",
   prismac: "h-12 max-sm:h-7",
+  cibin: "h-16 max-sm:h-10",
+  roversi: "h-12 max-sm:h-7",
 };
 
 const opticalClass: Record<string, string> = {
   tecnosida: "translate-y-[2px]",
   spinelli: "translate-y-[3px]",
   muzzolon: "translate-y-px",
+  roversi: "translate-y-px",
 };
 
 /** Wider cap for tall/square marks so height can actually grow. */
@@ -53,6 +56,8 @@ const skipInvert = new Set([
   "tecnosida",
   "tecnoprogetti",
   "prismac",
+  "cibin",
+  "roversi",
 ]);
 
 function ClientMark({

@@ -13,7 +13,7 @@ export type ClientLogo = {
 /**
  * Optical order: compact marks break up wide wordmarks.
  * Row ends: Baroni / Prismac (flush with header EN).
- * Parked local: Magnetti, Pezt Co., Cre System, Roversi, ST Performance, Cibin.
+ * Parked local: Magnetti, Pezt Co., Cre System, ST Performance.
  * Fonderie Ariotti: autorizzazione scritta 03/11/2026 (sito + LinkedIn, senza alterazioni).
  */
 export const homeClients: ClientLogo[] = [
@@ -136,5 +136,25 @@ export const homeClients: ClientLogo[] = [
     altEn: "Prismac logo, Studio Capoferri client",
     width: 350,
     height: 71,
+  },
+  {
+    id: "cibin",
+    name: "Cibin Studio7",
+    src: "/assets/clienti/cibin.webp",
+    href: "https://www.studiocibin.com/",
+    altIt: "Logo Cibin Studio7, cliente Studio Capoferri",
+    altEn: "Cibin Studio7 logo, Studio Capoferri client",
+    width: 119,
+    height: 140,
+  },
+  {
+    id: "roversi",
+    name: "Roversi Scale",
+    src: "/assets/clienti/roversi.webp",
+    href: "https://www.roversiscale.it/",
+    altIt: "Logo Roversi Scale, cliente Studio Capoferri",
+    altEn: "Roversi Scale logo, Studio Capoferri client",
+    width: 612,
+    height: 168,
   },
 ];
