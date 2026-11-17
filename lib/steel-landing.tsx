@@ -99,7 +99,7 @@ export const steelLandingBrescia: SteelLandingConfig = {
     {
       href: "/progetti/industriali/centro-direzionale-provaglio-diseo",
       title: "Centro direzionale a Provaglio d'Iseo (BS)",
-      description: "soppalco e carpenteria su edificio industriale esistente",
+      description: "con Tecnoprogetti: soppalco e carpenteria su edificio industriale esistente",
     },
     {
       href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
@@ -172,7 +172,7 @@ export const steelLandingBergamo: SteelLandingConfig = {
     {
       href: "/progetti/industriali/centro-direzionale-provaglio-diseo",
       title: "Centro direzionale a Provaglio d'Iseo (BS)",
-      description: "soppalco e carpenteria su esistente — stesso approccio su impianti in provincia",
+      description: "con Tecnoprogetti: soppalco e carpenteria su esistente — stesso approccio in provincia",
     },
     {
       href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
