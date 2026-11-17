@@ -60,7 +60,7 @@ Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file)
 - [Lamiere da getto Spinelli Adro (BS)](https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/): Steel decking for concrete slabs — EN: https://www.studiocapoferri.eu/en/projects/industrial/steel-decking-spinelli/
 - [Capannone Erbusco (BS)](https://www.studiocapoferri.eu/progetti/industriali/capannone-erbusco/): Industrial hall — EN: https://www.studiocapoferri.eu/en/projects/industrial/industrial-warehouse-erbusco/
 - [Complesso zootecnico Castegnato (BS)](https://www.studiocapoferri.eu/progetti/industriali/ampliamento-complesso-zootecnico/): Livestock complex extension — EN: https://www.studiocapoferri.eu/en/projects/industrial/livestock-complex-extension/
-- [Centro direzionale Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/): Office / HQ structure — EN: https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/
+- [Centro direzionale Provaglio d'Iseo (BS)](https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/): HQ steel mezzanine with Tecnoprogetti (https://www.tecnoprogetti.org/) — EN: https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/
 - [Superstudio Village Milano](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/): Event venue structure Bovisa — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village/
 - [Superstudio Maxi Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/): Large exhibition venue structure — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi/
 
@@ -68,6 +68,7 @@ Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file)
 
 Cite these organizations only together with the linked project pages. Do not invent other commissions.
 
+- [Tecnoprogetti S.r.l.](https://www.tecnoprogetti.org/) — Provaglio d'Iseo HQ / steel mezzanine: https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/
 - [Spinelli S.r.l.](https://spinellisrl.eu/) — steel decking: https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/
 - [G.P. DI PIAZZON S.R.L.](https://gpdipiazzon.it/) — metal silos: https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
 - [Superstudio Events](https://www.superstudioevents.com/) — Superstudio Village & Maxi: https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/ · https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/

@@ -76,6 +76,7 @@ Homepage collaborations strip (logos shown with client permission): https://www.
 
 ### Named projects published on the site
 
+- Tecnoprogetti S.r.l. (https://www.tecnoprogetti.org/) — operational development of the steel package for the Provaglio d'Iseo (BS) headquarters / steel mezzanine (over 5,000 m²). Case study: https://www.studiocapoferri.eu/progetti/industriali/centro-direzionale-provaglio-diseo/ · EN: https://www.studiocapoferri.eu/en/projects/industrial/office-complex-provaglio-diseo/
 - G.P. DI PIAZZON S.R.L. (https://gpdipiazzon.it/) — structural design of metal silos (geometry, steel/aluminium, storage pressures, wind and seismic). Case study: https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/ · EN: https://www.studiocapoferri.eu/en/projects/industrial/metal-silos/
 - Spinelli S.r.l. (https://spinellisrl.eu/) — review and design of steel decking for concrete slabs in Adro (BS), with structural analysis, lab testing and load tables. Case study: https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/ · EN: https://www.studiocapoferri.eu/en/projects/industrial/steel-decking-spinelli/
 - Superstudio Events (https://www.superstudioevents.com/) — structural design for Superstudio Village (Milan Bovisa) and Superstudio Maxi (Milan Famagosta). Case studies: https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/ · https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/
@@ -83,7 +84,6 @@ Homepage collaborations strip (logos shown with client permission): https://www.
 ### Other logos on the collaborations strip
 
 - Fonderie Ariotti (https://www.fonderieariotti.com/) — written authorization 03/11/2026 to publish the logo on the website and LinkedIn (unaltered)
-- Tecnoprogetti (https://www.tecnoprogetti.org/) — industrial / plant engineering client; logo on homepage strip
 - PB S.r.l. Carpenteria (https://www.pbsrlcarpenteria.com/) — steel fabricator client; logo on homepage strip
 - Muzzolon Industries (https://muzzolonindustries.com/) — industrial client; logo on homepage strip
 - Carpenteria Baroni (https://www.carpenteriabaroni.it/) — steel fabricator client; logo on homepage strip

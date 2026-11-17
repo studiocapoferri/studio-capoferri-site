@@ -81,6 +81,10 @@ const caseLocations: Record<string, { name: string; addressRegion: string; addre
 
 /** Clients named on published case-study pages only (not the full logo strip). */
 const caseClients: Record<string, { name: string; url: string }> = {
+  "industriali/centro-direzionale-provaglio-diseo": {
+    name: "Tecnoprogetti S.r.l.",
+    url: "https://www.tecnoprogetti.org/",
+  },
   "industriali/lamiere-da-getto-spinelli": { name: "Spinelli S.r.l.", url: "https://spinellisrl.eu/" },
   "industriali/silos-metallici": { name: "G.P. DI PIAZZON S.R.L.", url: "https://gpdipiazzon.it/" },
   "ricettivi/superstudio-village": { name: "Superstudio Events", url: "https://www.superstudioevents.com/" },

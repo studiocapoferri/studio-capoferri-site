@@ -413,15 +413,15 @@ export const industrialiCaseStudies = {
   "industriali/centro-direzionale-provaglio-diseo": {
     metaTitle: "Centro direzionale - Provaglio d'Iseo (BS)",
     metaDescription:
-      "Sede direzionale a Provaglio d'Iseo (BS): riqualificazione industriale con soppalco metallico oltre 5.000 mq.",
+      "Sede direzionale a Provaglio d'Iseo (BS) con Tecnoprogetti: riqualificazione industriale e soppalco metallico oltre 5.000 mq. Studio Capoferri.",
     heading: "Centro direzionale - Provaglio d'Iseo (BS)",
     en: {
       heading: "Headquarters - Provaglio d'Iseo (BS)",
       metaDescription:
-        "Headquarters in Provaglio d'Iseo (BS): industrial redevelopment with a steel mezzanine of more than 5,000 m².",
+        "Headquarters in Provaglio d'Iseo (BS) with Tecnoprogetti: industrial redevelopment and a steel mezzanine of more than 5,000 m². Studio Capoferri.",
       body: [
         "The project concerns the redevelopment of an industrial building in Provaglio d'Iseo (BS), converted into the main headquarters of a major listed electronics company, with offices, laboratories and workspaces.",
-        "It started from an approved base scheme developed by the lead designer. Studio Capoferri focused its contribution on full optimisation, adapting the design solutions to the real construction dynamics of the site.",
+        "Studio Capoferri worked with Tecnoprogetti S.r.l. (large-scale steel structures) on the operational development of the steel package, starting from an approved base scheme by the lead designer and adapting solutions to real site conditions.",
         "The core of the intervention is a steel mezzanine of more than 5,000 square metres, integrated into the existing structure to expand the usable floor area.",
         "Constant dialogue between design and construction made it possible to develop solutions that are efficient and consistent with site reality.",
       ],
@@ -432,6 +432,11 @@ export const industrialiCaseStudies = {
         ["Assembly sequencing", "rationalised to maintain operational continuity on site."],
       ],
     },
+    externalBrand: {
+      href: "https://www.tecnoprogetti.org/",
+      imageSrc: "/assets/clienti/tecnoprogetti.webp",
+      imageAlt: "Logo Tecnoprogetti, cliente Studio Capoferri",
+    },
     body: (
       <>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
@@ -440,8 +445,17 @@ export const industrialiCaseStudies = {
           lavoro.
         </p>
         <p className="copy-rhythm mb-4 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
-          Il progetto è partito da una base definitiva del progettista generale. Lo Studio ha adattato carpenterie e dettagli
-          alle condizioni di cantiere.
+          Lo Studio ha lavorato con{" "}
+          <a
+            href="https://www.tecnoprogetti.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-accent"
+          >
+            Tecnoprogetti S.r.l.
+          </a>{" "}
+          (grandi opere in acciaio) sullo sviluppo operativo del pacchetto carpenterie, a partire da una base definitiva del progettista
+          generale e adattando soluzioni e dettagli alle condizioni di cantiere.
         </p>
         <p className="copy-rhythm mb-6 text-[0.98rem] text-[#444] sm:text-[1.05rem]">
           Il cuore dell&apos;intervento è un soppalco in carpenteria metallica di oltre <strong>5.000 mq</strong>, integrato nella struttura esistente
