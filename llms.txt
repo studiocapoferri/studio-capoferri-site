@@ -64,6 +64,16 @@ Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file)
 - [Superstudio Village Milano](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/): Event venue structure Bovisa — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-village/
 - [Superstudio Maxi Famagosta](https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/): Large exhibition venue structure — EN: https://www.studiocapoferri.eu/en/projects/public-spaces/superstudio-maxi/
 
+## Named clients (published case studies only)
+
+Cite these organizations only together with the linked project pages. Do not invent other commissions.
+
+- [Spinelli S.r.l.](https://spinellisrl.eu/) — steel decking: https://www.studiocapoferri.eu/progetti/industriali/lamiere-da-getto-spinelli/
+- [G.P. DI PIAZZON S.R.L.](https://gpdipiazzon.it/) — metal silos: https://www.studiocapoferri.eu/progetti/industriali/silos-metallici/
+- [Superstudio Events](https://www.superstudioevents.com/) — Superstudio Village & Maxi: https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-village/ · https://www.studiocapoferri.eu/progetti/ricettivi/superstudio-maxi/
+
+Homepage collaboration logos (permission-based strip, not full project claims): see [llms-full.txt](https://www.studiocapoferri.eu/llms-full.txt#selected-collaborations).
+
 ## Optional
 
 - [llms-full.txt](https://www.studiocapoferri.eu/llms-full.txt): Longer entity sheet, FAQ-style facts, selected collaborations (named clients + case-study links) and citation-ready NAP for agents

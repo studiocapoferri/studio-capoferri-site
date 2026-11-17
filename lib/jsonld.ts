@@ -79,6 +79,14 @@ const caseLocations: Record<string, { name: string; addressRegion: string; addre
   },
 };
 
+/** Clients named on published case-study pages only (not the full logo strip). */
+const caseClients: Record<string, { name: string; url: string }> = {
+  "industriali/lamiere-da-getto-spinelli": { name: "Spinelli S.r.l.", url: "https://spinellisrl.eu/" },
+  "industriali/silos-metallici": { name: "G.P. DI PIAZZON S.R.L.", url: "https://gpdipiazzon.it/" },
+  "ricettivi/superstudio-village": { name: "Superstudio Events", url: "https://www.superstudioevents.com/" },
+  "ricettivi/superstudio-maxi": { name: "Superstudio Events", url: "https://www.superstudioevents.com/" },
+};
+
 export const offeredServices = [
   {
     nameIt: "Progettazione strutturale",
@@ -171,6 +179,7 @@ export function creativeWorkJsonLd({
   keywords,
   contentLocation,
   inLanguage,
+  client,
 }: {
   name: string;
   description: string;
@@ -180,6 +189,8 @@ export function creativeWorkJsonLd({
   keywords?: string;
   contentLocation?: { name: string; addressRegion: string; addressLocality?: string };
   inLanguage?: string;
+  /** Named client on a published case study */
+  client?: { name: string; url: string };
 }) {
   return {
     "@context": "https://schema.org",
@@ -201,6 +212,15 @@ export function creativeWorkJsonLd({
         }
       : {}),
     ...(keywords ? { keywords } : {}),
+    ...(client
+      ? {
+          mentions: {
+            "@type": "Organization",
+            name: client.name,
+            url: client.url,
+          },
+        }
+      : {}),
     ...(contentLocation
       ? {
           contentLocation: {
@@ -236,11 +256,12 @@ export function caseStudyJsonLd({
   const path = `/progetti/${area}/${slug}`;
   const key = `${area}/${slug}`;
   const location = caseLocations[key];
+  const client = caseClients[key];
   const about = areaAbout[locale][area];
   const keywords =
     locale === "en"
-      ? `${about.join(", ")}, Studio Capoferri, Northern Italy`
-      : `${about.join(", ")}, Studio Capoferri, Nord Italia`;
+      ? `${about.join(", ")}, Studio Capoferri, Northern Italy${client ? `, ${client.name}` : ""}`
+      : `${about.join(", ")}, Studio Capoferri, Nord Italia${client ? `, ${client.name}` : ""}`;
 
   return [
     breadcrumbJsonLd(
@@ -260,6 +281,7 @@ export function caseStudyJsonLd({
       keywords,
       contentLocation: location,
       inLanguage: locale === "en" ? "en" : "it",
+      client,
     }),
   ];
 }
