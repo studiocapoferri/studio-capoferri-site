@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CookiePreferencesButton } from "@/components/CookiePreferencesButton";
 import { useLocale } from "@/components/LocaleProvider";
 import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 import { chromeCopy, getNavLabel, localizeHref } from "@/lib/i18n";
@@ -157,6 +158,8 @@ export function SiteFooter() {
               <Link className={`${ui.footerLink} underline underline-offset-2`} href={localizeHref("/privacy-policy", locale)} title={linkTitles.privacy}>
                 Privacy policy
               </Link>
+              {" | "}
+              <CookiePreferencesButton variant="footer" />
             </p>
             <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-white/85">{footerTagline}</p>
             <p className="mt-1">{`${locale === "en" ? "VAT" : "P.IVA"} ${site.pivaDisplay}`}</p>

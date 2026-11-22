@@ -2,37 +2,24 @@
 
 import { useEffect, useState } from "react";
 import { useLocale } from "@/components/LocaleProvider";
+import { openCookiePreferences, readCookiePreferences, type CookiePreferences } from "@/lib/cookie-consent";
 import { site } from "@/lib/site";
-import { CookieChoice } from "./CookieBanner";
-
-const STORAGE_KEY = "cookie_consent_studio_capoferri";
-
-function readConsent(): CookieChoice | null {
-  try {
-    const v = localStorage.getItem(STORAGE_KEY);
-    if (v === "accepted" || v === "rejected") return v;
-  } catch {
-    /* ignore */
-  }
-  return null;
-}
 
 export function MapEmbed() {
   const locale = useLocale();
   const isEn = locale === "en";
-  const [consent, setConsent] = useState<CookieChoice | null>(null);
+  const [prefs, setPrefs] = useState<CookiePreferences | null>(null);
 
   useEffect(() => {
-    setConsent(readConsent());
+    setPrefs(readCookiePreferences());
     const onCustom = (e: Event) => {
-      const ce = e as CustomEvent<CookieChoice>;
-      setConsent(ce.detail);
+      setPrefs((e as CustomEvent<CookiePreferences>).detail);
     };
     window.addEventListener("cookie-consent", onCustom as EventListener);
     return () => window.removeEventListener("cookie-consent", onCustom as EventListener);
   }, []);
 
-  if (consent !== "accepted") {
+  if (prefs?.maps !== true) {
     return (
       <div
         className="flex min-h-[220px] flex-col items-center justify-center gap-3 rounded-sm border border-[#1c1e21]/10 bg-[#f7f6f2] px-4 text-center text-[0.82rem] text-[#444] sm:min-h-[300px] sm:px-5 sm:text-sm md:min-h-[400px]"
@@ -41,17 +28,17 @@ export function MapEmbed() {
       >
         <p className="m-0 max-w-md">
           {isEn
-            ? "The Google Maps embed loads only if you accept non-essential cookies from the banner at the bottom of the page, or from the privacy policy."
-            : "La mappa Google Maps viene caricata solo se accetti i cookie non strettamente necessari dal banner in basso, oppure da privacy policy."}
+            ? "The Google Maps embed loads only if you enable maps in cookie preferences (banner or footer)."
+            : "La mappa Google Maps si carica solo se abiliti le mappe nelle preferenze cookie (banner o footer)."}
         </p>
-        <a
-          href={site.mapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link-accent font-medium"
-        >
-          {isEn ? "Open on Google Maps" : "Apri su Google Maps"}
-        </a>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <button type="button" className="link-accent font-medium" onClick={() => openCookiePreferences()}>
+            {isEn ? "Cookie preferences" : "Preferenze cookie"}
+          </button>
+          <a href={site.mapsUrl} target="_blank" rel="noopener noreferrer" className="link-accent font-medium">
+            {isEn ? "Open on Google Maps" : "Apri su Google Maps"}
+          </a>
+        </div>
       </div>
     );
   }

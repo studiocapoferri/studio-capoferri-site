@@ -39,8 +39,8 @@ export function LocalizedPrivacyPageContent() {
             <ul className={`mt-2 list-none space-y-3 pl-0 ${ui.bodyMuted}`}>
               <li>
                 {isEn
-                  ? "Browsing data: IP address, date/time, pages visited, device/browser information, collected via Google Analytics only after cookie consent."
-                  : "Dati di navigazione: indirizzo IP, data/ora, pagine visitate, informazioni su dispositivo/browser, raccolti tramite Google Analytics solo dopo il consenso ai cookie."}
+                  ? "Browsing data: IP address (anonymized in Analytics), date/time, pages visited, device/browser information, collected via Google Analytics only after analytics consent."
+                  : "Dati di navigazione: indirizzo IP (anonimizzato in Analytics), data/ora, pagine visitate, informazioni su dispositivo/browser, raccolti tramite Google Analytics solo dopo il consenso alle statistiche."}
               </li>
               <li>
                 {isEn
@@ -49,8 +49,8 @@ export function LocalizedPrivacyPageContent() {
               </li>
               <li>
                 {isEn
-                  ? "Cookie preference: your accept/reject choice stored locally so we remember it on later visits."
-                  : "Preferenza cookie: la scelta Accetta/Rifiuta salvata in locale per ricordarla nelle visite successive."}
+                  ? "Cookie preferences: your granular choices (analytics / maps) stored locally so we remember them on later visits."
+                  : "Preferenze cookie: le scelte granulari (statistiche / mappe) salvate in locale per ricordarle nelle visite successive."}
               </li>
             </ul>
 
@@ -63,13 +63,13 @@ export function LocalizedPrivacyPageContent() {
               </li>
               <li>
                 {isEn
-                  ? "Site statistics with Google Analytics: legal basis: consent (Art. 6(1)(a) GDPR / ePrivacy). Without consent the analytics script is not loaded."
-                  : "Statistiche di sito con Google Analytics: base giuridica: consenso (art. 6, par. 1, lett. a GDPR / ePrivacy). Senza consenso lo script analytics non viene caricato."}
+                  ? "Site statistics with Google Analytics: legal basis: consent (Art. 6(1)(a) GDPR / ePrivacy). Without analytics consent the gtag.js script is not loaded. We use Google Consent Mode v2 with analytics_storage denied by default."
+                  : "Statistiche di sito con Google Analytics: base giuridica: consenso (art. 6, par. 1, lett. a GDPR / ePrivacy). Senza consenso alle statistiche lo script gtag.js non viene caricato. Usiamo Google Consent Mode v2 con analytics_storage negato di default."}
               </li>
               <li>
                 {isEn
-                  ? "Embedding Google Maps on the contacts page: legal basis: consent. Without consent the map is not loaded."
-                  : "Incorporamento di Google Maps nella pagina contatti: base giuridica: consenso. Senza consenso la mappa non viene caricata."}
+                  ? "Embedding Google Maps on the contacts page: legal basis: consent (maps preference). Without maps consent the map is not loaded."
+                  : "Incorporamento di Google Maps nella pagina contatti: base giuridica: consenso (preferenza mappe). Senza consenso alle mappe la mappa non viene caricata."}
               </li>
               <li>
                 {isEn
@@ -86,27 +86,79 @@ export function LocalizedPrivacyPageContent() {
             </p>
             <ul className={`mt-3 list-none space-y-2 pl-0 ${ui.body}`}>
               <li>
-                {isEn
-                  ? "Formspree: receives contact-form submissions so we can read and reply to messages."
-                  : "Formspree: riceve i messaggi del form di contatto per consentirci di leggerli e rispondere."}
+                {isEn ? (
+                  <>
+                    Formspree (Wingify): receives contact-form submissions.{" "}
+                    <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="link-accent">
+                      Privacy policy
+                    </a>
+                    .
+                  </>
+                ) : (
+                  <>
+                    Formspree (Wingify): riceve i messaggi del form di contatto.{" "}
+                    <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="link-accent">
+                      Privacy policy
+                    </a>
+                    .
+                  </>
+                )}
               </li>
               <li>
-                {isEn
-                  ? `Google Ireland Ltd / Google LLC, Google Analytics (${site.gaMeasurementId}) and, if accepted, Google Maps embeds.`
-                  : `Google Ireland Ltd / Google LLC, Google Analytics (${site.gaMeasurementId}) e, se accettato, l’embed di Google Maps.`}
+                {isEn ? (
+                  <>
+                    Google Ireland Ltd / Google LLC — Google Analytics ({site.gaMeasurementId}) and, if maps are enabled, Google Maps embeds.{" "}
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="link-accent">
+                      Google Privacy Policy
+                    </a>
+                    .
+                  </>
+                ) : (
+                  <>
+                    Google Ireland Ltd / Google LLC — Google Analytics ({site.gaMeasurementId}) e, se le mappe sono abilitate, embed Google Maps.{" "}
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="link-accent">
+                      Privacy Policy Google
+                    </a>
+                    .
+                  </>
+                )}
               </li>
               <li>
-                {isEn
-                  ? "Hosting / infrastructure providers needed to publish the website."
-                  : "Fornitori di hosting / infrastruttura necessari alla pubblicazione del sito."}
+                {isEn ? (
+                  <>
+                    Hosting: GitHub Pages (GitHub, Inc. / Microsoft).{" "}
+                    <a
+                      href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-accent"
+                    >
+                      GitHub Privacy Statement
+                    </a>
+                    .
+                  </>
+                ) : (
+                  <>
+                    Hosting: GitHub Pages (GitHub, Inc. / Microsoft).{" "}
+                    <a
+                      href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-accent"
+                    >
+                      GitHub Privacy Statement
+                    </a>
+                    .
+                  </>
+                )}
               </li>
             </ul>
 
             <h2 className={h2}>{isEn ? "Transfers outside the EU/EEA" : "Trasferimenti extra UE/SEE"}</h2>
             <p className={ui.bodyMuted}>
               {isEn
-                ? "Some providers (notably Google and Formspree) may process data in countries outside the European Economic Area. Where applicable, transfers rely on adequacy decisions or Standard Contractual Clauses and additional safeguards offered by those providers."
-                : "Alcuni fornitori (in particolare Google e Formspree) possono trattare dati in Paesi fuori dallo Spazio economico europeo. Ove applicabile, i trasferimenti si basano su decisioni di adeguatezza o Clausole contrattuali tipo e sulle misure aggiuntive previste da tali fornitori."}
+                ? "Google, Formspree and GitHub/Microsoft may process data in countries outside the European Economic Area (including the United States). Where applicable, transfers rely on the EU–US Data Privacy Framework adequacy decision and/or Standard Contractual Clauses (SCCs) and the additional safeguards published by those providers."
+                : "Google, Formspree e GitHub/Microsoft possono trattare dati in Paesi fuori dallo Spazio economico europeo (inclusi gli Stati Uniti). Ove applicabile, i trasferimenti si basano sulla decisione di adeguatezza EU–US Data Privacy Framework e/o sulle Clausole contrattuali tipo (SCC) e sulle misure aggiuntive pubblicate da tali fornitori."}
             </p>
 
             <h2 className={h2}>{isEn ? "Retention" : "Conservazione"}</h2>
@@ -118,8 +170,8 @@ export function LocalizedPrivacyPageContent() {
               </li>
               <li>
                 {isEn
-                  ? "Analytics data: retained according to the Google Analytics property settings configured by the controller."
-                  : "Dati analytics: conservati secondo le impostazioni della proprietà Google Analytics configurate dal titolare."}
+                  ? "Analytics data: retained for 14 months in the Google Analytics property (then automatically deleted/aggregated per GA settings). IP anonymization is enabled."
+                  : "Dati analytics: conservati per 14 mesi nella proprietà Google Analytics (poi cancellati/aggregati secondo le impostazioni GA). È attiva l’anonimizzazione IP."}
               </li>
               <li>
                 {isEn
@@ -131,8 +183,8 @@ export function LocalizedPrivacyPageContent() {
             <h2 className={h2}>{isEn ? "Your rights" : "Diritti dell’interessato"}</h2>
             <p className={ui.bodyMuted}>
               {isEn
-                ? "You may request access, rectification, erasure, restriction, portability, and object to processing where applicable (Arts. 15–22 GDPR). You may withdraw cookie/analytics consent at any time via “Change cookie preferences” below or the banner controls. Withdrawal does not affect processing already carried out."
-                : "Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opporti al trattamento nei casi previsti (artt. 15–22 GDPR). Puoi revocare il consenso ai cookie/analytics in qualsiasi momento tramite “Modifica preferenze cookie” qui sotto o dal banner. La revoca non pregiudica i trattamenti già effettuati."}
+                ? "You may request access, rectification, erasure, restriction, portability, and object to processing where applicable (Arts. 15–22 GDPR). You may withdraw cookie consent at any time via “Cookie preferences” in the footer or below. Withdrawal does not affect processing already carried out. Rejecting or disabling analytics also deletes Google Analytics first-party cookies (_ga / _ga_*) from this site."
+                : "Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opporti al trattamento nei casi previsti (artt. 15–22 GDPR). Puoi revocare il consenso ai cookie in qualsiasi momento tramite “Preferenze cookie” nel footer o qui sotto. La revoca non pregiudica i trattamenti già effettuati. Il rifiuto o la disattivazione delle statistiche cancella anche i cookie di prima parte di Google Analytics (_ga / _ga_*) da questo sito."}
             </p>
             <p className={`mt-3 ${ui.bodyMuted}`}>
               {isEn
@@ -146,22 +198,66 @@ export function LocalizedPrivacyPageContent() {
                 : ". Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it)."}
             </p>
 
-            <h2 id="cookie" className={h2}>
+            <h2 id="cookie" className={`${h2} ${scrollAnchorClass}`}>
               {isEn ? "Cookies" : "Cookie"}
             </h2>
             <p className={`mb-6 ${ui.bodyMuted}`}>
               {isEn
-                ? "We use essential technical cookies and, only with your prior consent, non-essential third-party cookies/scripts. You can accept or reject non-essential cookies from the banner; refusal does not block browsing of the site."
-                : "Utilizziamo cookie tecnici necessari e, solo con il tuo consenso preventivo, cookie/script di terze parti non necessari. Puoi accettare o rifiutare i cookie non necessari dal banner; il rifiuto non impedisce la navigazione del sito."}
+                ? "We use essential technical cookies and, only with your prior consent, non-essential third-party cookies/scripts. You can accept all, reject all, or customize analytics and maps separately from the banner or footer. Refusal does not block browsing of the site."
+                : "Utilizziamo cookie tecnici necessari e, solo con il tuo consenso preventivo, cookie/script di terze parti non necessari. Puoi accettare tutto, rifiutare tutto o personalizzare separatamente statistiche e mappe dal banner o dal footer. Il rifiuto non impedisce la navigazione del sito."}
             </p>
+
+            <div className="mb-8 overflow-x-auto">
+              <table className="w-full min-w-[36rem] border-collapse text-left text-sm text-[#333]">
+                <thead>
+                  <tr className="border-b border-[#1c1e21]/15">
+                    <th className="py-2 pr-3 font-medium">{isEn ? "Name" : "Nome"}</th>
+                    <th className="py-2 pr-3 font-medium">{isEn ? "Provider" : "Fornitore"}</th>
+                    <th className="py-2 pr-3 font-medium">{isEn ? "Purpose" : "Finalità"}</th>
+                    <th className="py-2 pr-3 font-medium">{isEn ? "Type" : "Tipo"}</th>
+                    <th className="py-2 font-medium">{isEn ? "Duration" : "Durata"}</th>
+                  </tr>
+                </thead>
+                <tbody className="align-top">
+                  <tr className="border-b border-[#1c1e21]/8">
+                    <td className="py-2 pr-3 font-mono text-xs">cookie_consent_studio_capoferri</td>
+                    <td className="py-2 pr-3">{site.legalName}</td>
+                    <td className="py-2 pr-3">{isEn ? "Store analytics/maps preferences" : "Memorizzare preferenze analytics/mappe"}</td>
+                    <td className="py-2 pr-3">{isEn ? "Technical" : "Tecnico"}</td>
+                    <td className="py-2">12 {isEn ? "months" : "mesi"}</td>
+                  </tr>
+                  <tr className="border-b border-[#1c1e21]/8">
+                    <td className="py-2 pr-3 font-mono text-xs">_ga</td>
+                    <td className="py-2 pr-3">Google</td>
+                    <td className="py-2 pr-3">{isEn ? "Distinguish users (GA4)" : "Distinguere gli utenti (GA4)"}</td>
+                    <td className="py-2 pr-3">{isEn ? "Analytics (consent)" : "Statistiche (consenso)"}</td>
+                    <td className="py-2">2 {isEn ? "years" : "anni"}</td>
+                  </tr>
+                  <tr className="border-b border-[#1c1e21]/8">
+                    <td className="py-2 pr-3 font-mono text-xs">_ga_{site.gaMeasurementId.replace("G-", "")}</td>
+                    <td className="py-2 pr-3">Google</td>
+                    <td className="py-2 pr-3">{isEn ? "Persist GA4 session state" : "Persistenza stato sessione GA4"}</td>
+                    <td className="py-2 pr-3">{isEn ? "Analytics (consent)" : "Statistiche (consenso)"}</td>
+                    <td className="py-2">2 {isEn ? "years" : "anni"}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-3 font-mono text-xs">Google Maps (iframe)</td>
+                    <td className="py-2 pr-3">Google</td>
+                    <td className="py-2 pr-3">{isEn ? "Show office map on contact page" : "Mostrare la mappa della sede in contatti"}</td>
+                    <td className="py-2 pr-3">{isEn ? "Embed (consent)" : "Embed (consenso)"}</td>
+                    <td className="py-2">{isEn ? "Per Google / session" : "Secondo Google / sessione"}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <div className="space-y-5 sm:space-y-8">
               <div className="home-plate">
                 <h3 className={h3}>{isEn ? "Technical cookies (no consent required)" : "Cookie tecnici (senza consenso)"}</h3>
                 <p className={ui.bodyMuted}>
                   {isEn
-                    ? "Preference cookie that stores whether you accepted or rejected non-essential cookies (localStorage / first-party cookie, about 12 months). Needed to remember your choice."
-                    : "Cookie/preferenza che memorizza se hai accettato o rifiutato i cookie non necessari (localStorage / cookie di prima parte, circa 12 mesi). Serve a ricordare la tua scelta."}
+                    ? "Preference storage that records your analytics/maps choices (localStorage / first-party cookie, about 12 months)."
+                    : "Memorizzazione della preferenza che registra le scelte analytics/mappe (localStorage / cookie di prima parte, circa 12 mesi)."}
                 </p>
               </div>
 
@@ -169,8 +265,8 @@ export function LocalizedPrivacyPageContent() {
                 <h3 className={h3}>{isEn ? "Analytics: Google Analytics 4 (consent required)" : "Statistiche, Google Analytics 4 (consenso richiesto)"}</h3>
                 <p className={ui.bodyMuted}>
                   {isEn
-                    ? `Provider: Google. Measurement ID: ${site.gaMeasurementId}. Purpose: aggregated statistics on visits and page use. Loaded only after “Accept”. If you refuse or have not chosen yet, the gtag.js script is not installed.`
-                    : `Fornitore: Google. ID misurazione: ${site.gaMeasurementId}. Finalità: statistiche aggregate su visite e uso delle pagine. Caricato solo dopo “Accetta”. Se rifiuti o non hai ancora scelto, lo script gtag.js non viene installato.`}
+                    ? `Provider: Google. Measurement ID: ${site.gaMeasurementId}. Purpose: aggregated statistics. Loaded only if you enable analytics. IP anonymization is on; event retention is set to 14 months.`
+                    : `Fornitore: Google. ID misurazione: ${site.gaMeasurementId}. Finalità: statistiche aggregate. Caricato solo se abiliti le statistiche. Anonimizzazione IP attiva; retention eventi impostata a 14 mesi.`}
                 </p>
               </div>
 
@@ -178,8 +274,8 @@ export function LocalizedPrivacyPageContent() {
                 <h3 className={h3}>{isEn ? "Embedded content: Google Maps (consent required)" : "Contenuti incorporati, Google Maps (consenso richiesto)"}</h3>
                 <p className={ui.bodyMuted}>
                   {isEn
-                    ? "On the contacts page, the map iframe loads only after consent. Without consent a placeholder is shown instead."
-                    : "Nella pagina contatti, l’iframe della mappa si carica solo dopo il consenso. Senza consenso viene mostrato un segnaposto."}
+                    ? "On the contacts page, the map iframe loads only if maps are enabled in preferences. Without consent a placeholder and an external Google Maps link are shown."
+                    : "Nella pagina contatti, l’iframe della mappa si carica solo se le mappe sono abilitate nelle preferenze. Senza consenso restano un segnaposto e il link esterno a Google Maps."}
                 </p>
               </div>
 
@@ -198,8 +294,8 @@ export function LocalizedPrivacyPageContent() {
                 </h3>
                 <p className="mb-3 copy-rhythm text-[0.98rem] leading-relaxed text-white/95 sm:text-[1.05rem]">
                   {isEn
-                    ? "You can change your choice at any time. Resetting preferences reloads the page and shows the banner again."
-                    : "Puoi modificare la scelta in qualsiasi momento. Il reset delle preferenze ricarica la pagina e ripropone il banner."}
+                    ? "You can change your choice at any time from the footer or this button. Opening preferences shows the banner again without forcing a full reset first."
+                    : "Puoi modificare la scelta in qualsiasi momento dal footer o da questo pulsante. Aprendo le preferenze si ripropone il banner senza un reset forzato iniziale."}
                 </p>
                 <div className="mt-5">
                   <CookiePreferencesButton />
@@ -207,10 +303,15 @@ export function LocalizedPrivacyPageContent() {
               </div>
             </div>
 
-            <p className={`mt-12 text-sm text-[#666] ${ui.body}`}>
+            <h2 className={h2}>{isEn ? "Professional disclaimer" : "Disclaimer professionale"}</h2>
+            <p className={ui.bodyMuted}>
               {isEn
-                ? "Last updated: September 2026."
-                : "Ultimo aggiornamento: settembre 2026."}
+                ? "Content on this website is for general information about Studio Capoferri’s professional services. It does not constitute engineering advice, a quotation, or a professional appointment. Any engagement is governed by a separate written agreement and applicable professional rules."
+                : "I contenuti di questo sito hanno finalità informative generali sui servizi professionali di Studio Capoferri. Non costituiscono parere tecnico, preventivo vincolante né incarico professionale. Ogni incarico è regolato da accordo scritto separato e dalle norme deontologiche applicabili."}
+            </p>
+
+            <p className={`mt-12 text-sm text-[#666] ${ui.body}`}>
+              {isEn ? "Last updated: November 2026." : "Ultimo aggiornamento: novembre 2026."}
             </p>
           </article>
         </div>

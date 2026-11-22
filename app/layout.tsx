@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AppProviders } from "@/components/AppProviders";
+import { ConsentModeDefaults } from "@/components/ConsentModeDefaults";
 import { CookieBanner } from "@/components/CookieBanner";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { LocalePreferenceRedirect } from "@/components/LocalePreferenceRedirect";
@@ -207,6 +208,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <ConsentModeDefaults />
         <AppProviders>
           <SkipLink />
           <LocalePreferenceRedirect />
