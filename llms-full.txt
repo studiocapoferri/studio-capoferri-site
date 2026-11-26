@@ -49,7 +49,7 @@
 ## What they do
 
 - Structural design: steel, reinforced concrete, masonry
-- Analysis: FEM; codes NTC 2018 and Eurocodes
+- Analysis: FEM with Sismicad; codes NTC 2018 and Eurocodes
 - Fabrication shop drawings / disegni costruttivi d'officina (assemblies, NC-oriented deliverables)
 - BIM / 3D structural modelling with official Tekla Structures licences
 - Connection and detail FEM checks with official IDEA StatiCa licences

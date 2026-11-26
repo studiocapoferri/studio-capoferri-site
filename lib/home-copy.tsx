@@ -121,7 +121,7 @@ export const homeCopy = {
       ["Energy certification", "Energy certification services for issuing Building Energy Performance Certificates (APE)"],
       [
         "Professional software",
-        "Official licences for Tekla Structures (BIM and fabrication drawings) and IDEA StatiCa (FEM checks on connections and details).",
+        "Sismicad for FEM analysis; official licences for Tekla Structures (BIM and fabrication drawings) and IDEA StatiCa (connection and detail checks).",
       ],
     ] as [string, string][],
     zoneTitle: "Where we work",

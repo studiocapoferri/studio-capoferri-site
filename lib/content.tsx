@@ -104,7 +104,7 @@ export const certifications = [
   },
   {
     title: "Software professionali",
-    text: "Licenze ufficiali Tekla Structures (BIM e elaborati d'officina) e IDEA StatiCa (verifica FEM di nodi e connessioni).",
+    text: "Sismicad per il calcolo FEM; licenze ufficiali Tekla Structures (BIM e elaborati d'officina) e IDEA StatiCa (verifica nodi e connessioni).",
   },
 ] as const;
 

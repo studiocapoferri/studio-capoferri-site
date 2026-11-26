@@ -22,8 +22,12 @@ export const servicesCopy = {
             "Edifici residenziali, commerciali, industriali e infrastrutture. Anche silos metallici per stoccaggio industriale (granuli, farine e altri materiali): geometria, carichi, sostegni e sequenza di montaggio.",
           ],
           [
+            "Modellazione FEM (Sismicad)",
+            "Analisi agli elementi finiti con Sismicad: valutazioni statiche e dinamiche secondo NTC ed Eurocodici, anche su componenti di dettaglio.",
+          ],
+          [
             "Verifica nodi e connessioni (IDEA StatiCa)",
-            "Analisi FEM locale con IDEA StatiCa (licenza ufficiale): giunti, piastre di ancoraggio, connessioni e componenti di dettaglio (anche ancoraggi per shock transmitter).",
+            "Analisi FEM locale con IDEA StatiCa (licenza ufficiale): giunti, piastre di ancoraggio, connessioni e componenti critici (anche ancoraggi per shock transmitter).",
           ],
           [
             "Modellazione BIM (Tekla Structures)",
@@ -177,7 +181,7 @@ export const servicesCopy = {
       ],
       [
         "Con quali software lavorate?",
-        "Licenze ufficiali Tekla Structures per modellazione BIM ed elaborati d'officina, e IDEA StatiCa per la verifica FEM di nodi, connessioni e dettagli critici.",
+        "Sismicad per il calcolo FEM e le verifiche normative; licenze ufficiali Tekla Structures per modellazione BIM ed elaborati d'officina, e IDEA StatiCa per la verifica FEM di nodi, connessioni e dettagli critici.",
       ],
       [
         "Progettate silos metallici?",
@@ -212,6 +216,10 @@ export const servicesCopy = {
           [
             "Civil and industrial structures",
             "Houses, commercial and industrial buildings, infrastructure. Including metal silos for industrial storage (granules, flour and other materials): geometry, loads, supports and erection sequence.",
+          ],
+          [
+            "FEM modelling (Sismicad)",
+            "Finite-element analysis with Sismicad: static and dynamic assessment to NTC and Eurocodes, including detail components.",
           ],
           [
             "Connection and detail checks (IDEA StatiCa)",
@@ -369,7 +377,7 @@ export const servicesCopy = {
       ],
       [
         "Which software do you use?",
-        "Official licences for Tekla Structures (BIM modelling and fabrication drawings) and IDEA StatiCa (FEM checks on connections, joints and critical details).",
+        "Sismicad for FEM analysis and code checks; official licences for Tekla Structures (BIM modelling and fabrication drawings) and IDEA StatiCa (FEM checks on connections, joints and critical details).",
       ],
       [
         "Do you design metal silos?",

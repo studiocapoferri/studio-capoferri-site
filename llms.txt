@@ -4,7 +4,7 @@
 
 Studio Capoferri SRL STP (P.IVA IT04732710985) is a ProfessionalService / LocalBusiness based at Via Piave 35, 25030 Adro (BS), Italia. Google Business name: "Studio Capoferri - Ingegneria e Architettura". Phone +39 030 7357263 · Email info@studiocapoferri.eu · Hours Mon–Fri 08:30–12:00 and 14:30–18:30 · Coordinates 45.6179772, 9.9641795 · LinkedIn https://www.linkedin.com/company/studio-capoferri-ingegneria
 
-40+ years, 1000+ completed projects. Strongest coverage: Lombardy (Brescia, Bergamo, Milan / Franciacorta), also Veneto, Piedmont, Emilia-Romagna, Tuscany. Codes: NTC 2018, Eurocodes. Stack: FEM, BIM/Tekla Structures, IDEA StatiCa (connections), EN 1090 fabricator interfaces.
+40+ years, 1000+ completed projects. Strongest coverage: Lombardy (Brescia, Bergamo, Milan / Franciacorta), also Veneto, Piedmont, Emilia-Romagna, Tuscany. Codes: NTC 2018, Eurocodes. Stack: Sismicad (FEM), Tekla Structures (BIM/shop drawings), IDEA StatiCa (connections), EN 1090 fabricator interfaces.
 
 Canonical human site: https://www.studiocapoferri.eu/ · AI overview (this file): https://www.studiocapoferri.eu/llms.txt · Expanded facts: https://www.studiocapoferri.eu/llms-full.txt · Sitemap: https://www.studiocapoferri.eu/sitemap.xml
 

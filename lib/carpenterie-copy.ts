@@ -24,7 +24,7 @@ export const carpenterieCopy = {
         id: "cosa-facciamo",
         heading: "Cosa possiamo seguire per voi",
         items: [
-          ["Calcolo strutturale", "Relazioni e elaborati secondo NTC / Eurocodici."],
+          ["Calcolo strutturale", "Relazioni e elaborati secondo NTC / Eurocodici con Sismicad."],
           ["Modello 3D", "Modellazione per officina in Tekla Structures (licenza ufficiale)."],
           ["Nodi e connessioni", "Verifica FEM di giunti e dettagli critici con IDEA StatiCa (licenza ufficiale)."],
           ["Disegni d'officina", "Disegni di montaggio, assemblaggi e file NC (controllo numerico)."],
@@ -35,7 +35,7 @@ export const carpenterieCopy = {
         id: "come-lavoriamo",
         heading: "Come lavoriamo con l'officina",
         body: [
-          "Voi restate il riferimento per produzione e, tipicamente, per direzione lavori e pratiche verso committenza e enti. Noi consegniamo il pacchetto progettuale e costruttivo necessario a fabbricare e montare in sicurezza, con licenze ufficiali Tekla Structures e IDEA StatiCa.",
+          "Voi restate il riferimento per produzione e, tipicamente, per direzione lavori e pratiche verso committenza e enti. Noi consegniamo il pacchetto progettuale e costruttivo necessario a fabbricare e montare in sicurezza: Sismicad per il calcolo, Tekla Structures e IDEA StatiCa (licenze ufficiali) per modello, officina e nodi critici.",
         ],
       },
     ],
@@ -47,7 +47,7 @@ export const carpenterieCopy = {
       ],
       [
         "Lavorate con Tekla?",
-        "Sì: usiamo Tekla Structures con licenza ufficiale per modellazione e elaborati d'officina. Per i nodi critici integriamo IDEA StatiCa.",
+        "Sì: usiamo Tekla Structures con licenza ufficiale per modellazione e elaborati d'officina. Il calcolo strutturale è su Sismicad; per i nodi critici integriamo IDEA StatiCa (licenza ufficiale).",
       ],
       [
         "Seguite anche direzione lavori e pratiche?",
@@ -104,7 +104,7 @@ export const carpenterieCopy = {
         id: "what-we-do",
         heading: "What we can cover for you",
         items: [
-          ["Structural analysis", "Reports and drawings to NTC / Eurocodes."],
+          ["Structural analysis", "Reports and drawings to NTC / Eurocodes with Sismicad."],
           ["3D model", "Workshop modelling in Tekla Structures (official licence)."],
           ["Connections and details", "Local FEM checks on joints and critical details with IDEA StatiCa (official licence)."],
           ["Shop drawings", "General arrangement drawings, assemblies and NC files (numerical control)."],
@@ -115,7 +115,7 @@ export const carpenterieCopy = {
         id: "how-we-work",
         heading: "How we work with the workshop",
         body: [
-          "You typically remain the lead for fabrication and often for site supervision and filings. We deliver the design and fabrication package needed to manufacture and erect safely, using official Tekla Structures and IDEA StatiCa licences.",
+          "You typically remain the lead for fabrication and often for site supervision and filings. We deliver the design and fabrication package needed to manufacture and erect safely: Sismicad for analysis, Tekla Structures and IDEA StatiCa (official licences) for modelling, shop drawings and critical connections.",
         ],
       },
     ],
@@ -127,7 +127,7 @@ export const carpenterieCopy = {
       ],
       [
         "Do you work in Tekla?",
-        "Yes — we use Tekla Structures with an official licence for modelling and fabrication drawings. For critical connections we integrate IDEA StatiCa.",
+        "Yes — we use Tekla Structures with an official licence for modelling and fabrication drawings. Structural analysis runs in Sismicad; for critical connections we integrate IDEA StatiCa (official licence).",
       ],
       [
         "Do you also handle site supervision and filings?",
