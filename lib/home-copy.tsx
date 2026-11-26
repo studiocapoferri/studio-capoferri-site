@@ -119,7 +119,10 @@ export const homeCopy = {
         "Professionals listed by the Italian Ministry of the Interior under article 16 of Legislative Decree no. 139 of March 8, 2006",
       ],
       ["Energy certification", "Energy certification services for issuing Building Energy Performance Certificates (APE)"],
-      ["Professional software", "CAD, FEM analysis, structural calculation, BIM modelling."],
+      [
+        "Professional software",
+        "Official licences for Tekla Structures (BIM and fabrication drawings) and IDEA StatiCa (FEM checks on connections and details).",
+      ],
     ] as [string, string][],
     zoneTitle: "Where we work",
     zoneHeading: "Northern Italy",

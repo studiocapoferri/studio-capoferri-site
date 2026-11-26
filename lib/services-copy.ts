@@ -22,12 +22,12 @@ export const servicesCopy = {
             "Edifici residenziali, commerciali, industriali e infrastrutture. Anche silos metallici per stoccaggio industriale (granuli, farine e altri materiali): geometria, carichi, sostegni e sequenza di montaggio.",
           ],
           [
-            "Modellazione FEM",
-            "Analisi agli elementi finiti per valutazioni statiche e dinamiche, anche su componenti di dettaglio come piastre di ancoraggio per shock transmitter.",
+            "Verifica nodi e connessioni (IDEA StatiCa)",
+            "Analisi FEM locale con IDEA StatiCa (licenza ufficiale): giunti, piastre di ancoraggio, connessioni e componenti di dettaglio (anche ancoraggi per shock transmitter).",
           ],
           [
-            "Modellazione BIM",
-            "Modello informativo per coordinamento, controllo interferenze e scambio dati con committente e impresa.",
+            "Modellazione BIM (Tekla Structures)",
+            "Modello 3D/BIM con Tekla Structures (licenza ufficiale): coordinamento, controllo interferenze, elaborati d'officina e scambio dati con committente e impresa.",
           ],
           [
             "Progettazione in condizioni di incendio",
@@ -176,6 +176,10 @@ export const servicesCopy = {
         "Sì. Tavole esecutive per la fabbricazione e il montaggio delle strutture metalliche, anche per carpenterie e officine EN 1090.",
       ],
       [
+        "Con quali software lavorate?",
+        "Licenze ufficiali Tekla Structures per modellazione BIM ed elaborati d'officina, e IDEA StatiCa per la verifica FEM di nodi, connessioni e dettagli critici.",
+      ],
+      [
         "Progettate silos metallici?",
         "Sì. Geometria, acciaio o alluminio, pressioni di riempimento e svuotamento, vento e sisma, su impianti e materiali diversi.",
       ],
@@ -210,12 +214,12 @@ export const servicesCopy = {
             "Houses, commercial and industrial buildings, infrastructure. Including metal silos for industrial storage (granules, flour and other materials): geometry, loads, supports and erection sequence.",
           ],
           [
-            "FEM modelling",
-            "Finite-element analysis for static and dynamic assessment, including detail components such as shock-transmitter anchor plates.",
+            "Connection and detail checks (IDEA StatiCa)",
+            "Local FEM analysis with IDEA StatiCa (official licence): joints, base plates, connections and critical details (including shock-transmitter anchors).",
           ],
           [
-            "BIM modelling",
-            "Building information modelling for coordination, clash detection and data exchange with client and contractor.",
+            "BIM modelling (Tekla Structures)",
+            "3D/BIM modelling with Tekla Structures (official licence): coordination, clash detection, fabrication drawings and data exchange with client and contractor.",
           ],
           [
             "Design in fire conditions",
@@ -362,6 +366,10 @@ export const servicesCopy = {
       [
         "Do you produce shop drawings?",
         "Yes. Fabrication drawings for workshop and erection of steel structures, including work with EN 1090 fabricators.",
+      ],
+      [
+        "Which software do you use?",
+        "Official licences for Tekla Structures (BIM modelling and fabrication drawings) and IDEA StatiCa (FEM checks on connections, joints and critical details).",
       ],
       [
         "Do you design metal silos?",

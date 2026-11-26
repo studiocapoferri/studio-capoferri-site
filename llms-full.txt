@@ -51,7 +51,8 @@
 - Structural design: steel, reinforced concrete, masonry
 - Analysis: FEM; codes NTC 2018 and Eurocodes
 - Fabrication shop drawings / disegni costruttivi d'officina (assemblies, NC-oriented deliverables)
-- BIM / 3D structural modelling (including Tekla workflows where relevant)
+- BIM / 3D structural modelling with official Tekla Structures licences
+- Connection and detail FEM checks with official IDEA StatiCa licences
 - Construction supervision / direzione lavori
 - Site safety coordination CSP/CSE
 - Fire-safety consultancy where listed professionals apply
