@@ -38,7 +38,13 @@ export function LocalizedCarpenteriePage() {
     description: copy.lead,
     provider: { "@id": organizationId() },
     areaServed: [
+      { "@type": "AdministrativeArea", name: "Brescia" },
+      { "@type": "AdministrativeArea", name: "Bergamo" },
+      { "@type": "AdministrativeArea", name: "Milano" },
       { "@type": "AdministrativeArea", name: "Lombardy" },
+      { "@type": "AdministrativeArea", name: "Veneto" },
+      { "@type": "AdministrativeArea", name: "Piedmont" },
+      { "@type": "AdministrativeArea", name: "Emilia-Romagna" },
       { "@type": "Country", name: "Italy" },
     ],
     url: absolutePageUrl,

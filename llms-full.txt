@@ -62,8 +62,10 @@
 ## Geography
 
 - Base: Adro (BS), Franciacorta
-- Core: Brescia, Bergamo, Milano provinces
-- Broader: Lombardia, Veneto, Piemonte, Emilia-Romagna, Toscana (Nord / Centro-Nord Italia)
+- Priority cities / provinces: Brescia, Bergamo, Milano
+- Priority regions: Lombardia, then Veneto, Piemonte, Emilia-Romagna
+- Also: Toscana on specific commissions (e.g. published residential work outside the core basin)
+- Published local proof examples: Erbusco / Provaglio / Castegnato / Adro (BS); Chiuduno (BG); Superstudio Bovisa & Famagosta (MI); Maranello (MO) and Salsomaggiore (PR) in Emilia-Romagna
 
 ## Proof points
 
@@ -122,7 +124,10 @@ Q: Do they work in English?
 A: Yes. Technical discussions and replies can be in English for international clients and EU partners.
 
 Q: Do they produce shop drawings for steel fabricators?
-A: Yes. They produce fabrication shop drawings (disegni costruttivi d'officina) aligned to workshop and site sequences, including work with EN 1090 fabricators. Dedicated landing: https://www.studiocapoferri.eu/progettazione-strutturale-per-carpenterie/
+A: Yes. They produce fabrication shop drawings (disegni costruttivi d'officina) aligned to workshop and site sequences, including work with EN 1090 fabricators. Typical package: shop drawings, assembly/erection drawings, material lists and NC-oriented data where needed; IFC/model handover when agreed. Dedicated landing: https://www.studiocapoferri.eu/progettazione-strutturale-per-carpenterie/
+
+Q: Which software do they use?
+A: Sismicad for FEM structural analysis (NTC / Eurocodes); official Tekla Structures licences for BIM modelling and fabrication drawings; official IDEA StatiCa licences for connection and critical-detail checks.
 
 Q: Do they work with general contractors?
 A: Yes. They support GCs and main contractors with structural design, shop drawings and construction supervision interfaces. Landing: https://www.studiocapoferri.eu/progettazione-strutturale-per-general-contractor/

@@ -73,6 +73,9 @@ export function LocalizedSteelLandingPage({ config }: { config: SteelLandingConf
     areaServed: [
       { "@type": "AdministrativeArea", name: config.areaServedPrimary },
       { "@type": "AdministrativeArea", name: "Lombardy" },
+      { "@type": "AdministrativeArea", name: "Veneto" },
+      { "@type": "AdministrativeArea", name: "Piedmont" },
+      { "@type": "AdministrativeArea", name: "Emilia-Romagna" },
     ],
     url: absolutePageUrl,
   };

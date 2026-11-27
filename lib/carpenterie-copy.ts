@@ -32,10 +32,52 @@ export const carpenterieCopy = {
         ],
       },
       {
+        id: "flusso",
+        heading: "Dal brief agli elaborati di officina",
+        items: [
+          [
+            "1. Brief e vincoli",
+            "Tipologia (capannone, scala, soppalco, villa), carichi, vincoli di montaggio e standard di officina.",
+          ],
+          [
+            "2. Calcolo (Sismicad)",
+            "Modello FEM, verifiche NTC / Eurocodici, relazioni e elaborati firmati quando richiesti.",
+          ],
+          [
+            "3. Modello Tekla",
+            "Profili, bulloneria, saldature e ancoraggi in Tekla Structures: una sola fonte per produzione e montaggio.",
+          ],
+          [
+            "4. Nodi critici (IDEA StatiCa)",
+            "Verifica FEM locale di giunti, piastre e dettagli dove il modello globale non basta.",
+          ],
+          [
+            "5. Estrazione elaborati",
+            "Tavole, assemblaggi, distinte e file NC coerenti col modello — senza ridisegnare a mano pezzo per pezzo.",
+          ],
+        ],
+      },
+      {
+        id: "deliverable",
+        heading: "Cosa consegnamo all'officina",
+        items: [
+          ["Tavole d'officina", "Viste, sezioni, quote e specifiche di materiale per ogni elemento."],
+          ["Assemblaggi e montaggio", "Disegni di assemblaggio e di montaggio con sequenza e giunti di cantiere."],
+          ["Distinte", "Distinte di taglio / materiale per ordine e produzione."],
+          ["File NC", "Dati orientati al controllo numerico, dove il flusso di officina lo richiede."],
+          ["Scambio dati", "IFC o altri formati di scambio per coordinamento con committenza e impresa, se concordato."],
+          [
+            "Modello Tekla",
+            "Consegna del modello all'officina quando usate Tekla in produzione: si valuta in incarico.",
+          ],
+        ],
+      },
+      {
         id: "come-lavoriamo",
         heading: "Come lavoriamo con l'officina",
         body: [
           "Voi restate il riferimento per produzione e, tipicamente, per direzione lavori e pratiche verso committenza e enti. Noi consegniamo il pacchetto progettuale e costruttivo necessario a fabbricare e montare in sicurezza: Sismicad per il calcolo, Tekla Structures e IDEA StatiCa (licenze ufficiali) per modello, officina e nodi critici.",
+          "Lavoriamo soprattutto con officine in Lombardia (Brescia, Bergamo, Milano) e su commesse in Veneto, Piemonte ed Emilia-Romagna. Se l'officina non usa Tekla, gli elaborati restano leggibili in PDF/DWG standard.",
         ],
       },
     ],
@@ -50,8 +92,20 @@ export const carpenterieCopy = {
         "Sì: usiamo Tekla Structures con licenza ufficiale per modellazione e elaborati d'officina. Il calcolo strutturale è su Sismicad; per i nodi critici integriamo IDEA StatiCa (licenza ufficiale).",
       ],
       [
+        "Consegnate anche il modello Tekla?",
+        "Se l'officina lo usa in produzione, sì: si definisce in incarico. Altrimenti consegniamo tavole, assemblaggi e distinte estratte dal modello in formati standard.",
+      ],
+      [
+        "Cosa include tipicamente il pacchetto d'officina?",
+        "Tavole d'officina, disegni di assemblaggio e montaggio, distinte di taglio/materiale e, dove serve, file NC. I nodi critici si verificano con IDEA StatiCa.",
+      ],
+      [
         "Seguite anche direzione lavori e pratiche?",
         "Spesso restano a carico dell'officina o del committente. Se servono, segnalatelo nella richiesta: si valuta per singola commessa.",
+      ],
+      [
+        "In quali zone lavorate con le carpenterie?",
+        "Bacino principale: Lombardia (Brescia, Bergamo, Milano). Accettiamo anche commesse in Veneto, Piemonte ed Emilia-Romagna.",
       ],
     ],
     form: {
@@ -112,10 +166,52 @@ export const carpenterieCopy = {
         ],
       },
       {
+        id: "workflow",
+        heading: "From brief to fabrication drawings",
+        items: [
+          [
+            "1. Brief and constraints",
+            "Building type (hall, stair, mezzanine, house), loads, erection constraints and workshop standards.",
+          ],
+          [
+            "2. Analysis (Sismicad)",
+            "FEM model, NTC / Eurocode checks, reports and signed deliverables when required.",
+          ],
+          [
+            "3. Tekla model",
+            "Members, bolts, welds and anchors in Tekla Structures — one source for fabrication and erection.",
+          ],
+          [
+            "4. Critical connections (IDEA StatiCa)",
+            "Local FEM checks on joints, base plates and details where the global model is not enough.",
+          ],
+          [
+            "5. Drawing extraction",
+            "Shop drawings, assemblies, material lists and NC data coherent with the model — without redrawing piece by piece.",
+          ],
+        ],
+      },
+      {
+        id: "deliverables",
+        heading: "What we deliver to the workshop",
+        items: [
+          ["Shop drawings", "Views, sections, dimensions and material specs for each member."],
+          ["Assemblies and erection", "Assembly and erection drawings with sequence and site joints."],
+          ["Material lists", "Cutting / material lists for ordering and production."],
+          ["NC files", "NC-oriented data where the workshop workflow requires it."],
+          ["Data exchange", "IFC or other exchange formats for client and contractor coordination, if agreed."],
+          [
+            "Tekla model",
+            "Model handover when the workshop runs Tekla in production — agreed per commission.",
+          ],
+        ],
+      },
+      {
         id: "how-we-work",
         heading: "How we work with the workshop",
         body: [
           "You typically remain the lead for fabrication and often for site supervision and filings. We deliver the design and fabrication package needed to manufacture and erect safely: Sismicad for analysis, Tekla Structures and IDEA StatiCa (official licences) for modelling, shop drawings and critical connections.",
+          "We work mainly with fabricators in Lombardy (Brescia, Bergamo, Milan) and on jobs in Veneto, Piedmont and Emilia-Romagna. If the workshop does not use Tekla, deliverables remain readable as standard PDF/DWG.",
         ],
       },
     ],
@@ -130,8 +226,20 @@ export const carpenterieCopy = {
         "Yes — we use Tekla Structures with an official licence for modelling and fabrication drawings. Structural analysis runs in Sismicad; for critical connections we integrate IDEA StatiCa (official licence).",
       ],
       [
+        "Do you also deliver the Tekla model?",
+        "If the workshop uses it in production, yes — agreed per commission. Otherwise we deliver shop drawings, assemblies and lists extracted from the model in standard formats.",
+      ],
+      [
+        "What does a typical shop package include?",
+        "Shop drawings, assembly and erection drawings, cutting/material lists and, where needed, NC files. Critical connections are checked with IDEA StatiCa.",
+      ],
+      [
         "Do you also handle site supervision and filings?",
         "Often those stay with the fabricator or client. If you need them, say so in the enquiry — we assess per job.",
+      ],
+      [
+        "Where do you work with fabricators?",
+        "Main basin: Lombardy (Brescia, Bergamo, Milan). We also take commissions in Veneto, Piedmont and Emilia-Romagna.",
       ],
     ],
     form: {

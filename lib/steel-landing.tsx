@@ -102,14 +102,14 @@ export const steelLandingBrescia: SteelLandingConfig = {
       description: "con Tecnoprogetti: soppalco e carpenteria su edificio industriale esistente",
     },
     {
-      href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-      title: "Villa in acciaio a Salsomaggiore Terme (PR)",
-      description: "telaio in acciaio, pali e copertura fotovoltaica — tipologia residenziale che progettiamo anche in provincia",
+      href: "/progetti/industriali/ampliamento-complesso-zootecnico",
+      title: "Complesso zootecnico a Castegnato (BS)",
+      description: "capriate a grande luce su esistente — provincia di Brescia",
     },
     {
-      href: "/progetti/ricettivi/superstudio-village",
-      title: "Superstudio Village a Milano",
-      description: "quando l'incarico esce dalla provincia: nuova struttura in acciaio e consolidamenti",
+      href: "/progetti/industriali/copertura-edificio-verniciatura-maranello",
+      title: "Tettoia reticolare a Maranello (MO)",
+      description: "grandi luci in Emilia-Romagna — stesso approccio su incarichi fuori Lombardia",
     },
   ],
 };
@@ -145,13 +145,13 @@ export const steelLandingBergamo: SteelLandingConfig = {
   areaBody:
     "Bergamo città e hinterland, Isola Bergamasca, pianura, Val Seriana, Val Brembana, Val Cavallina. Non abbiamo una sede a Bergamo: partiamo da Adro e andiamo in cantiere dove serve.",
   areaBodySecondary:
-    "Brescia resta il bacino di sede. Milano e le altre province arrivano per incarico.",
+    "Brescia resta il bacino di sede. Su incarico lavoriamo anche su Milano e, fuori Lombardia, in Veneto, Piemonte ed Emilia-Romagna.",
   ctaHeading: "Un progetto in acciaio in provincia di Bergamo?",
   faqCostQuestion: "Quanto costa la progettazione di una struttura in acciaio a Bergamo?",
   faqCostAnswer:
     "Dipende da dimensioni e destinazione. Per incarichi in provincia il primo passo è una chiamata o un sopralluogo; poi un preventivo senza impegno su calcolo, costruttivi e direzione lavori.",
   faqAreaAnswer:
-    "Sì: tutta la provincia di Bergamo — città, pianura, Isola e valli. La sede è ad Adro, a ridosso del confine.",
+    "Sì: tutta la provincia di Bergamo — città, pianura, Isola e valli. La sede è ad Adro, a ridosso del confine. Operiamo anche sul resto della Lombardia e, per incarichi, in Veneto, Piemonte ed Emilia-Romagna.",
   areaServedPrimary: "Provincia di Bergamo",
   heroImage: {
     src: "/assets/residenziale/strutture-acciaio-bergamo.webp",
@@ -159,30 +159,30 @@ export const steelLandingBergamo: SteelLandingConfig = {
     altEn: "Steel structure design in Bergamo — residential villa with steel frame",
   },
   secondaryImage: {
-    src: "/assets/residenziale/villa-acciaio-salsomaggiore/carpenteria-metallica-villa-acciaio.webp",
-    alt: "Carpenteria metallica per ville e residenziale in acciaio — tipologia progettata anche in provincia di Bergamo",
-    altEn: "Steel fabrication for houses — a type we also design in the Bergamo province",
+    src: "/assets/industriale/centro-raccolta-rifiuti-chiuduno/copertura-reticolare-cielo-blu-chiuduno.webp",
+    alt: "Struttura reticolare in acciaio del centro raccolta rifiuti a Chiuduno (BG)",
+    altEn: "Steel space-truss structure at the waste collection centre in Chiuduno (BG)",
   },
   featuredProjects: [
     {
+      href: "/progetti/industriali/centro-raccolta-rifiuti-chiuduno",
+      title: "Centro raccolta rifiuti a Chiuduno (BG)",
+      description: "fondazioni, c.a. e telaio in acciaio — caso pubblicato in provincia di Bergamo",
+    },
+    {
       href: "/progetti/industriali/capannone-erbusco",
       title: "Capannone industriale a Erbusco (BS)",
-      description: "carroponti e disegni d'officina — tipologia industriale che portiamo anche in Bergamasca",
+      description: "carroponti e disegni d'officina — tipologia industriale a ridosso del confine",
     },
     {
       href: "/progetti/industriali/centro-direzionale-provaglio-diseo",
       title: "Centro direzionale a Provaglio d'Iseo (BS)",
-      description: "con Tecnoprogetti: soppalco e carpenteria su esistente — stesso approccio in provincia",
-    },
-    {
-      href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-      title: "Villa in acciaio a Salsomaggiore Terme (PR)",
-      description: "telaio e copertura fotovoltaica — residenze in acciaio per committenti bergamaschi",
+      description: "soppalco e carpenteria su esistente — stesso approccio su impianti in Bergamasca",
     },
     {
       href: "/progetti/ricettivi/superstudio-maxi",
       title: "Superstudio Maxi a Milano Famagosta",
-      description: "recupero e nuove strutture in acciaio, fuori provincia",
+      description: "recupero e nuove strutture in acciaio in Lombardia",
     },
   ],
 };
@@ -218,13 +218,13 @@ export const steelLandingMilano: SteelLandingConfig = {
   areaBody:
     "Cantieri in città (Bovisa, Famagosta) e in hinterland nord/sud, Monza e Brianza. Non abbiamo una sede milanese: il calcolo è in Franciacorta, il sopralluogo sul posto quando serve.",
   areaBodySecondary:
-    "Brescia e Bergamo restano il bacino di sede. Gli incarichi milanesi arrivano per tipologia (recupero, eventi, carpenteria), non perché «copriamo tutta la Lombardia».",
+    "Brescia e Bergamo restano il bacino di sede. Gli incarichi milanesi arrivano per tipologia (recupero, eventi, carpenteria). Fuori Lombardia: Veneto, Piemonte ed Emilia-Romagna su incarico.",
   ctaHeading: "Un recupero o una struttura in acciaio a Milano?",
   faqCostQuestion: "Quanto costa la progettazione di una struttura in acciaio a Milano?",
   faqCostAnswer:
     "Su Milano pesano vincoli dell'esistente, sismica e interferenze di cantiere più che i soli mq. Dopo una scheda (tipo di edificio, zona, tempi) o un sopralluogo, mandiamo un preventivo senza impegno: calcolo, costruttivi, direzione lavori.",
   faqAreaAnswer:
-    "Sì, su incarico: città e hinterland, come sui Superstudio. La sede è ad Adro (BS); non è uno studio di quartiere milanese, è lo strutturista di Franciacorta che ha già lavorato in città.",
+    "Sì, su incarico: città e hinterland, come sui Superstudio. La sede è ad Adro (BS). Operiamo anche sul resto della Lombardia e, per incarichi, in Veneto, Piemonte ed Emilia-Romagna.",
   areaServedPrimary: "Provincia di Milano",
   heroImage: {
     src: "/assets/superstudio-maxi/strutture-acciaio-milano.webp",
@@ -250,12 +250,12 @@ export const steelLandingMilano: SteelLandingConfig = {
     {
       href: "/progetti/industriali/capannone-erbusco",
       title: "Capannone industriale a Erbusco (BS)",
-      description: "tipologia industriale con carroponti — lo stesso approccio su incarichi in hinterland",
+      description: "tipologia industriale con carroponti — stesso approccio su incarichi in hinterland",
     },
     {
-      href: "/progetti/residenziali/villa-acciaio-salsomaggiore",
-      title: "Villa in acciaio a Salsomaggiore Terme (PR)",
-      description: "telaio e copertura fotovoltaica — residenze in acciaio anche fuori città",
+      href: "/progetti/industriali/copertura-edificio-verniciatura-maranello",
+      title: "Tettoia reticolare a Maranello (MO)",
+      description: "grandi luci in Emilia-Romagna — stessa logica su incarichi fuori Lombardia",
     },
   ],
 };

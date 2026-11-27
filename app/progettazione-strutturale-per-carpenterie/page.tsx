@@ -11,9 +11,12 @@ export const metadata: Metadata = buildPageMetadata({
     "progettazione per carpenteria metallica",
     "disegni d'officina carpenteria",
     "studio strutturale EN 1090",
-    "Tekla disegni officina",
+    "Tekla Structures disegni officina",
+    "IDEA StatiCa connessioni acciaio",
+    "Sismicad calcolo strutturale",
     "preventivo progettazione carpenteria",
     "ingegnere strutturista carpenteria Brescia",
+    "carpenteria metallica Lombardia",
   ],
 });
 

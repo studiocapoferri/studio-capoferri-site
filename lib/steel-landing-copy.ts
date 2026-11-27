@@ -39,8 +39,8 @@ export const steelLandingCopyEn = {
       featuredProjects: [
         ["Industrial building in Erbusco (BS)", "two overhead cranes, sandwich panels and shop drawings — Franciacorta"],
         ["Headquarters mezzanine in Provaglio d'Iseo (BS)", "steel mezzanine and fabrication on an existing industrial building"],
-        ["Steel villa in Salsomaggiore Terme (PR)", "steel frame, piles and a photovoltaic roof — a house type we also design in the province"],
-        ["Superstudio Village in Milan", "when the job leaves the province: new steel structure and strengthening"],
+        ["Livestock complex in Castegnato (BS)", "large-span trusses on an existing site — Brescia province"],
+        ["Space-truss canopy in Maranello (MO)", "long spans in Emilia-Romagna — the same approach outside Lombardy"],
       ] as const,
     },
     bergamo: {
@@ -56,17 +56,17 @@ export const steelLandingCopyEn = {
       areaBody:
         "Bergamo city and hinterland, Isola Bergamasca, the plain, Val Seriana, Val Brembana, Val Cavallina. We do not have a Bergamo office: we leave from Adro and go to site where needed.",
       areaBodySecondary:
-        "Brescia remains the home basin. Milan and the other provinces come by commission.",
+        "Brescia remains the home basin. On commission we also work in Milan and, outside Lombardy, in Veneto, Piedmont and Emilia-Romagna.",
       ctaHeading: "A steel project in the Bergamo province?",
       faqCostAnswer:
         "It depends on size and use. For work in the province the first step is a call or a site visit; then a no-obligation quote for calculation, shop drawings and site supervision.",
       faqAreaAnswer:
-        "Yes: the whole Bergamo province — city, plain, Isola and the valleys. The office is in Adro, on the provincial border.",
+        "Yes: the whole Bergamo province — city, plain, Isola and the valleys. The office is in Adro, on the provincial border. We also work across the rest of Lombardy and, on commission, in Veneto, Piedmont and Emilia-Romagna.",
       featuredProjects: [
-        ["Industrial hall in Erbusco (BS)", "overhead cranes and shop drawings — an industrial type we also take in Bergamo province"],
-        ["Headquarters mezzanine in Provaglio d'Iseo (BS)", "steel mezzanine on an existing building — the same approach on plants in the province"],
-        ["Steel villa in Salsomaggiore Terme (PR)", "frame and photovoltaic roof — steel houses for Bergamo-area clients"],
-        ["Superstudio Maxi in Milan Famagosta", "reuse and new steel, outside the province"],
+        ["Waste collection centre in Chiuduno (BG)", "foundations, RC works and steel frame — published case in Bergamo province"],
+        ["Industrial hall in Erbusco (BS)", "overhead cranes and shop drawings — an industrial type just across the border"],
+        ["Headquarters mezzanine in Provaglio d'Iseo (BS)", "steel mezzanine on an existing building — the same approach on Bergamo-area plants"],
+        ["Superstudio Maxi in Milan Famagosta", "reuse and new steel elsewhere in Lombardy"],
       ] as const,
     },
     milano: {
@@ -82,17 +82,17 @@ export const steelLandingCopyEn = {
       areaBody:
         "Sites in the city (Bovisa, Famagosta) and in the northern/southern hinterland, Monza and Brianza. We do not have a Milan office: calculation is in Franciacorta; we visit the site when needed.",
       areaBodySecondary:
-        "Brescia and Bergamo remain the home basin. Milan commissions come by type (reuse, venues, steelwork), not because we “cover all of Lombardy”.",
+        "Brescia and Bergamo remain the home basin. Milan commissions come by type (reuse, venues, steelwork). Outside Lombardy: Veneto, Piedmont and Emilia-Romagna on commission.",
       ctaHeading: "A reuse or steel structure in Milan?",
       faqCostAnswer:
         "In Milan, existing-building constraints, seismic work and site logistics often weigh more than floor area alone. After a brief (building type, district, programme) or a visit, we send a no-obligation quote: calculation, shop drawings, site supervision.",
       faqAreaAnswer:
-        "Yes, on commission: city and hinterland, as on the Superstudio jobs. The office is in Adro (Brescia) — a Franciacorta structural practice that has already worked in Milan, not a neighbourhood studio.",
+        "Yes, on commission: city and hinterland, as on the Superstudio jobs. The office is in Adro (Brescia). We also work across the rest of Lombardy and, on commission, in Veneto, Piedmont and Emilia-Romagna.",
       featuredProjects: [
         ["Superstudio Village in Milan Bovisa", "new steel structure around 16 metres high, strengthening and reconstruction"],
         ["Superstudio Maxi in Famagosta", "industrial hall reuse, seismic upgrading and new steel"],
         ["Industrial hall in Erbusco (BS)", "crane building — the same approach on hinterland commissions"],
-        ["Steel villa in Salsomaggiore Terme (PR)", "frame and photovoltaic roof — steel houses also outside the city"],
+        ["Space-truss canopy in Maranello (MO)", "long spans in Emilia-Romagna — the same logic outside Lombardy"],
       ] as const,
     },
   },
